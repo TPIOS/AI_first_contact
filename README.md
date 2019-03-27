@@ -1,2 +1,2 @@
 # AI_first_contact
-Record the program with AI before Graduate
+Record the programs with AI before Graduate
