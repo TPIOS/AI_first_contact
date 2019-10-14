@@ -4,18 +4,24 @@ import datetime
 
 def write_file(model_file, tagAppearTime, tagBeforeTag, tagAfterTag, wordAndTag):
     model_file = open(model_file, "w")
+
     for key, value in tagAppearTime.items(): model_file.write(key + ":" + str(value) + "\n")
+
+    model_file.write("!@#\n")
     for key1 in tagBeforeTag.keys():
         for key2, value in tagBeforeTag[key1].items():
             model_file.write(key1 + " " + key2 + ":" + str(value) + "\n")
-
+    
+    model_file.write("!@#\n")
     for key1 in tagAfterTag.keys():
         for key2, value in tagAfterTag[key1].items():
             model_file.write(key1 + " " + key2 + ":" + str(value) + "\n")
 
+    model_file.write("!@#\n")
     for key1 in wordAndTag.keys():
         for key2, value in wordAndTag[key1].items():
             model_file.write(key1 + " " + key2 + ":" + str(value) + "\n")
+
     model_file.close()
 
 def train_model(train_file, model_file):
@@ -25,10 +31,15 @@ def train_model(train_file, model_file):
     tagBeforeTag = dict()
     tagAfterTag = dict()
     wordAndTag = dict()
+    
+    tagAppearTime["<s>"] = 0
+    tagAppearTime["</s>"] = 0
 
     lines = trainFile.readlines()
     for line in lines:
         prev = "<s>"
+        tagAppearTime["<s>"] += 1
+        tagAppearTime["</s>"] += 1
         sentence = line.strip()
         words = sentence.split(" ")
         for wordWithTag in words:
@@ -72,7 +83,7 @@ def train_model(train_file, model_file):
             word, tag = wordWithTag.rsplit("/", 1)
             word = word.lower()
             if late in tagAfterTag:
-                if tag in tagAfterTag[late][tag]:
+                if tag in tagAfterTag[late]:
                     tagAfterTag[late][tag] += 1
                 else:
                     tagAfterTag[late][tag] = 1
@@ -80,6 +91,7 @@ def train_model(train_file, model_file):
                 tagAfterTag[late] = dict()
                 tagAfterTag[late][tag] = 1
             late = tag
+
         if late in tagAfterTag:
             if "<s>" in tagAfterTag[late]:
                 tagAfterTag[late]["<s>"] += 1
