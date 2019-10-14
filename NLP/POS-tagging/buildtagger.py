@@ -2,12 +2,17 @@ import os
 import sys
 import datetime
 
-def write_file(model_file, tagAppearTime, tagAndTag, wordAndTag):
+def write_file(model_file, tagAppearTime, tagBeforeTag, tagAfterTag, wordAndTag):
     model_file = open(model_file, "w")
     for key, value in tagAppearTime.items(): model_file.write(key + ":" + str(value) + "\n")
-    for key1 in tagAndTag.keys():
-        for key2, value in tagAndTag[key1].items():
+    for key1 in tagBeforeTag.keys():
+        for key2, value in tagBeforeTag[key1].items():
             model_file.write(key1 + " " + key2 + ":" + str(value) + "\n")
+
+    for key1 in tagAfterTag.keys():
+        for key2, value in tagAfterTag[key1].items():
+            model_file.write(key1 + " " + key2 + ":" + str(value) + "\n")
+
     for key1 in wordAndTag.keys():
         for key2, value in wordAndTag[key1].items():
             model_file.write(key1 + " " + key2 + ":" + str(value) + "\n")
@@ -17,7 +22,8 @@ def train_model(train_file, model_file):
     trainFile = open(train_file, "r");
 
     tagAppearTime = dict()
-    tagAndTag = dict()
+    tagBeforeTag = dict()
+    tagAfterTag = dict()
     wordAndTag = dict()
 
     lines = trainFile.readlines()
@@ -33,14 +39,14 @@ def train_model(train_file, model_file):
             else:
                 tagAppearTime[tag] = 1
 
-            if prev in tagAndTag:
-                if tag in tagAndTag[prev]:
-                    tagAndTag[prev][tag] += 1
+            if prev in tagBeforeTag:
+                if tag in tagBeforeTag[prev]:
+                    tagBeforeTag[prev][tag] += 1
                 else:
-                    tagAndTag[prev][tag] = 1
+                    tagBeforeTag[prev][tag] = 1
             else:
-                tagAndTag[prev] = dict()
-                tagAndTag[prev][tag] = 1
+                tagBeforeTag[prev] = dict()
+                tagBeforeTag[prev][tag] = 1
             
             if word in wordAndTag:
                 if tag in wordAndTag[word]:
@@ -52,17 +58,38 @@ def train_model(train_file, model_file):
                 wordAndTag[word][tag] = 1         
 
             prev = tag
-        
-        if prev in tagAndTag:
-            if "</s>" in tagAndTag[prev]:
-                tagAndTag[prev]["</s>"] += 1
+        if prev in tagBeforeTag:
+            if "</s>" in tagBeforeTag[prev]:
+                tagBeforeTag[prev]["</s>"] += 1
             else:
-                tagAndTag[prev]["</s>"] = 1
+                tagBeforeTag[prev]["</s>"] = 1
         else:
-            tagAndTag[prev] = dict()
-            tagAndTag[prev]["</s>"] = 1
+            tagBeforeTag[prev] = dict()
+            tagBeforeTag[prev]["</s>"] = 1
         
-    write_file(model_file, tagAppearTime, tagAndTag, wordAndTag)
+        late = "</s>"
+        for wordWithTag in words:
+            word, tag = wordWithTag.rsplit("/", 1)
+            word = word.lower()
+            if late in tagAfterTag:
+                if tag in tagAfterTag[late][tag]:
+                    tagAfterTag[late][tag] += 1
+                else:
+                    tagAfterTag[late][tag] = 1
+            else:
+                tagAfterTag[late] = dict()
+                tagAfterTag[late][tag] = 1
+            late = tag
+        if late in tagAfterTag:
+            if "<s>" in tagAfterTag[late]:
+                tagAfterTag[late]["<s>"] += 1
+            else:
+                tagAfterTag[late]["<s>"] = 1
+        else:
+            tagAfterTag[late] = dict()
+            tagAfterTag[late]["<s>"] = 1
+        
+    write_file(model_file, tagAppearTime, tagBeforeTag, tagAfterTag, wordAndTag)
     print('Finished...')
     trainFile.close()
 

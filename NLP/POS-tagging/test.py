@@ -1,2 +1,1 @@
-s = "a/b/c"
-print(s.rsplit("/", 1))
+from nltk.tag import tnt
