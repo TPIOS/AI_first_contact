@@ -1,6 +1,7 @@
 def f(a):
-    b = a.copy()
-    b["3"] += 1
+    b = list(a.keys())
+    print(type(b))
+    print(b)
 a = {"1":2, "2":3, "3":4}
 print(a)
 f(a)
