@@ -79,7 +79,7 @@ def train_model(train_file, model_file):
             tagBeforeTag[prev]["</s>"] = 1
         
         late = "</s>"
-        for wordWithTag in words:
+        for wordWithTag in words[::-1]:
             word, tag = wordWithTag.rsplit("/", 1)
             word = word.lower()
             if late in tagAfterTag:

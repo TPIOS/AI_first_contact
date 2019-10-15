@@ -45,57 +45,82 @@ def loadModel(model_file):
                 wordAndTag[firstKey][secondKey] = times
     return tagAppearTime, tagBeforeTag, tagAfterTag, wordAndTag
 
-def viterbi(words, tagAppearTime, tagBeforeTag, tagAfterTag, wordAndTag, smoothing = False):
+def viterbi(localTagAppearTime, localTagAndTag, localWordAndTag, numOfWords, numOfTags, words, Tags, startPos):
+    table = np.zeros((numOfWords, numOfTags))
+    backpoint = [[-1 for i in range(numOfTags)] for j in range(numOfWords)]
+    tempMax = 0
+    argMax = -1
+    if startPos == "<s>":
+        endPos = "</s>"
+    if startPos == "</s>":
+        endPos = "<s>"
+        words = words[::-1]
+
+    for i in range(numOfTags):
+        if words[0] in localWordAndTag.keys():
+            if Tags[i] in localTagAndTag[startPos] and Tags[i] in localWordAndTag[words[0]]:
+                table[0][i] = (localTagAndTag[startPos][Tags[i]] / localTagAppearTime[startPos]) * (localWordAndTag[words[0]][Tags[i]] / localTagAppearTime[Tags[i]])
+        else:
+            if Tags[i] in localTagAndTag[startPos]:
+                table[0][i] = (localTagAndTag[startPos][Tags[i]] / localTagAppearTime[startPos])
+    for i in range(1, numOfWords):
+        for j in range(numOfTags):
+            for k in range(numOfTags):
+                if words[i] in localWordAndTag.keys():
+                    if Tags[j] in localTagAndTag[Tags[k]] and Tags[j] in localWordAndTag[words[i]]: 
+                        cal = (localTagAndTag[Tags[k]][Tags[j]] / localTagAppearTime[Tags[k]]) * (localWordAndTag[words[i]][Tags[j]] / localTagAppearTime[Tags[j]]) * table[i-1][k]
+                        if cal > table[i][j]:
+                            table[i][j] = cal
+                            backpoint[i][j] = k
+                else:
+                    if Tags[j] in localTagAndTag[Tags[k]]:
+                        cal = (localTagAndTag[Tags[k]][Tags[j]] / localTagAppearTime[Tags[k]]) * table[i-1][k]
+                        if cal > table[i][j]:
+                            table[i][j] = cal
+                            backpoint[i][j] = k
+    for i in range(numOfTags):
+        if endPos in localTagAndTag[Tags[i]]:
+            cal = (localTagAndTag[Tags[i]][endPos] / localTagAppearTime[Tags[i]]) * table[numOfWords-1][i]
+            if cal > tempMax:
+                tempMax = cal
+                argMax = i
+
+    tag = list()
+    for i in range(numOfWords-1, -1, -1):
+        tag.append(Tags[argMax])
+        argMax = backpoint[i][argMax]
+
+    if startPos == "<s>": tag = tag[::-1]
+    if startPos == "</s>": table = table[::-1]
+    return table, tag
+
+def algorithm(words, tagAppearTime, tagBeforeTag, tagAfterTag, wordAndTag):
     localTagAppearTime = deepcopy(tagAppearTime)
     localTagBeforeTag = deepcopy(tagBeforeTag)
     localTagAfterTag = deepcopy(tagAfterTag)
     localWordAndTag = deepcopy(wordAndTag)
     localTagBeforeTag["</s>"] = dict()
     localTagAfterTag["<s>"] = dict()
-    tag = list()
     numOfWords = len(words)
     Tags = list(localTagAppearTime.keys())
     numOfTags = len(localTagAppearTime.keys())
-    table = np.zeros((numOfWords, numOfTags))
-    backpoint = [[-1 for i in range(numOfTags)] for j in range(numOfWords)]
-    tempMax = 0
-    argMax = -1
-    if not smoothing:
-        for i in range(numOfTags):
-            if words[0] in localWordAndTag.keys():
-                if Tags[i] in localTagBeforeTag["<s>"] and Tags[i] in localWordAndTag[words[0]]:
-                    table[0][i] = (localTagBeforeTag["<s>"][Tags[i]] / localTagAppearTime["<s>"]) * (localWordAndTag[words[0]][Tags[i]] / localTagAppearTime[Tags[i]])
-            else:
-                if Tags[i] in localTagBeforeTag["<s>"]:
-                    table[0][i] = (localTagBeforeTag["<s>"][Tags[i]] / localTagAppearTime["<s>"])
-        for i in range(1, numOfWords):
+    forwardTable, forwardTag = viterbi(localTagAppearTime, localTagBeforeTag, localWordAndTag, numOfWords, numOfTags, words, Tags, "<s>")
+    backwardTable, backwardTag = viterbi(localTagAppearTime, localTagAfterTag, localWordAndTag, numOfWords, numOfTags, words, Tags, "</s>")
+    ansTag = list()
+    for i in range(len(forwardTag)):
+        if forwardTag[i] == backwardTag[i]:
+            ansTag.append(forwardTag[i])
+        else:
+            thisForward = thisBackward = -1
             for j in range(numOfTags):
-                for k in range(numOfTags):
-                    if words[i] in localWordAndTag.keys():
-                        if Tags[j] in localTagBeforeTag[Tags[k]] and Tags[j] in localWordAndTag[words[i]]: 
-                            cal = (localTagBeforeTag[Tags[k]][Tags[j]] / localTagAppearTime[Tags[k]]) * (localWordAndTag[words[i]][Tags[j]] / localTagAppearTime[Tags[j]]) * table[i-1][k]
-                            if cal > table[i][j]:
-                                table[i][j] = cal
-                                backpoint[i][j] = k
-                    else:
-                        if Tags[j] in localTagBeforeTag[Tags[k]]:
-                            cal = (localTagBeforeTag[Tags[k]][Tags[j]] / localTagAppearTime[Tags[k]]) * table[i-1][k]
-                            if cal > table[i][j]:
-                                table[i][j] = cal
-                                backpoint[i][j] = k
-        for i in range(numOfTags):
-            if "</s>" in localTagBeforeTag[Tags[i]]:
-                cal = (localTagBeforeTag[Tags[i]]["</s>"] / localTagAppearTime[Tags[i]]) * table[numOfWords-1][i]
-                if cal > tempMax:
-                    tempMax = cal
-                    argMax = i
-        
-    for i in range(numOfWords-1, -1, -1):
-        tag.append(Tags[argMax])
-        argMax = backpoint[i][argMax]
-    tag = tag[::-1]
-    assert(len(tag) == len(words))
-    return tag
+                if forwardTag[i] == Tags[i]: thisForward = j
+                if backwardTag[i] == Tags[i]: thisBackward = j
+            if forwardTable[i][thisForward] >= backwardTable[i][thisBackward]:
+                ansTag.append(forwardTag[i])
+            else:
+                ansTag.append(backwardTag[i])
+
+    return ansTag
 
 def tag_sentence(test_file, model_file, out_file):
     tagAppearTime, tagBeforeTag, tagAfterTag, wordAndTag = loadModel(model_file)
@@ -105,7 +130,7 @@ def tag_sentence(test_file, model_file, out_file):
     for line in lines:
         sentence = line.rstrip()
         words = sentence.lower().split(" ")
-        tag = viterbi(words, tagAppearTime, tagBeforeTag, tagAfterTag, wordAndTag)
+        tag = algorithm(words, tagAppearTime, tagBeforeTag, tagAfterTag, wordAndTag)
         words = sentence.split(" ")
         ans = list()
         for i in range(len(tag)): ans.append(words[i]+"/"+tag[i])
