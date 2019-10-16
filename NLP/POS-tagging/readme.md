@@ -57,3 +57,26 @@ HMM模型告诉我们，假如说对于一个词，已知这个词前一个词�
 这个单纯的方法能得到：
 
 0.9419520080616379
+
+
+
+存在一些answer有错误的情况？我将我错误的答案进行了输出，发现了一些：
+
+1. `House-Senate`在answer中只有NNP的形式，但是在train中有JJ的形式，然而理论上在test这个样例中，house-senate确实应该位JJ，所以这样的错误肯定不可避免。
+2. `the/DT House/NNP Appropriations/NNP Committee/NNP`这个其中的Appropriations在train中就是NNP，但是在answer中却成了NNPS，说明answer也确有问题
+3. 错的比较多的都是`JJ, VBG`, `VBZ, NNS`, `NN VBG`，`JJ, VBN`
+4. 数字CD
+5. 开头大写的字母且不在词库里的，尾巴又没有s的，非常有可能是NNP
+6. insert竟然没有动词形式
+7. 中间大写字母果然需要单独考虑
+
+
+
+**question: Tri-gram是否可以做到呢**
+
+
+
+暂且把目前的94.19%正确率叫做version0.5，接下来开始陆续更新
+
+
+
