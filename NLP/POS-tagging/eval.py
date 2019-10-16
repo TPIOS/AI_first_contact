@@ -2,7 +2,7 @@ import os
 import sys
 
 if __name__ == "__main__":
-    # wrongFile = open("sents.wrong", "w")
+    wrongFile = open("sents.wrong", "w")
     out_file = sys.argv[1]
     reader = open(out_file)
     out_lines = reader.readlines()
@@ -20,7 +20,7 @@ if __name__ == "__main__":
     total_tags = 0
     matched_tags = 0
     for i in range(0, len(out_lines)):
-        # correct = True
+        correct = True
         cur_out_line = out_lines[i].strip()
         cur_out_tags = cur_out_line.split(' ')
         cur_ref_line = ref_lines[i].strip()
@@ -30,11 +30,11 @@ if __name__ == "__main__":
         for j in range(0, len(cur_ref_tags)):
             if cur_out_tags[j] == cur_ref_tags[j]:
                 matched_tags += 1
-        #     else:
-        #         wrongFile.write(cur_out_tags[j]+" "+cur_ref_tags[j]+"<>")
-        #         correct = False
+            else:
+                wrongFile.write(cur_out_tags[j]+" "+cur_ref_tags[j]+"<>")
+                correct = False
         
-        # if not correct: wrongFile.write("\n" + cur_out_line + "\n-------\n" + cur_ref_line + "\n\n")
+        if not correct: wrongFile.write("\n" + cur_out_line + "\n-------\n" + cur_ref_line + "\n\n")
 
     print("Accuracy=", float(matched_tags) / total_tags)
-    # wrongFile.close()
+    wrongFile.close()

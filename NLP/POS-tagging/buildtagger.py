@@ -42,9 +42,9 @@ def train_model(train_file, model_file):
         tagAppearTime["</s>"] += 1
         sentence = line.strip()
         words = sentence.split(" ")
-        for wordWithTag in words:
-            word, tag = wordWithTag.rsplit("/", 1)
-            word = word.lower()
+        for i in range(len(words)):
+            word, tag = words[i].rsplit("/", 1)
+            if i == 0: word = word.lower()
             if tag in tagAppearTime:
                 tagAppearTime[tag] += 1
             else:
