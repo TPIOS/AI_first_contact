@@ -83,7 +83,7 @@ def processWord(x, localWordAndTag):
     if x+"s" in localWordAndTag:
         localWordAndTag[x] = dict()
         for key in localWordAndTag[x+"s"]:
-            if key == "NNS": localWordAndTag[x]["NNS"] = localWordAndTag[x+"s"]["NNS"]
+            if key == "NNS": localWordAndTag[x]["NN"] = localWordAndTag[x+"s"]["NNS"]
             if key == "NNPS": localWordAndTag[x]["NNP"] = localWordAndTag[x+"s"]["NNPS"]
         return x
 
@@ -91,6 +91,40 @@ def processWord(x, localWordAndTag):
     if "-" in x:
         localWordAndTag[x] = dict()
         localWordAndTag[x]["NNP"] = 20
+        localWordAndTag[x]["JJ"] = 20
+        return x
+
+    #capitalized word
+    if x == x.capitalize():
+        if x.endswith("s"):
+            localWordAndTag[x] = dict()
+            localWordAndTag[x]["NNPS"] = 20
+        else:
+            localWordAndTag = dict()
+            localWordAndTag[x]["NNP"] = 20
+        return x
+    
+    #pass tone
+    if x.endswith("d") and x[:-1] in localWordAndTag:
+        localWordAndTag[x] = dict()
+        for key in localWordAndTag[x[:-1]]:
+            if key == "VBP":
+                localWordAndTag[x]["VBD"] = localWordAndTag[x[:-1]]["VBP"]
+                localWordAndTag[x]["VBN"] = localWordAndTag[x[:-1]]["VBP"]
+            if key == "VB":
+                localWordAndTag[x]["VBD"] = localWordAndTag[x[:-1]]["VB"]
+                localWordAndTag[x]["VBN"] = localWordAndTag[x[:-1]]["VB"]
+        return x
+
+    if x.endswith("ed") and x[:-2] in localWordAndTag:
+        localWordAndTag[x] = dict()
+        for key in localWordAndTag[x[:-2]]:
+            if key == "VBP":
+                localWordAndTag[x]["VBD"] = localWordAndTag[x[:-2]]["VBP"]
+                localWordAndTag[x]["VBN"] = localWordAndTag[x[:-2]]["VBP"]
+            if key == "VB":
+                localWordAndTag[x]["VBD"] = localWordAndTag[x[:-2]]["VB"]
+                localWordAndTag[x]["VBN"] = localWordAndTag[x[:-2]]["VB"]
         return x
 
 def viterbi(localTagAppearTime, localTagAndTag, localWordAndTag, numOfWords, numOfTags, words, Tags, startPos):
