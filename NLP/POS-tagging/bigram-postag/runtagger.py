@@ -56,6 +56,60 @@ def processWord(x, localWordAndTag):
             localWordAndTag[x]["CD"] = 100
         return x
 
+    #dash
+    if "-" in x:
+        if x in localWordAndTag:
+            localWordAndTag[x]["NNP"] = 10
+            localWordAndTag[x]["JJ"] = 10
+            localWordAndTag[x]["NN"] = 10
+        else:
+            localWordAndTag[x] = dict()
+            localWordAndTag[x]["NNP"] = 10
+            localWordAndTag[x]["JJ"] = 10
+            localWordAndTag[x]["NN"] = 10
+        return x
+
+    #end-with-ing
+    if x.endswith("ing"):
+        if x in localWordAndTag:
+            if not "VBG" in localWordAndTag[x]: localWordAndTag[x]["VBG"] = 10
+            if not "NN" in localWordAndTag[x]: localWordAndTag[x]["NN"] = 10
+        else:
+            localWordAndTag[x] = dict()
+            localWordAndTag[x]["VBG"] = 10
+            localWordAndTag[x]["NN"] = 10
+            localWordAndTag[x]["JJ"] = 10
+        return x
+
+    #end-with-ment/ness
+    if x.endswith("ment") or x.endswith("ness"):
+        if x in localWordAndTag:
+            if not "NN" in localWordAndTag[x]: localWordAndTag["NN"] = 10
+        else:
+            localWordAndTag[x] = dict()
+            localWordAndTag[x]["NN"] = 10
+        return x
+
+    #capitalized word
+    if x == x.capitalize():
+        if x.endswith("s"):
+            if not x in localWordAndTag:
+                localWordAndTag[x] = dict()
+                localWordAndTag[x]["NNPS"] = 20
+            else:
+                if not "NNPS" in localWordAndTag[x]: localWordAndTag[x]["NNPS"] = 10
+                if not "JJ" in localWordAndTag[x]: localWordAndTag["JJ"] = 10
+                if not "NNS" in localWordAndTag[x]: localWordAndTag["NNS"] = 10
+        else:
+            if not x in localWordAndTag:
+                localWordAndTag[x] = dict()
+                localWordAndTag[x]["NNP"] = 20
+            else:
+                if not "NNP" in localWordAndTag[x]: localWordAndTag[x]["NNP"] = 10
+                if not "JJ" in localWordAndTag[x]: localWordAndTag["JJ"] = 10
+                if not "NN" in localWordAndTag[x]: localWordAndTag["NN"] = 10
+        return x
+
     if x in localWordAndTag: return x # not UNK, just return
 
     if x.capitalize() in localWordAndTag or x.lower() in localWordAndTag or x.upper() in localWordAndTag:
@@ -87,50 +141,33 @@ def processWord(x, localWordAndTag):
             if key == "NNS": localWordAndTag[x]["NN"] = localWordAndTag[x+"s"]["NNS"]
             if key == "NNPS": localWordAndTag[x]["NNP"] = localWordAndTag[x+"s"]["NNPS"]
         return x
-
-    #dash
-    if "-" in x:
-        localWordAndTag[x] = dict()
-        localWordAndTag[x]["NNP"] = 20
-        localWordAndTag[x]["JJ"] = 10
-        return x
-
-    #capitalized word
-    if x == x.capitalize() and (not x in localWordAndTag):
-        if x.endswith("s"):
-            localWordAndTag[x] = dict()
-            localWordAndTag[x]["NNPS"] = 20
-        else:
-            localWordAndTag[x] = dict()
-            localWordAndTag[x]["NNP"] = 20
-        return x
     
     #pass tone
-    # if x.endswith("d") and x[:-1] in localWordAndTag:
-    #     if not x in localWordAndTag: localWordAndTag[x] = dict()
-    #     if not "VBD" in localWordAndTag[x]: localWordAndTag[x]["VBD"] = 0
-    #     if not "VBN" in localWordAndTag[x]: localWordAndTag[x]["VBN"] = 0
-    #     for key in localWordAndTag[x[:-1]]:
-    #         if key == "VBP":
-    #             localWordAndTag[x]["VBD"] += localWordAndTag[x[:-1]]["VBP"]
-    #             localWordAndTag[x]["VBN"] += localWordAndTag[x[:-1]]["VBP"]
-    #         if key == "VB":
-    #             localWordAndTag[x]["VBD"] += localWordAndTag[x[:-1]]["VB"]
-    #             localWordAndTag[x]["VBN"] += localWordAndTag[x[:-1]]["VB"]
-    #     return x
+    if x.endswith("d") and x[:-1] in localWordAndTag:
+        if not x in localWordAndTag: localWordAndTag[x] = dict()
+        if not "VBD" in localWordAndTag[x]: localWordAndTag[x]["VBD"] = 0
+        if not "VBN" in localWordAndTag[x]: localWordAndTag[x]["VBN"] = 0
+        for key in localWordAndTag[x[:-1]]:
+            if key == "VBP":
+                localWordAndTag[x]["VBD"] += localWordAndTag[x[:-1]]["VBP"]
+                localWordAndTag[x]["VBN"] += localWordAndTag[x[:-1]]["VBP"]
+            if key == "VB":
+                localWordAndTag[x]["VBD"] += localWordAndTag[x[:-1]]["VB"]
+                localWordAndTag[x]["VBN"] += localWordAndTag[x[:-1]]["VB"]
+        return x
     
-    # if x.endswith("ed") and x[:-2] in localWordAndTag:
-    #     if not x in localWordAndTag: localWordAndTag[x] = dict()
-    #     if not "VBD" in localWordAndTag[x]: localWordAndTag[x]["VBD"] = 0
-    #     if not "VBN" in localWordAndTag[x]: localWordAndTag[x]["VBN"] = 0
-    #     for key in localWordAndTag[x[:-2]]:
-    #         if key == "VBP":
-    #             localWordAndTag[x]["VBD"] += localWordAndTag[x[:-2]]["VBP"]
-    #             localWordAndTag[x]["VBN"] += localWordAndTag[x[:-2]]["VBP"]
-    #         if key == "VB":
-    #             localWordAndTag[x]["VBD"] += localWordAndTag[x[:-2]]["VB"]
-    #             localWordAndTag[x]["VBN"] += localWordAndTag[x[:-2]]["VB"]
-    #     return x
+    if x.endswith("ed") and x[:-2] in localWordAndTag:
+        if not x in localWordAndTag: localWordAndTag[x] = dict()
+        if not "VBD" in localWordAndTag[x]: localWordAndTag[x]["VBD"] = 0
+        if not "VBN" in localWordAndTag[x]: localWordAndTag[x]["VBN"] = 0
+        for key in localWordAndTag[x[:-2]]:
+            if key == "VBP":
+                localWordAndTag[x]["VBD"] += localWordAndTag[x[:-2]]["VBP"]
+                localWordAndTag[x]["VBN"] += localWordAndTag[x[:-2]]["VBP"]
+            if key == "VB":
+                localWordAndTag[x]["VBD"] += localWordAndTag[x[:-2]]["VB"]
+                localWordAndTag[x]["VBN"] += localWordAndTag[x[:-2]]["VB"]
+        return x
 
 def viterbi(localTagAppearTime, localTagAndTag, localWordAndTag, numOfWords, numOfTags, words, Tags, startPos):
     table = np.zeros((numOfWords, numOfTags))
