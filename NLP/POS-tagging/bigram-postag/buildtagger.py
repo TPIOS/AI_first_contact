@@ -40,8 +40,7 @@ def train_model(train_file, model_file):
         words = sentence.split(" ")
         for i in range(len(words)):
             word, tag = words[i].rsplit("/", 1)
-            # if tag != "NNP" or tag != "NNPS": word = word.lower()
-            if i == 0: word = word.lower()
+            if i == 0 and (tag != "NNP" or tag != "NNPS"): word = word.lower()
             if tag in tagAppearTime:
                 tagAppearTime[tag] += 1
             else:
@@ -81,8 +80,7 @@ def train_model(train_file, model_file):
         words = sentence.split(" ")
         for i in range(len(words)):
             word, tag = words[i].rsplit("/", 1)
-            # if tag != "NNP" or tag != "NNPS": word = word.lower()
-            if i == 0: word = word.lower()
+            if i == 0 and (tag != "NNP" or tag != "NNPS"): word = word.lower()
             if tag == "NNS":
                 if word[:-1] in wordAndTag:
                     if "NN" in wordAndTag[word[:-1]]:

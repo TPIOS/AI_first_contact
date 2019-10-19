@@ -56,19 +56,6 @@ def processWord(x, localWordAndTag):
             localWordAndTag[x]["CD"] = 100
         return x
 
-    #dash
-    if "-" in x:
-        if x in localWordAndTag:
-            localWordAndTag[x]["NNP"] = 10
-            localWordAndTag[x]["JJ"] = 10
-            localWordAndTag[x]["NN"] = 10
-        else:
-            localWordAndTag[x] = dict()
-            localWordAndTag[x]["NNP"] = 10
-            localWordAndTag[x]["JJ"] = 10
-            localWordAndTag[x]["NN"] = 10
-        return x
-
     #end-with-ing
     if x.endswith("ing"):
         if x in localWordAndTag:
@@ -89,7 +76,7 @@ def processWord(x, localWordAndTag):
             localWordAndTag[x] = dict()
             localWordAndTag[x]["NN"] = 10
         return x
-
+        
     #capitalized word
     if x == x.capitalize():
         if x.endswith("s"):
@@ -99,7 +86,6 @@ def processWord(x, localWordAndTag):
             else:
                 if not "NNPS" in localWordAndTag[x]: localWordAndTag[x]["NNPS"] = 10
                 if not "JJ" in localWordAndTag[x]: localWordAndTag["JJ"] = 10
-                if not "NNS" in localWordAndTag[x]: localWordAndTag["NNS"] = 10
         else:
             if not x in localWordAndTag:
                 localWordAndTag[x] = dict()
@@ -107,7 +93,15 @@ def processWord(x, localWordAndTag):
             else:
                 if not "NNP" in localWordAndTag[x]: localWordAndTag[x]["NNP"] = 10
                 if not "JJ" in localWordAndTag[x]: localWordAndTag["JJ"] = 10
-                if not "NN" in localWordAndTag[x]: localWordAndTag["NN"] = 10
+        return x
+
+    #dash
+    if "-" in x:
+        if not x in localWordAndTag:
+            localWordAndTag[x] = dict()
+            localWordAndTag[x]["NNP"] = 10
+            localWordAndTag[x]["JJ"] = 10
+            localWordAndTag[x]["NN"] = 10
         return x
 
     if x in localWordAndTag: return x # not UNK, just return
