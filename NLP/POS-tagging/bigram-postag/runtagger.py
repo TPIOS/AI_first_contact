@@ -10,7 +10,6 @@ def loadModel(model_file):
     modelFile = open(model_file, "r")
     tagAppearTime = dict()
     tagBeforeTag = dict()
-    tagAfterTag = dict()
     wordAndTag = dict()
     lines = modelFile.readlines()
     modelFile.close()
@@ -33,18 +32,12 @@ def loadModel(model_file):
                 tagBeforeTag[firstKey] = dict()
                 tagBeforeTag[firstKey][secondKey] = times
         if whichDict == 2:
-            if firstKey in tagAfterTag:
-                tagAfterTag[firstKey][secondKey] = times
-            else:
-                tagAfterTag[firstKey] = dict()
-                tagAfterTag[firstKey][secondKey] = times
-        if whichDict == 3:
             if firstKey in wordAndTag:
                 wordAndTag[firstKey][secondKey] = times
             else:
                 wordAndTag[firstKey] = dict()
                 wordAndTag[firstKey][secondKey] = times
-    return tagAppearTime, tagBeforeTag, tagAfterTag, wordAndTag
+    return tagAppearTime, tagBeforeTag, wordAndTag
 
 def is_number(num):
     pattern = re.compile(r'^[-+]?[\']?([0-9]+[.,-]?)*[s]?$')
@@ -55,8 +48,7 @@ def is_number(num):
         return False
 
 def processWord(x, localWordAndTag):
-    #for all number, it should be number
-    if is_number(x):
+    if is_number(x): #for all number, it should be number
         if x in localWordAndTag:
             localWordAndTag[x]["CD"] = 100
         else:
@@ -65,21 +57,30 @@ def processWord(x, localWordAndTag):
         return x
 
     if x in localWordAndTag: return x # not UNK, just return
-    if x.capitalize() in localWordAndTag: return x.capitalize() # not UNK, just capitalized it
-    if x.lower() in localWordAndTag: return x.lower() # not UNK, just return lower of it
-    if x.upper() in localWordAndTag: return x.upper() # not UNK, just return upper of it
+
+    if x.capitalize() in localWordAndTag or x.lower() in localWordAndTag or x.upper() in localWordAndTag:
+        if x.capitalize() in localWordAndTag:
+            localWordAndTag[x] = deepcopy(localWordAndTag[x.capitalize()]) #enlarge corpus
+        if x.lower() in localWordAndTag:
+            localWordAndTag[x] = deepcopy(localWordAndTag[x.lower()]) #enlarge corpus
+        if x.upper() in localWordAndTag:
+            localWordAndTag[x] = deepcopy(localWordAndTag[x.upper()]) #enlarge corpus
+        return x
 
     #end-with-s
     if x.endswith("s") and x[:-1] in localWordAndTag:
-        localWordAndTag[x] = dict()
+        if not x in localWordAndTag: localWordAndTag[x] = dict()
+        if not "NNS" in localWordAndTag[x]: localWordAndTag[x]["NNS"] = 0
+        if not "NNPS" in localWordAndTag[x]: localWordAndTag[x]["NNPS"] = 0
+        if not "VBZ" in localWordAndTag[x]: localWordAndTag[x]["VBZ"] = 0
         for key in localWordAndTag[x[:-1]]:
-            if key == "NN": localWordAndTag[x]["NNS"] = localWordAndTag[x[:-1]]["NN"]
-            if key == "NNP": localWordAndTag[x]["NNPS"] = localWordAndTag[x[:-1]]["NNP"]
-            if key == "VBP": localWordAndTag[x]["VBZ"] = localWordAndTag[x[:-1]]["VBP"]
-            if key == "VB": localWordAndTag[x]["VBZ"] = localWordAndTag[x[:-1]]["VB"]
+            if key == "NN": localWordAndTag[x]["NNS"] += localWordAndTag[x[:-1]]["NN"]
+            if key == "NNP": localWordAndTag[x]["NNPS"] += localWordAndTag[x[:-1]]["NNP"]
+            if key == "VBP": localWordAndTag[x]["VBZ"] += localWordAndTag[x[:-1]]["VBP"]
+            if key == "VB": localWordAndTag[x]["VBZ"] += localWordAndTag[x[:-1]]["VB"]
         return x
     
-    #single-plural
+    # #single-plural
     if x+"s" in localWordAndTag:
         localWordAndTag[x] = dict()
         for key in localWordAndTag[x+"s"]:
@@ -91,11 +92,11 @@ def processWord(x, localWordAndTag):
     if "-" in x:
         localWordAndTag[x] = dict()
         localWordAndTag[x]["NNP"] = 20
-        localWordAndTag[x]["JJ"] = 20
+        localWordAndTag[x]["JJ"] = 10
         return x
 
     #capitalized word
-    if x == x.capitalize():
+    if x == x.capitalize() and (not x in localWordAndTag):
         if x.endswith("s"):
             localWordAndTag[x] = dict()
             localWordAndTag[x]["NNPS"] = 20
@@ -105,27 +106,31 @@ def processWord(x, localWordAndTag):
         return x
     
     #pass tone
-    if x.endswith("d") and x[:-1] in localWordAndTag:
-        localWordAndTag[x] = dict()
-        for key in localWordAndTag[x[:-1]]:
-            if key == "VBP":
-                localWordAndTag[x]["VBD"] = localWordAndTag[x[:-1]]["VBP"]
-                localWordAndTag[x]["VBN"] = localWordAndTag[x[:-1]]["VBP"]
-            if key == "VB":
-                localWordAndTag[x]["VBD"] = localWordAndTag[x[:-1]]["VB"]
-                localWordAndTag[x]["VBN"] = localWordAndTag[x[:-1]]["VB"]
-        return x
-
-    if x.endswith("ed") and x[:-2] in localWordAndTag:
-        localWordAndTag[x] = dict()
-        for key in localWordAndTag[x[:-2]]:
-            if key == "VBP":
-                localWordAndTag[x]["VBD"] = localWordAndTag[x[:-2]]["VBP"]
-                localWordAndTag[x]["VBN"] = localWordAndTag[x[:-2]]["VBP"]
-            if key == "VB":
-                localWordAndTag[x]["VBD"] = localWordAndTag[x[:-2]]["VB"]
-                localWordAndTag[x]["VBN"] = localWordAndTag[x[:-2]]["VB"]
-        return x
+    # if x.endswith("d") and x[:-1] in localWordAndTag:
+    #     if not x in localWordAndTag: localWordAndTag[x] = dict()
+    #     if not "VBD" in localWordAndTag[x]: localWordAndTag[x]["VBD"] = 0
+    #     if not "VBN" in localWordAndTag[x]: localWordAndTag[x]["VBN"] = 0
+    #     for key in localWordAndTag[x[:-1]]:
+    #         if key == "VBP":
+    #             localWordAndTag[x]["VBD"] += localWordAndTag[x[:-1]]["VBP"]
+    #             localWordAndTag[x]["VBN"] += localWordAndTag[x[:-1]]["VBP"]
+    #         if key == "VB":
+    #             localWordAndTag[x]["VBD"] += localWordAndTag[x[:-1]]["VB"]
+    #             localWordAndTag[x]["VBN"] += localWordAndTag[x[:-1]]["VB"]
+    #     return x
+    
+    # if x.endswith("ed") and x[:-2] in localWordAndTag:
+    #     if not x in localWordAndTag: localWordAndTag[x] = dict()
+    #     if not "VBD" in localWordAndTag[x]: localWordAndTag[x]["VBD"] = 0
+    #     if not "VBN" in localWordAndTag[x]: localWordAndTag[x]["VBN"] = 0
+    #     for key in localWordAndTag[x[:-2]]:
+    #         if key == "VBP":
+    #             localWordAndTag[x]["VBD"] += localWordAndTag[x[:-2]]["VBP"]
+    #             localWordAndTag[x]["VBN"] += localWordAndTag[x[:-2]]["VBP"]
+    #         if key == "VB":
+    #             localWordAndTag[x]["VBD"] += localWordAndTag[x[:-2]]["VB"]
+    #             localWordAndTag[x]["VBN"] += localWordAndTag[x[:-2]]["VB"]
+    #     return x
 
 def viterbi(localTagAppearTime, localTagAndTag, localWordAndTag, numOfWords, numOfTags, words, Tags, startPos):
     table = np.zeros((numOfWords, numOfTags))
@@ -181,43 +186,26 @@ def viterbi(localTagAppearTime, localTagAndTag, localWordAndTag, numOfWords, num
     if startPos == "</s>": table = table[::-1]
     return table, tag
 
-def algorithm(words, tagAppearTime, tagBeforeTag, tagAfterTag, wordAndTag):
+def algorithm(words, tagAppearTime, tagBeforeTag, wordAndTag):
     localTagAppearTime = deepcopy(tagAppearTime)
     localTagBeforeTag = deepcopy(tagBeforeTag)
-    localTagAfterTag = deepcopy(tagAfterTag)
     localWordAndTag = deepcopy(wordAndTag)
     localTagBeforeTag["</s>"] = dict()
-    localTagAfterTag["<s>"] = dict()
     numOfWords = len(words)
     Tags = list(localTagAppearTime.keys())
     numOfTags = len(localTagAppearTime.keys())
     forwardTable, forwardTag = viterbi(localTagAppearTime, localTagBeforeTag, localWordAndTag, numOfWords, numOfTags, words, Tags, "<s>")
-    # backwardTable, backwardTag = viterbi(localTagAppearTime, localTagAfterTag, localWordAndTag, numOfWords, numOfTags, words, Tags, "</s>")
-    # ansTag = list()
-    # for i in range(len(forwardTag)):
-    #     if forwardTag[i] == backwardTag[i]:
-    #         ansTag.append(forwardTag[i])
-    #     else:
-    #         thisForward = thisBackward = -1
-    #         for j in range(numOfTags):
-    #             if forwardTag[i] == Tags[i]: thisForward = j
-    #             if backwardTag[i] == Tags[i]: thisBackward = j
-    #         if forwardTable[i][thisForward] >= backwardTable[i][thisBackward]:
-    #             ansTag.append(forwardTag[i])
-    #         else:
-    #             ansTag.append(backwardTag[i])
-
     return forwardTag
 
 def tag_sentence(test_file, model_file, out_file):
-    tagAppearTime, tagBeforeTag, tagAfterTag, wordAndTag = loadModel(model_file)
+    tagAppearTime, tagBeforeTag, wordAndTag = loadModel(model_file)
     testFile = open(test_file, "r")
     outFile = open(out_file, "w")
     lines = testFile.readlines()
     for line in lines:
         sentence = line.rstrip()
         words = sentence.split(" ")
-        tag = algorithm(words, tagAppearTime, tagBeforeTag, tagAfterTag, wordAndTag)
+        tag = algorithm(words, tagAppearTime, tagBeforeTag, wordAndTag)
         words = sentence.split(" ")
         ans = list()
         for i in range(len(tag)): ans.append(words[i]+"/"+tag[i])

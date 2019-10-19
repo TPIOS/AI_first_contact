@@ -10,5 +10,5 @@
 # while(True):
 #     num = input("Please input: ")
 #     print(is_number(num))
-a = "asfs"
-print(a[:-1])
+c = dict()
+c.get

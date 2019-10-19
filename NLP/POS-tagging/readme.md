@@ -104,3 +104,12 @@ HMM模型告诉我们，假如说对于一个词，已知这个词前一个词�
 
 教授说先让我把bi-gram模型争取弄到96以上，再考虑tri-gram，所以我们还是优化bi-gram的后期处理，因为准确率已经逼近95%，那么viterbi算法应该是没有出错，现在影响准确率的就是单词的ambiguity了
 
+94.26%，增加了NNPS之后，准确率下降了
+
+89.31%，失败的尝试？
+
+把很多东西都删掉了，感觉最重要的就是buildTragger.py里面if i == 0: word = word.lower()这句话，如果
+
+改成这样的，if tag != "NNP" or tag != "NNPS": word = word.lower()，效果立马下降
+
+Accuracy= 0.9452060546259946
