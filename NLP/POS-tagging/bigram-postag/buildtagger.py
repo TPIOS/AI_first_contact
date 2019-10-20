@@ -81,40 +81,6 @@ def train_model(train_file, model_file):
         for i in range(len(words)):
             word, tag = words[i].rsplit("/", 1)
             if i == 0 and (tag != "NNP" or tag != "NNPS"): word = word.lower()
-            if tag == "NNS":
-                if word[:-1] in wordAndTag:
-                    if "NN" in wordAndTag[word[:-1]]:
-                        wordAndTag[word[:-1]]["NN"] += 1
-                    else:
-                        wordAndTag[word[:-1]]["NN"] = 1
-                if word[:-2] in wordAndTag:
-                    if "NN" in wordAndTag[word[:-2]]:
-                        wordAndTag[word[:-2]]["NN"] += 1
-                    else:
-                        wordAndTag[word[:-2]]["NN"] = 1    
-                if word[:-3] + "y" in wordAndTag:
-                    if "NN" in wordAndTag[word[:-3] + "y"]:
-                        wordAndTag[word[:-3] + "y"]["NN"] += 1
-                    else:
-                        wordAndTag[word[:-3] + "y"]["NN"] = 1
-
-            if tag == "NNPS":
-                if word[:-1] in wordAndTag:
-                    if "NNP" in wordAndTag[word[:-1]]:
-                        wordAndTag[word[:-1]]["NNP"] += 1
-                    else:
-                        wordAndTag[word[:-1]]["NNP"] = 1
-                if word[:-2] in wordAndTag:
-                    if "NNP" in wordAndTag[word[:-2]]:
-                        wordAndTag[word[:-2]]["NNP"] += 1
-                    else:
-                        wordAndTag[word[:-2]]["NNP"] = 1    
-                if word[:-3] + "y" in wordAndTag:
-                    if "NNP" in wordAndTag[word[:-3] + "y"]:
-                        wordAndTag[word[:-3] + "y"]["NNP"] += 1
-                    else:
-                        wordAndTag[word[:-3] + "y"]["NNP"] = 1
-            
             if tag == "NN":
                 if word+"s" in wordAndTag:
                     if "NNS" in wordAndTag[word+"s"]:
@@ -129,28 +95,160 @@ def train_model(train_file, model_file):
                     else:
                         wordAndTag[word+"s"]["NNPS"] = 1
 
-            if tag == "NN":
-                if word != word.lower():
-                    if not word.lower() in wordAndTag:
-                        wordAndTag[word.lower()] = dict()
-                        wordAndTag[word.lower()]["NN"] = 1
-                    else:
-                        if not "NN" in wordAndTag[word.lower()]:
+            if len(word) >= 3:            
+                if tag == "NNS":
+                    if word.lower().endswith("s") and word[:-1] in wordAndTag: #s
+                        if "NN" in wordAndTag[word[:-1]]:
+                            wordAndTag[word[:-1]]["NN"] += 1
+                        else:
+                            wordAndTag[word[:-1]]["NN"] = 1
+                    elif word.lower().endswith("es") and word[:-2] in wordAndTag: #es
+                        if "NN" in wordAndTag[word[:-2]]:
+                            wordAndTag[word[:-2]]["NN"] += 1
+                        else:
+                            wordAndTag[word[:-2]]["NN"] = 1    
+                    elif word.lower().endswith("ies") and word[:-3] + "y" in wordAndTag: #ies
+                        if "NN" in wordAndTag[word[:-3] + "y"]:
+                            wordAndTag[word[:-3] + "y"]["NN"] += 1
+                        else:
+                            wordAndTag[word[:-3] + "y"]["NN"] = 1
+
+                if tag == "NNPS":
+                    if word.lower().endswith("s") and word[:-1] in wordAndTag:
+                        if "NNP" in wordAndTag[word[:-1]]:
+                            wordAndTag[word[:-1]]["NNP"] += 1
+                        else:
+                            wordAndTag[word[:-1]]["NNP"] = 1
+                    elif word.lower().endswith("es") and word[:-2] in wordAndTag:
+                        if "NNP" in wordAndTag[word[:-2]]:
+                            wordAndTag[word[:-2]]["NNP"] += 1
+                        else:
+                            wordAndTag[word[:-2]]["NNP"] = 1    
+                    elif word.lower().endswith("ies") and word[:-3] + "y" in wordAndTag:
+                        if "NNP" in wordAndTag[word[:-3] + "y"]:
+                            wordAndTag[word[:-3] + "y"]["NNP"] += 1
+                        else:
+                            wordAndTag[word[:-3] + "y"]["NNP"] = 1
+
+                if tag == "NN":
+                    if word != word.lower():
+                        if not word.lower() in wordAndTag:
+                            wordAndTag[word.lower()] = dict()
                             wordAndTag[word.lower()]["NN"] = 1
                         else:
-                            wordAndTag[word.lower()]["NN"] += 1
-            
-            if tag == "NNS":
-                if word != word.lower():
-                    if not word.lower() in wordAndTag:
-                        wordAndTag[word.lower()] = dict()
-                        wordAndTag[word.lower()]["NNS"] = 1
-                    else:
-                        if not "NNS" in wordAndTag[word.lower()]:
+                            if not "NN" in wordAndTag[word.lower()]:
+                                wordAndTag[word.lower()]["NN"] = 1
+                            else:
+                                wordAndTag[word.lower()]["NN"] += 1
+                
+                if tag == "NNS":
+                    if word != word.lower():
+                        if not word.lower() in wordAndTag:
+                            wordAndTag[word.lower()] = dict()
                             wordAndTag[word.lower()]["NNS"] = 1
                         else:
-                            wordAndTag[word.lower()]["NNS"] += 1
+                            if not "NNS" in wordAndTag[word.lower()]:
+                                wordAndTag[word.lower()]["NNS"] = 1
+                            else:
+                                wordAndTag[word.lower()]["NNS"] += 1
 
+                if tag == "VBD":
+                    if word.lower().endswith("d") and word[:-1] in wordAndTag: #d
+                        if "VB" in wordAndTag[word[:-1]]:
+                            wordAndTag[word[:-1]]["VB"] += 1
+                        else:
+                            wordAndTag[word[:-1]]["VB"] = 1
+                        if "VBP" in wordAndTag[word[:-1]]:
+                            wordAndTag[word[:-1]]["VBP"] += 1
+                        else:
+                            wordAndTag[word[:-1]]["VBP"] = 1
+                    elif word.lower().endswith("ed") and word[:-2] in wordAndTag: #ed
+                        if "VB" in wordAndTag[word[:-2]]:
+                            wordAndTag[word[:-2]]["VB"] += 1
+                        else:
+                            wordAndTag[word[:-2]]["VB"] = 1
+                        if "VBP" in wordAndTag[word[:-2]]:
+                            wordAndTag[word[:-2]]["VBP"] += 1
+                        else:
+                            wordAndTag[word[:-2]]["VBP"] = 1    
+                    elif word.lower().endswith("ied") and word[:-3] + "y" in wordAndTag: #ied
+                        if "VB" in wordAndTag[word[:-3] + "y"]:
+                            wordAndTag[word[:-3] + "y"]["VB"] += 1
+                        else:
+                            wordAndTag[word[:-3] + "y"]["VB"] = 1
+                        if "VBP" in wordAndTag[word[:-3] + "y"]:
+                            wordAndTag[word[:-3] + "y"]["VBP"] += 1
+                        else:
+                            wordAndTag[word[:-3] + "y"]["VBP"] = 1
+                
+                if tag == "VBN":
+                    if (word.lower().endswith("d") or word.lower().endswith("n")) and word[:-1] in wordAndTag: #d
+                        if "VB" in wordAndTag[word[:-1]]:
+                            wordAndTag[word[:-1]]["VB"] += 1
+                        else:
+                            wordAndTag[word[:-1]]["VB"] = 1
+                        if "VBP" in wordAndTag[word[:-1]]:
+                            wordAndTag[word[:-1]]["VBP"] += 1
+                        else:
+                            wordAndTag[word[:-1]]["VBP"] = 1
+                    elif (word.lower().endswith("ed") or word.lower().endswith("en")) and word[:-2] in wordAndTag: #ed
+                        if "VB" in wordAndTag[word[:-2]]:
+                            wordAndTag[word[:-2]]["VB"] += 1
+                        else:
+                            wordAndTag[word[:-2]]["VB"] = 1
+                        if "VBP" in wordAndTag[word[:-2]]:
+                            wordAndTag[word[:-2]]["VBP"] += 1
+                        else:
+                            wordAndTag[word[:-2]]["VBP"] = 1    
+                    elif (word.lower().endswith("ied") or word.lower().endswith("ien")) and word[:-3] + "y" in wordAndTag: #ied
+                        if "VB" in wordAndTag[word[:-3] + "y"]:
+                            wordAndTag[word[:-3] + "y"]["VB"] += 1
+                        else:
+                            wordAndTag[word[:-3] + "y"]["VB"] = 1
+                        if "VBP" in wordAndTag[word[:-3] + "y"]:
+                            wordAndTag[word[:-3] + "y"]["VBP"] += 1
+                        else:
+                            wordAndTag[word[:-3] + "y"]["VBP"] = 1
+                
+                if tag == "VBZ":
+                    if word.lower().endswith("s") and word[:-1] in wordAndTag: #s
+                        if "VB" in wordAndTag[word[:-1]]:
+                            wordAndTag[word[:-1]]["VB"] += 1
+                        else:
+                            wordAndTag[word[:-1]]["VB"] = 1
+                        if "VBP" in wordAndTag[word[:-1]]:
+                            wordAndTag[word[:-1]]["VBP"] += 1
+                        else:
+                            wordAndTag[word[:-1]]["VBP"] = 1
+                    elif word.lower().endswith("es") and word[:-2] in wordAndTag: #es
+                        if "VB" in wordAndTag[word[:-2]]:
+                            wordAndTag[word[:-2]]["VB"] += 1
+                        else:
+                            wordAndTag[word[:-2]]["VB"] = 1
+                        if "VBP" in wordAndTag[word[:-2]]:
+                            wordAndTag[word[:-2]]["VBP"] += 1
+                        else:
+                            wordAndTag[word[:-2]]["VBP"] = 1    
+                    elif word.lower().endswith("ies") and word[:-3] + "y" in wordAndTag: #ies
+                        if "VB" in wordAndTag[word[:-3] + "y"]:
+                            wordAndTag[word[:-3] + "y"]["VB"] += 1
+                        else:
+                            wordAndTag[word[:-3] + "y"]["VB"] = 1
+                        if "VBP" in wordAndTag[word[:-3] + "y"]:
+                            wordAndTag[word[:-3] + "y"]["VBP"] += 1
+                        else:
+                            wordAndTag[word[:-3] + "y"]["VBP"] = 1
+                
+                if tag == "VBG":
+                    if word.lower().endswith("ing") and word[:-3] in wordAndTag: #ing
+                        if "VB" in wordAndTag[word[:-3]]:
+                            wordAndTag[word[:-3]]["VB"] += 1
+                        else:
+                            wordAndTag[word[:-3]]["VB"] = 1
+                        if "VBP" in wordAndTag[word[:-3]]:
+                            wordAndTag[word[:-3]]["VBP"] += 1
+                        else:
+                            wordAndTag[word[:-3]]["VBP"] = 1
         
     write_file(model_file, tagAppearTime, tagBeforeTag, wordAndTag)
     print('Finished...')

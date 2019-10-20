@@ -49,7 +49,7 @@ def is_number(num):
         return False
 
 def processWord(x, localWordAndTag):
-    if is_number(x) or (x == "hundred" or x == "thousand" or x == "TWO"): #for all number, it should be number
+    if is_number(x) or (x == "hundred" or x == "thousand" or x == "TWO" or x.endswith("1st") or x.endswith("2nd") or x.endswith("3rd")): #for all number, it should be number
         localWordAndTag[x] = dict()
         localWordAndTag[x]["CD"] = 100
         return x
@@ -67,7 +67,7 @@ def processWord(x, localWordAndTag):
         return x
 
     #end-with-ment/ness
-    if x.endswith("ment") or x.endswith("ness"):
+    if x.endswith("ment") or x.endswith("ness") or x.endswith("tion") or x.endswith("sion"):
         if x in localWordAndTag:
             if not "NN" in localWordAndTag[x]: localWordAndTag["NN"] = 10
         else:
@@ -95,7 +95,7 @@ def processWord(x, localWordAndTag):
 
     #abbr.
     if x == x.upper():
-        if not x in localWordAndTag:
+        if not x in localWordAndTag or not x.lower() in localWordAndTag or not x.capitalize() in localWordAndTag:
             localWordAndTag[x] = dict()
             localWordAndTag[x]["NNP"] = 20
 
@@ -135,6 +135,7 @@ def processWord(x, localWordAndTag):
         localWordAndTag[x] = dict()
         localWordAndTag[x]["NNS"] = 20
         localWordAndTag[x]["NNPS"] = 20
+        return x
     
     # #single-plural
     if x+"s" in localWordAndTag:
@@ -197,7 +198,6 @@ def viterbi(localTagAppearTime, localTagAndTag, localWordAndTag, numOfWords, num
     for i in range(1, numOfWords):
         if preWord == "``" or preWord == "''" or preWord == "(": words[i] = words[i].lower()
         words[i] = processWord(words[i], localWordAndTag)
-        # if words[i] == "1990": print(localWordAndTag["1990"])
         for j in range(numOfTags):
             for k in range(numOfTags):
                 if words[i] in localWordAndTag.keys():
