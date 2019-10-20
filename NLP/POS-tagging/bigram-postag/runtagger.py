@@ -40,6 +40,7 @@ def loadModel(model_file):
     return tagAppearTime, tagBeforeTag, wordAndTag
 
 def is_number(num):
+    if num == "'" or num == "'s": return False
     pattern = re.compile(r'^[-+]?[\']?([0-9]+[.,-]?)*[s]?$')
     result = pattern.match(num)
     if result:
@@ -168,11 +169,7 @@ def viterbi(localTagAppearTime, localTagAndTag, localWordAndTag, numOfWords, num
     backpoint = [[-1 for i in range(numOfTags)] for j in range(numOfWords)]
     tempMax = 0
     argMax = -1
-    if startPos == "<s>":
-        endPos = "</s>"
-    if startPos == "</s>":
-        endPos = "<s>"
-        words = words[::-1]
+    if startPos == "<s>": endPos = "</s>"
 
     words[0] = words[0].lower()
     words[0] = processWord(words[0], localWordAndTag) #assume we just add the times that UNK as a Tag but not add Tag appear time.
@@ -183,8 +180,10 @@ def viterbi(localTagAppearTime, localTagAndTag, localWordAndTag, numOfWords, num
         else:
             if Tags[i] in localTagAndTag[startPos]:
                 table[0][i] = (localTagAndTag[startPos][Tags[i]] / localTagAppearTime[startPos])
-    
+
+    preWord = words[0]
     for i in range(1, numOfWords):
+        if preWord == "``" or preWord == "''" or preWord == "(": words[i] = words[i].lower()
         words[i] = processWord(words[i], localWordAndTag)
         for j in range(numOfTags):
             for k in range(numOfTags):
@@ -200,6 +199,7 @@ def viterbi(localTagAppearTime, localTagAndTag, localWordAndTag, numOfWords, num
                         if cal > table[i][j]:
                             table[i][j] = cal
                             backpoint[i][j] = k
+        preWord = words[i]
     
     for i in range(numOfTags):
         if endPos in localTagAndTag[Tags[i]]:
@@ -214,7 +214,6 @@ def viterbi(localTagAppearTime, localTagAndTag, localWordAndTag, numOfWords, num
         argMax = backpoint[i][argMax]
 
     if startPos == "<s>": tag = tag[::-1]
-    if startPos == "</s>": table = table[::-1]
     return table, tag
 
 def algorithm(words, tagAppearTime, tagBeforeTag, wordAndTag):
