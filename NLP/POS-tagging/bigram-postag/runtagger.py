@@ -41,7 +41,7 @@ def loadModel(model_file):
 
 def is_number(num):
     if num == "'" or num == "'s": return False
-    pattern = re.compile(r'^[-+]?[\']?([0-9]+[.,-]?)*[s]?$')
+    pattern = re.compile(r'^[-+]?[\']?([0-9]+[.,-/]?)*[s]?$')
     result = pattern.match(num)
     if result:
         return True
@@ -50,11 +50,8 @@ def is_number(num):
 
 def processWord(x, localWordAndTag):
     if is_number(x): #for all number, it should be number
-        if x in localWordAndTag:
-            localWordAndTag[x]["CD"] = 100
-        else:
-            localWordAndTag[x] = dict()
-            localWordAndTag[x]["CD"] = 100
+        localWordAndTag[x] = dict()
+        localWordAndTag[x]["CD"] = 100
         return x
 
     #end-with-ing
@@ -96,6 +93,12 @@ def processWord(x, localWordAndTag):
                 if not "JJ" in localWordAndTag[x]: localWordAndTag["JJ"] = 10
         return x
 
+    #abbr.
+    if x == x.upper():
+        if not x in localWordAndTag:
+            localWordAndTag[x] = dict()
+            localWordAndTag[x]["NNP"] = 20
+
     #dash
     if "-" in x:
         if not x in localWordAndTag:
@@ -128,6 +131,10 @@ def processWord(x, localWordAndTag):
             if key == "VBP": localWordAndTag[x]["VBZ"] += localWordAndTag[x[:-1]]["VBP"]
             if key == "VB": localWordAndTag[x]["VBZ"] += localWordAndTag[x[:-1]]["VB"]
         return x
+    elif x.endswith("s"):
+        localWordAndTag[x] = dict()
+        localWordAndTag[x]["NNS"] = 20
+        localWordAndTag[x]["NNPS"] = 20
     
     # #single-plural
     if x+"s" in localWordAndTag:
@@ -135,6 +142,9 @@ def processWord(x, localWordAndTag):
         for key in localWordAndTag[x+"s"]:
             if key == "NNS": localWordAndTag[x]["NN"] = localWordAndTag[x+"s"]["NNS"]
             if key == "NNPS": localWordAndTag[x]["NNP"] = localWordAndTag[x+"s"]["NNPS"]
+            if key == "VBZ":
+                localWordAndTag[x]["VB"] = localWordAndTag[x+"s"]["VBZ"]
+                localWordAndTag[x]["VBP"] = localWordAndTag[x+"s"]["VBZ"]
         return x
     
     #pass tone
@@ -181,10 +191,13 @@ def viterbi(localTagAppearTime, localTagAndTag, localWordAndTag, numOfWords, num
             if Tags[i] in localTagAndTag[startPos]:
                 table[0][i] = (localTagAndTag[startPos][Tags[i]] / localTagAppearTime[startPos])
 
+    # print(table[0])
+
     preWord = words[0]
     for i in range(1, numOfWords):
         if preWord == "``" or preWord == "''" or preWord == "(": words[i] = words[i].lower()
         words[i] = processWord(words[i], localWordAndTag)
+        # if words[i] == "1990": print(localWordAndTag["1990"])
         for j in range(numOfTags):
             for k in range(numOfTags):
                 if words[i] in localWordAndTag.keys():
@@ -199,7 +212,22 @@ def viterbi(localTagAppearTime, localTagAndTag, localWordAndTag, numOfWords, num
                         if cal > table[i][j]:
                             table[i][j] = cal
                             backpoint[i][j] = k
+        allZero = True
+        for j in range(numOfTags):
+            if table[i][j] != 0: 
+                allZero = False
+                break
+        if allZero:
+            for j in range(numOfTags):
+                for k in range(numOfTags):
+                    if Tags[j] in localTagAndTag[Tags[k]]:
+                        cal = (localTagAndTag[Tags[k]][Tags[j]] / localTagAppearTime[Tags[k]]) * table[i-1][k]
+                        if cal > table[i][j]:
+                            table[i][j] = cal
+                            backpoint[i][j] = k
+
         preWord = words[i]
+        # print(table[i])
     
     for i in range(numOfTags):
         if endPos in localTagAndTag[Tags[i]]:
