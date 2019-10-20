@@ -10,5 +10,5 @@
 # while(True):
 #     s = input("Please input: ")
 #     print(is_number(s))
-s = "d"
-print(s.endswith("ed"))
+s = "to afa"
+print(s.title())

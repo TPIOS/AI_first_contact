@@ -77,7 +77,7 @@ def processWord(x, localWordAndTag):
         
     #capitalized word
     if x == x.capitalize():
-        if x.endswith("s"):
+        if x.endswith("es"):
             if not x in localWordAndTag:
                 localWordAndTag[x] = dict()
                 localWordAndTag[x]["NNPS"] = 20
