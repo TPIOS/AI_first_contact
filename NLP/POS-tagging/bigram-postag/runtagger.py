@@ -123,18 +123,19 @@ def processWord(x, localWordAndTag):
     if x.endswith("s") and x[:-1] in localWordAndTag:
         if not x in localWordAndTag: localWordAndTag[x] = dict()
         if not "NNS" in localWordAndTag[x]: localWordAndTag[x]["NNS"] = 0
-        if not "NNPS" in localWordAndTag[x]: localWordAndTag[x]["NNPS"] = 0
+        # if not "NNPS" in localWordAndTag[x]: localWordAndTag[x]["NNPS"] = 0
         if not "VBZ" in localWordAndTag[x]: localWordAndTag[x]["VBZ"] = 0
         for key in localWordAndTag[x[:-1]]:
             if key == "NN": localWordAndTag[x]["NNS"] += localWordAndTag[x[:-1]]["NN"]
-            if key == "NNP": localWordAndTag[x]["NNPS"] += localWordAndTag[x[:-1]]["NNP"]
+            # if key == "NNP": localWordAndTag[x]["NNPS"] += localWordAndTag[x[:-1]]["NNP"]
             if key == "VBP": localWordAndTag[x]["VBZ"] += localWordAndTag[x[:-1]]["VBP"]
             if key == "VB": localWordAndTag[x]["VBZ"] += localWordAndTag[x[:-1]]["VB"]
         return x
     elif x.endswith("s"):
         localWordAndTag[x] = dict()
         localWordAndTag[x]["NNS"] = 20
-        localWordAndTag[x]["NNPS"] = 20
+        # localWordAndTag[x]["NNPS"] = 20
+        localWordAndTag[x]["VBZ"] = 20
         return x
     
     # #single-plural
@@ -196,7 +197,7 @@ def viterbi(localTagAppearTime, localTagAndTag, localWordAndTag, numOfWords, num
 
     preWord = words[0]
     for i in range(1, numOfWords):
-        if preWord == "``" or preWord == "''" or preWord == "(": words[i] = words[i].lower()
+        if preWord == "``" or preWord == "''" or preWord == "(" or preWord == "--" or preWord == ":": words[i] = words[i].lower()
         words[i] = processWord(words[i], localWordAndTag)
         for j in range(numOfTags):
             for k in range(numOfTags):

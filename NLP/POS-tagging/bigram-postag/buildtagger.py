@@ -40,7 +40,7 @@ def train_model(train_file, model_file):
         words = sentence.split(" ")
         for i in range(len(words)):
             word, tag = words[i].rsplit("/", 1)
-            if (prev == "<s>" or prev == "``" or prev == "''" or prev == "-LRB-") and (tag != "NNP" or tag != "NNPS"): word = word.lower()
+            if (prev == "<s>" or prev == "``" or prev == "''" or prev == "-LRB-" or prev == ":") and (tag != "NNP" or tag != "NNPS"): word = word.lower()
             if tag in tagAppearTime:
                 tagAppearTime[tag] += 1
             else:
