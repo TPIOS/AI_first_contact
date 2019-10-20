@@ -128,6 +128,29 @@ def train_model(train_file, model_file):
                         wordAndTag[word+"s"]["NNPS"] += 1
                     else:
                         wordAndTag[word+"s"]["NNPS"] = 1
+
+            if tag == "NN":
+                if word != word.lower():
+                    if not word.lower() in wordAndTag:
+                        wordAndTag[word.lower()] = dict()
+                        wordAndTag[word.lower()]["NN"] = 1
+                    else:
+                        if not "NN" in wordAndTag[word.lower()]:
+                            wordAndTag[word.lower()]["NN"] = 1
+                        else:
+                            wordAndTag[word.lower()]["NN"] += 1
+            
+            if tag == "NNS":
+                if word != word.lower():
+                    if not word.lower() in wordAndTag:
+                        wordAndTag[word.lower()] = dict()
+                        wordAndTag[word.lower()]["NNS"] = 1
+                    else:
+                        if not "NNS" in wordAndTag[word.lower()]:
+                            wordAndTag[word.lower()]["NNS"] = 1
+                        else:
+                            wordAndTag[word.lower()]["NNS"] += 1
+
         
     write_file(model_file, tagAppearTime, tagBeforeTag, wordAndTag)
     print('Finished...')

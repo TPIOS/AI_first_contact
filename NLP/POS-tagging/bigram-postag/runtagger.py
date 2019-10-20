@@ -49,7 +49,7 @@ def is_number(num):
         return False
 
 def processWord(x, localWordAndTag):
-    if is_number(x): #for all number, it should be number
+    if is_number(x) or (x == "hundred" or x == "thousand" or x == "TWO"): #for all number, it should be number
         localWordAndTag[x] = dict()
         localWordAndTag[x]["CD"] = 100
         return x
