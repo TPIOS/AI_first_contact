@@ -198,8 +198,8 @@ And/CC after/IN losing/VBG a/DT battle/NN Tuesday/NNP night/NN with/IN the/DT Se
 -------
 And/CC after/IN losing/VBG a/DT battle/NN Tuesday/NNP night/NN with/IN the/DT Senate/NNP Foreign/NNP Relations/NNP Committee/NNP ,/, appropriators/NNS from/IN both/DT houses/NNS are/VBP expected/VBN to/TO be/VB forced/VBN back/RB to/TO conference/NN ./.
 
-Backseat/NNP Backseat/NN<>To/NNP To/TO<>
-Beauty/NN Takes/VBZ Backseat/NNP To/NNP Safety/NNP on/IN Bridges/NNPS
+Backseat/VBN Backseat/NN<>Safety/NN Safety/NNP<>Bridges/NNS Bridges/NNPS<>
+Beauty/NN Takes/VBZ Backseat/VBN To/TO Safety/NN on/IN Bridges/NNS
 -------
 Beauty/NN Takes/VBZ Backseat/NN To/TO Safety/NNP on/IN Bridges/NNPS
 
@@ -238,11 +238,6 @@ Similarly/RB ,/, highway/NN engineers/NNS agreed/VBD to/TO keep/VB the/DT old/JJ
 -------
 Similarly/RB ,/, highway/NN engineers/NNS agreed/VBD to/TO keep/VB the/DT old/JJ railings/NNS on/IN the/DT Key/NNP Bridge/NNP in/IN Washington/NNP ,/, D.C./NNP ,/, as/RB long/RB as/IN they/PRP could/MD install/VB a/DT crash/JJ barrier/NN between/IN the/DT sidewalk/NN and/CC the/DT road/NN ./.
 
-Carrier/NNP Carrier/NN<>Competes/NNPS Competes/VBZ<>Cartons/NNP Cartons/NNS<>
-Drink/NN Carrier/NNP Competes/NNPS With/IN Cartons/NNP
--------
-Drink/NN Carrier/NN Competes/VBZ With/IN Cartons/NNS
-
 POTABLES/NNP POTABLES/NNS<>Cup-Tote/NN Cup-Tote/NNP<>
 PORTING/VBG POTABLES/NNP just/RB got/VBD easier/JJR ,/, or/CC so/RB claims/VBZ Scypher/NNP Corp./NNP ,/, the/DT maker/NN of/IN the/DT Cup-Tote/NN ./.
 -------
@@ -278,8 +273,8 @@ While/IN it/PRP breaks/VBZ down/RB in/IN prolonged/JJ sunlight/NN ,/, it/PRP is/
 -------
 While/IN it/PRP breaks/VBZ down/RP in/IN prolonged/VBN sunlight/NN ,/, it/PRP is/VBZ n't/RB recyclable/JJ ./.
 
-Perestroika/NNP Perestroika/FW<>Touches/NNPS Touches/VBZ<>Design/NNP Design/NN<>World/NNP World/NN<>
-Spirit/NN of/IN Perestroika/NNP Touches/NNPS Design/NNP World/NNP
+Touches/NNS Touches/VBZ<>Design/VBP Design/NN<>
+Spirit/NN of/IN Perestroika/FW Touches/NNS Design/VBP World/NN
 -------
 Spirit/NN of/IN Perestroika/FW Touches/VBZ Design/NN World/NN
 
@@ -317,11 +312,6 @@ improve/VBP improve/VB<>
 ``/`` They/PRP got/VBD us/PRP thinking/VBG maybe/RB we/PRP should/MD be/VB helping/VBG U.S./NNP companies/NNS improve/VBP existing/VBG products/NNS rather/RB than/IN always/RB developing/VBG new/JJ ones/NNS ./. ''/''
 -------
 ``/`` They/PRP got/VBD us/PRP thinking/VBG maybe/RB we/PRP should/MD be/VB helping/VBG U.S./NNP companies/NNS improve/VB existing/VBG products/NNS rather/RB than/IN always/RB developing/VBG new/JJ ones/NNS ./. ''/''
-
-Jail/NNP Jail/NN<>Take/NNP Take/VB<>Root/NNP Root/NN<>
-Seed/NN for/IN Jail/NNP Solution/NN Fails/VBZ to/TO Take/NNP Root/NNP
--------
-Seed/NN for/IN Jail/NN Solution/NN Fails/VBZ to/TO Take/VB Root/NN
 
 Eggers/VBZ Eggers/NNP<>
 IT/PRP 'S/VBZ A/DT TWO/CD BIRDS/NNS with/IN one/CD stone/NN deal/NN :/: Eggers/VBZ Group/NNP architects/NNS propose/VBP using/VBG grain/NN elevators/NNS to/TO house/VB prisoners/NNS ./.
@@ -1703,8 +1693,8 @@ Like/IN virtually/JJ everything/NN on/IN Wall/NNP Street/NNP ,/, the/DT program-
 -------
 Like/IN virtually/RB everything/NN on/IN Wall/NNP Street/NNP ,/, the/DT program-trading/JJ battle/NN is/VBZ over/IN money/NN ,/, and/CC the/DT traditionalists/NNS have/VBP been/VBN losing/VBG out/RP on/IN bundles/NNS of/IN it/PRP to/TO the/DT New/NNP Guard/NNP in/IN recent/JJ years/NNS ./.
 
-Yet/RB Yet/CC<>fail/VB fail/VBP<>beat/NN beat/VB<>
-Yet/RB many/JJ such/JJ managers/NNS consistently/RB fail/VB to/TO even/RB keep/VB up/RP with/IN ,/, much/RB less/JJR beat/NN ,/, the/DT returns/NNS of/IN standard/JJ benchmarks/NNS like/IN the/DT S&P/NNP
+Yet/RB Yet/CC<>fail/VB fail/VBP<>beat/NN beat/VB<>S&P/NN S&P/NNP<>
+Yet/RB many/JJ such/JJ managers/NNS consistently/RB fail/VB to/TO even/RB keep/VB up/RP with/IN ,/, much/RB less/JJR beat/NN ,/, the/DT returns/NNS of/IN standard/JJ benchmarks/NNS like/IN the/DT S&P/NN
 -------
 Yet/CC many/JJ such/JJ managers/NNS consistently/RB fail/VBP to/TO even/RB keep/VB up/RP with/IN ,/, much/RB less/JJR beat/VB ,/, the/DT returns/NNS of/IN standard/JJ benchmarks/NNS like/IN the/DT S&P/NNP
 
@@ -2243,8 +2233,8 @@ The/DT National/NNP Association/NNP of/IN Diaper/NNP Services/NNPS ,/, Philadelp
 -------
 The/DT National/NNP Association/NNP of/IN Diaper/NNP Services/NNPS ,/, Philadelphia/NNP ,/, says/VBZ that/IN since/IN January/NNP it/PRP has/VBZ gotten/VBN more/JJR than/IN 672/CD inquiries/NNS from/IN people/NNS interested/JJ in/IN starting/VBG diaper/NN services/NNS ./.
 
-limited/JJ limited/VBD<>up/RB up/IN<>
-Diaper/NN shortages/NNS this/DT summer/NN limited/JJ growth/NN at/IN Stork/NNP Diaper/NNP Services/NNPS ,/, Springfield/NNP ,/, Mass./NNP ,/, where/WRB business/NN is/VBZ up/RB 25/CD %/NN in/IN
+limited/JJ limited/VBD<>Stork/DT Stork/NNP<>Diaper/NN Diaper/NNP<>Services/NNS Services/NNPS<>up/RB up/IN<>
+Diaper/NN shortages/NNS this/DT summer/NN limited/JJ growth/NN at/IN Stork/DT Diaper/NN Services/NNS ,/, Springfield/NNP ,/, Mass./NNP ,/, where/WRB business/NN is/VBZ up/RB 25/CD %/NN in/IN
 -------
 Diaper/NN shortages/NNS this/DT summer/NN limited/VBD growth/NN at/IN Stork/NNP Diaper/NNP Services/NNPS ,/, Springfield/NNP ,/, Mass./NNP ,/, where/WRB business/NN is/VBZ up/IN 25/CD %/NN in/IN
 

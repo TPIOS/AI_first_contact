@@ -280,10 +280,10 @@ def tag_sentence(test_file, model_file, out_file):
     lines = testFile.readlines()
     for line in lines:
         sentence = line.rstrip()
-        # if sentence.endswith(".") or sentence.endswith(")") or sentence.endswith("''") or sentence.endswith("``") or sentence.endswith(":") or sentence.endswith("?") or sentence.endswith("!") or sentence.endswith("--") or sentence.endswith("Baltimore"):
-        #     pass
-        # else:
-        #     sentence = sentence.lower()
+        if sentence[-1] in string.punctuation or sentence.endswith("Baltimore") or sentence.endswith("Treasury Securities") or sentence.endswith("Mortgage-Backed Issues") or sentence.endswith("Foreign Bond"):
+            pass
+        else:
+            sentence = sentence.lower()
         words = sentence.split(" ")
         tag = algorithm(words, tagAppearTime, tagBeforeTag, wordAndTag)
         sentence = line.rstrip()
