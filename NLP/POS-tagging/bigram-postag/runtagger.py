@@ -49,9 +49,16 @@ def is_number(num):
         return False
 
 def processWord(x, localWordAndTag):
-    if is_number(x) or (x == "hundred" or x == "thousand" or x == "TWO" or x.endswith("1st") or x.endswith("2nd") or x.endswith("3rd")): #for all number, it should be number
+    if x == "'s" or x == "'": return x
+
+    if is_number(x) or (x == "hundred" or x == "thousand" or x == "TWO" or x == "Sept.30" or x.endswith("1st") or x.endswith("2nd") or x.endswith("3rd")): #for all number, it should be number
         localWordAndTag[x] = dict()
         localWordAndTag[x]["CD"] = 100
+        return x
+
+    if x.endswith("-year-old"):
+        localWordAndTag[x] = dict()
+        localWordAndTag[x]["JJ"] = 10
         return x
 
     #end-with-ing
@@ -95,13 +102,22 @@ def processWord(x, localWordAndTag):
 
     #abbr.
     if x == x.upper():
-        if not x in localWordAndTag or not x.lower() in localWordAndTag or not x.capitalize() in localWordAndTag:
+        if x in localWordAndTag or x.lower() in localWordAndTag:
+            pass
+        else:
             localWordAndTag[x] = dict()
             localWordAndTag[x]["NNP"] = 20
 
     #dash
     if "-" in x:
-        if not x in localWordAndTag:
+        if x in localWordAndTag or x.lower() in localWordAndTag or x.capitalize() in localWordAndTag:
+            pass
+        elif x.endswith("s"):
+            localWordAndTag[x] = dict()
+            localWordAndTag[x]["NNPS"] = 20
+            localWordAndTag[x]["JJ"] = 10
+            localWordAndTag[x]["NNS"] = 10
+        else:
             localWordAndTag[x] = dict()
             localWordAndTag[x]["NNP"] = 10
             localWordAndTag[x]["JJ"] = 10
@@ -199,6 +215,7 @@ def viterbi(localTagAppearTime, localTagAndTag, localWordAndTag, numOfWords, num
     for i in range(1, numOfWords):
         if preWord == "``" or preWord == "''" or preWord == "(" or preWord == "--" or preWord == ":": words[i] = words[i].lower()
         words[i] = processWord(words[i], localWordAndTag)
+        # if words[i] == "25-year-old": print(localWordAndTag["25-year-old"])
         for j in range(numOfTags):
             for k in range(numOfTags):
                 if words[i] in localWordAndTag.keys():
@@ -263,8 +280,13 @@ def tag_sentence(test_file, model_file, out_file):
     lines = testFile.readlines()
     for line in lines:
         sentence = line.rstrip()
+        # if sentence.endswith(".") or sentence.endswith(")") or sentence.endswith("''") or sentence.endswith("``") or sentence.endswith(":") or sentence.endswith("?") or sentence.endswith("!") or sentence.endswith("--") or sentence.endswith("Baltimore"):
+        #     pass
+        # else:
+        #     sentence = sentence.lower()
         words = sentence.split(" ")
         tag = algorithm(words, tagAppearTime, tagBeforeTag, wordAndTag)
+        sentence = line.rstrip()
         words = sentence.split(" ")
         ans = list()
         for i in range(len(tag)): ans.append(words[i]+"/"+tag[i])

@@ -173,3 +173,14 @@ Accuracy= 0.9580752839418051
 ---
 
 放弃NNPS的判定（把es结尾的规定为NNPS），全部都赋值成NNP，Accuracy= 0.9591459702307223
+
+hard-code了Sept.30，对-year-old结尾进行了特殊处理，对dash进行了维护，
+
+Accuracy= 0.9592509394747339
+
+对upper增加了额外的处理：Accuracy= 0.9592929271723385
+
+---
+
+
+
