@@ -27,13 +27,13 @@ def is_number(num):
         return False
 
 def processWord(unkProb, x, wordIdx, tag, tagAndWord):
-    # if is_number(x) or (x == "hundred" or x == "thousand" or x == "TWO" or x == "Sept.30" or x.endswith("1st") or x.endswith("2nd") or x.endswith("3rd")): #for all number, it should be number
-    #     if tag == "CD":
-    #         return unkProb * 10000
+    if is_number(x) or (x == "hundred" or x == "thousand" or x == "TWO" or x == "Sept.30" or x.endswith("1st") or x.endswith("2nd") or x.endswith("3rd")): #for all number, it should be number
+        if tag == "CD":
+            return unkProb * 10000
 
-    # if x.endswith("-year-old"):
-    #     if tag == "JJ":
-    #         return unkProb * 10000
+    if x.endswith("-year-old"):
+        if tag == "JJ":
+            return unkProb * 10000
 
     #end-with-ing
     if x.endswith("ing"):
@@ -50,17 +50,17 @@ def processWord(unkProb, x, wordIdx, tag, tagAndWord):
             return unkProb * 10000
         
     #capitalized word
-    if x == x.capitalize() and wordIdx != 0:
+    if x[0] in string.ascii_uppercase and wordIdx != 0 and len(x) >= 3:
         if x.endswith("es"):
             if tag == "NNPS":
                 return unkProb * 7500
-            elif tag == "JJ":
-                return unkProb * 5000
+            # elif tag == "JJ":
+            #     return unkProb * 5000
         else:
             if tag == "NNP":
                 return unkProb * 7500
-            elif tag == "JJ":
-                return unkProb * 5000
+            # elif tag == "JJ":
+            #     return unkProb * 5000
 
     #abbr.
     if x.isupper() and wordIdx != 0:
@@ -99,6 +99,11 @@ def processWord(unkProb, x, wordIdx, tag, tagAndWord):
     if x+"s" in tagAndWord["VBZ"]:
         if tag == "VB" or tag == "VBP":
             return unkProb * 10000
+    
+    if x[0] in string.ascii_uppercase:
+        for tempTag in tagAndWord:
+            if x.lower() in tagAndWord[tempTag] and tempTag == tag:
+                return unkProb * 10000
     
     return unkProb
 

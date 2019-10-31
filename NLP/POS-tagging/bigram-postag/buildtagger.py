@@ -77,7 +77,7 @@ def loadTrainData(train_file, vocab, tags, tagAndWord):
         sents = sentence.split(" ")
         for sent in sents:
             word, tag = sent.rsplit("/", 1)
-            word = processWord(word, tag, prev)
+            # word = processWord(word, tag, prev)
             if tag not in tags:
                 tags.append(tag)
                 tagAndWord[tag] = dict()
