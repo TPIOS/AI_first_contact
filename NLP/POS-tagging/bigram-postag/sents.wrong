@@ -23,8 +23,8 @@ But/CC a/DT takeover/NN battle/NN opens/VBZ up/RP the/DT possibility/NN of/IN a/
 -------
 But/CC a/DT takeover/NN battle/NN opens/VBZ up/RP the/DT possibility/NN of/IN a/DT bidding/NN war/NN ,/, with/IN all/DT that/DT implies/VBZ ./.
 
-that/IN that/DT<>overpaying/JJ overpaying/VBG<>
-Given/VBN that/IN choice/NN ,/, associates/NNS of/IN Mr./NNP Hahn/NNP and/CC industry/NN observers/NNS say/VBP the/DT former/JJ university/NN president/NN --/: who/WP has/VBZ developed/VBN a/DT reputation/NN for/IN not/RB overpaying/JJ for/IN anything/NN --/: would/MD fold/VB ./.
+that/IN that/DT<>
+Given/VBN that/IN choice/NN ,/, associates/NNS of/IN Mr./NNP Hahn/NNP and/CC industry/NN observers/NNS say/VBP the/DT former/JJ university/NN president/NN --/: who/WP has/VBZ developed/VBN a/DT reputation/NN for/IN not/RB overpaying/VBG for/IN anything/NN --/: would/MD fold/VB ./.
 -------
 Given/VBN that/DT choice/NN ,/, associates/NNS of/IN Mr./NNP Hahn/NNP and/CC industry/NN observers/NNS say/VBP the/DT former/JJ university/NN president/NN --/: who/WP has/VBZ developed/VBN a/DT reputation/NN for/IN not/RB overpaying/VBG for/IN anything/NN --/: would/MD fold/VB ./.
 
@@ -53,23 +53,18 @@ That/DT impressed/JJ Robert/NNP B./NNP Pamplin/NNP ,/, Georgia-Pacific/NNP 's/PO
 -------
 That/DT impressed/VBN Robert/NNP B./NNP Pamplin/NNP ,/, Georgia-Pacific/NNP 's/POS chief/NN executive/JJ at/IN the/DT time/NN ,/, whom/WP Mr./NNP Hahn/NNP had/VBD met/VBN while/IN fundraising/VBG for/IN the/DT institute/NN ./.
 
-enticed/NNP enticed/VBD<>befuddled/VBZ befuddled/VBD<>
-In/IN 1975/CD ,/, Mr./NNP Pamplin/NNP enticed/NNP Mr./NNP Hahn/NNP into/IN joining/VBG the/DT company/NN as/IN executive/JJ vice/NN president/NN in/IN charge/NN of/IN chemicals/NNS ;/: the/DT move/NN befuddled/VBZ many/JJ in/IN Georgia-Pacific/NNP who/WP did/VBD n't/RB believe/VB a/DT university/NN administrator/NN could/MD make/VB the/DT transition/NN to/TO the/DT corporate/JJ world/NN ./.
+befuddled/VBZ befuddled/VBD<>
+In/IN 1975/CD ,/, Mr./NNP Pamplin/NNP enticed/VBD Mr./NNP Hahn/NNP into/IN joining/VBG the/DT company/NN as/IN executive/JJ vice/NN president/NN in/IN charge/NN of/IN chemicals/NNS ;/: the/DT move/NN befuddled/VBZ many/JJ in/IN Georgia-Pacific/NNP who/WP did/VBD n't/RB believe/VB a/DT university/NN administrator/NN could/MD make/VB the/DT transition/NN to/TO the/DT corporate/JJ world/NN ./.
 -------
 In/IN 1975/CD ,/, Mr./NNP Pamplin/NNP enticed/VBD Mr./NNP Hahn/NNP into/IN joining/VBG the/DT company/NN as/IN executive/JJ vice/NN president/NN in/IN charge/NN of/IN chemicals/NNS ;/: the/DT move/NN befuddled/VBD many/JJ in/IN Georgia-Pacific/NNP who/WP did/VBD n't/RB believe/VB a/DT university/NN administrator/NN could/MD make/VB the/DT transition/NN to/TO the/DT corporate/JJ world/NN ./.
-
-possessed/VBP possessed/VBD<>
-But/CC Mr./NNP Hahn/NNP rose/VBD swiftly/RB through/IN the/DT ranks/NNS ,/, demonstrating/VBG a/DT raw/JJ intelligence/NN that/IN he/PRP says/VBZ he/PRP knew/VBD he/PRP possessed/VBP early/RB on/IN ./.
--------
-But/CC Mr./NNP Hahn/NNP rose/VBD swiftly/RB through/IN the/DT ranks/NNS ,/, demonstrating/VBG a/DT raw/JJ intelligence/NN that/IN he/PRP says/VBZ he/PRP knew/VBD he/PRP possessed/VBD early/RB on/IN ./.
 
 skipped/NNP skipped/VBD<>classmates/NN classmates/NNS<>
 The/DT son/NN of/IN a/DT physicist/NN ,/, Mr./NNP Hahn/NNP skipped/NNP first/JJ grade/NN because/IN his/PRP$ reading/NN ability/NN was/VBD so/RB far/RB above/IN his/PRP$ classmates/NN ./.
 -------
 The/DT son/NN of/IN a/DT physicist/NN ,/, Mr./NNP Hahn/NNP skipped/VBD first/JJ grade/NN because/IN his/PRP$ reading/NN ability/NN was/VBD so/RB far/RB above/IN his/PRP$ classmates/NNS ./.
 
-graduated/VBZ graduated/VBD<>Beta/NN Beta/NNP<>
-Moving/VBG rapidly/RB through/IN school/NN ,/, he/PRP graduated/VBZ Phi/NNP Beta/NN Kappa/NNP from/IN the/DT University/NNP of/IN Kentucky/NNP at/IN age/NN 18/CD ,/, after/IN spending/VBG only/RB 2/CD 1/2/CD years/NNS in/IN college/NN ./.
+Moving/NN Moving/VBG<>graduated/VBZ graduated/VBD<>Beta/NN Beta/NNP<>
+Moving/NN rapidly/RB through/IN school/NN ,/, he/PRP graduated/VBZ Phi/NNP Beta/NN Kappa/NNP from/IN the/DT University/NNP of/IN Kentucky/NNP at/IN age/NN 18/CD ,/, after/IN spending/VBG only/RB 2/CD 1/2/CD years/NNS in/IN college/NN ./.
 -------
 Moving/VBG rapidly/RB through/IN school/NN ,/, he/PRP graduated/VBD Phi/NNP Beta/NNP Kappa/NNP from/IN the/DT University/NNP of/IN Kentucky/NNP at/IN age/NN 18/CD ,/, after/IN spending/VBG only/RB 2/CD 1/2/CD years/NNS in/IN college/NN ./.
 
@@ -178,8 +173,13 @@ About/IN a/DT quarter/NN of/IN this/DT share/NN has/VBZ already/RB been/VBN real
 -------
 About/IN a/DT quarter/NN of/IN this/DT share/NN has/VBZ already/RB been/VBN reallocated/VBN ,/, according/VBG to/TO the/DT industry/NN ,/, but/CC the/DT remaining/VBG 23,403/CD tons/NNS are/VBP still/RB a/DT lucrative/JJ target/NN for/IN growers/NNS because/IN the/DT current/JJ U.S./NNP price/NN of/IN 18/CD cents/NNS a/DT pound/NN runs/VBZ as/RB much/JJ as/IN a/DT nickel/NN a/DT pound/NN above/IN the/DT world/NN rate/NN ./.
 
-broadened/VB broadened/VBD<>further/RBR further/RB<>initiate/VB initiate/NN<>Philippines/NNPS Philippines/NNP<>-/CD -/:<>
-Rep./NNP Jerry/NNP Lewis/NNP ,/, a/DT conservative/JJ Californian/NN ,/, added/VBD a/DT provision/NN of/IN his/PRP$ own/JJ intended/VBN to/TO assist/VB Bolivia/NNP ,/, and/CC the/DT Senate/NNP then/RB broadened/VB the/DT list/NN further/RBR by/IN including/VBG all/DT countries/NNS in/IN the/DT U.S./NNP Caribbean/NNP Basin/NNP initiate/VB as/RB well/RB as/IN the/DT Philippines/NNPS -/CD backed/VBN by/IN the/DT powerful/JJ Hawaii/NNP Democrat/NNP Sen./NNP Daniel/NNP Inouye/NNP ./.
+English-speaking/NNP English-speaking/JJ<>
+The/DT potential/JJ sales/NNS are/VBP nearly/RB $/$ 9.3/CD million/CD ,/, and/CC House/NNP Majority/NNP Whip/NNP William/NNP Gray/NNP (/-LRB- D./NNP ,/, Pa/NNP ./. )/-RRB- began/VBD the/DT bidding/NN this/DT year/NN by/IN proposing/VBG language/NN that/IN the/DT quota/NN be/VB allocated/VBN to/TO English-speaking/NNP countries/NNS of/IN the/DT Caribbean/NNP ,/, such/JJ as/IN Jamaica/NNP and/CC Barbados/NNP ./.
+-------
+The/DT potential/JJ sales/NNS are/VBP nearly/RB $/$ 9.3/CD million/CD ,/, and/CC House/NNP Majority/NNP Whip/NNP William/NNP Gray/NNP (/-LRB- D./NNP ,/, Pa/NNP ./. )/-RRB- began/VBD the/DT bidding/NN this/DT year/NN by/IN proposing/VBG language/NN that/IN the/DT quota/NN be/VB allocated/VBN to/TO English-speaking/JJ countries/NNS of/IN the/DT Caribbean/NNP ,/, such/JJ as/IN Jamaica/NNP and/CC Barbados/NNP ./.
+
+broadened/VBN broadened/VBD<>further/RBR further/RB<>initiate/VB initiate/NN<>Philippines/NNPS Philippines/NNP<>-/CD -/:<>
+Rep./NNP Jerry/NNP Lewis/NNP ,/, a/DT conservative/JJ Californian/NN ,/, added/VBD a/DT provision/NN of/IN his/PRP$ own/JJ intended/VBN to/TO assist/VB Bolivia/NNP ,/, and/CC the/DT Senate/NNP then/RB broadened/VBN the/DT list/NN further/RBR by/IN including/VBG all/DT countries/NNS in/IN the/DT U.S./NNP Caribbean/NNP Basin/NNP initiate/VB as/RB well/RB as/IN the/DT Philippines/NNPS -/CD backed/VBN by/IN the/DT powerful/JJ Hawaii/NNP Democrat/NNP Sen./NNP Daniel/NNP Inouye/NNP ./.
 -------
 Rep./NNP Jerry/NNP Lewis/NNP ,/, a/DT conservative/JJ Californian/NN ,/, added/VBD a/DT provision/NN of/IN his/PRP$ own/JJ intended/VBN to/TO assist/VB Bolivia/NNP ,/, and/CC the/DT Senate/NNP then/RB broadened/VBD the/DT list/NN further/RB by/IN including/VBG all/DT countries/NNS in/IN the/DT U.S./NNP Caribbean/NNP Basin/NNP initiate/NN as/RB well/RB as/IN the/DT Philippines/NNP -/: backed/VBN by/IN the/DT powerful/JJ Hawaii/NNP Democrat/NNP Sen./NNP Daniel/NNP Inouye/NNP ./.
 
@@ -268,8 +268,8 @@ Drink/NN Carrier/NN Competes/VBZ With/IN Cartons/VBZ
 -------
 Drink/NN Carrier/NN Competes/VBZ With/IN Cartons/NNS
 
-PORTING/NNP PORTING/VBG<>POTABLES/NNP POTABLES/NNS<>
-PORTING/NNP POTABLES/NNP just/RB got/VBD easier/JJR ,/, or/CC so/RB claims/VBZ Scypher/NNP Corp./NNP ,/, the/DT maker/NN of/IN the/DT Cup-Tote/NNP ./.
+PORTING/JJ PORTING/VBG<>POTABLES/NNP POTABLES/NNS<>Cup-Tote/NN Cup-Tote/NNP<>
+PORTING/JJ POTABLES/NNP just/RB got/VBD easier/JJR ,/, or/CC so/RB claims/VBZ Scypher/NNP Corp./NNP ,/, the/DT maker/NN of/IN the/DT Cup-Tote/NN ./.
 -------
 PORTING/VBG POTABLES/NNS just/RB got/VBD easier/JJR ,/, or/CC so/RB claims/VBZ Scypher/NNP Corp./NNP ,/, the/DT maker/NN of/IN the/DT Cup-Tote/NNP ./.
 
@@ -283,8 +283,8 @@ The/DT new/JJ carrier/NN can/MD tote/VB as/IN many/JJ as/IN four/CD cups/NNS at/
 -------
 The/DT new/JJ carrier/NN can/MD tote/VB as/RB many/JJ as/IN four/CD cups/NNS at/IN once/RB ./.
 
-Inventor/NN Inventor/NNP<>spilling/JJ spilling/NN<>
-Inventor/NN Claire/NNP Marvin/NNP says/VBZ his/PRP$ design/NN virtually/RB eliminates/VBZ spilling/JJ ./.
+Inventor/NN Inventor/NNP<>
+Inventor/NN Claire/NNP Marvin/NNP says/VBZ his/PRP$ design/NN virtually/RB eliminates/VBZ spilling/NN ./.
 -------
 Inventor/NNP Claire/NNP Marvin/NNP says/VBZ his/PRP$ design/NN virtually/RB eliminates/VBZ spilling/NN ./.
 
@@ -428,13 +428,13 @@ USX/NNP has/VBZ 15/CD working/VBG days/NNS to/TO contest/NN the/DT citations/NN 
 -------
 USX/NNP has/VBZ 15/CD working/NN days/NNS to/TO contest/VB the/DT citations/NNS and/CC proposed/VBN penalties/NNS ,/, before/IN the/DT independent/JJ Occupational/NNP Safety/NNP and/CC Health/NNP Review/NNP Commission/NNP ./.
 
-proposed/JJ proposed/VBN<>alleged/JJ alleged/VBN<>meatpacking/JJ meatpacking/NN<>
-Before/IN the/DT USX/NNP case/NN ,/, OSHA/NNP 's/POS largest/JJS proposed/JJ fine/NN for/IN one/CD employer/NN was/VBD $/$ 4.3/CD million/CD for/IN alleged/JJ safety/NN violations/NNS at/IN John/NNP Morrell/NNP &/CC Co./NNP ,/, a/DT meatpacking/JJ subsidiary/NN of/IN United/NNP Brands/NNP Co./NNP ,/, Cincinnati/NNP ./.
+proposed/JJ proposed/VBN<>alleged/JJ alleged/VBN<>
+Before/IN the/DT USX/NNP case/NN ,/, OSHA/NNP 's/POS largest/JJS proposed/JJ fine/NN for/IN one/CD employer/NN was/VBD $/$ 4.3/CD million/CD for/IN alleged/JJ safety/NN violations/NNS at/IN John/NNP Morrell/NNP &/CC Co./NNP ,/, a/DT meatpacking/NN subsidiary/NN of/IN United/NNP Brands/NNP Co./NNP ,/, Cincinnati/NNP ./.
 -------
 Before/IN the/DT USX/NNP case/NN ,/, OSHA/NNP 's/POS largest/JJS proposed/VBN fine/NN for/IN one/CD employer/NN was/VBD $/$ 4.3/CD million/CD for/IN alleged/VBN safety/NN violations/NNS at/IN John/NNP Morrell/NNP &/CC Co./NNP ,/, a/DT meatpacking/NN subsidiary/NN of/IN United/NNP Brands/NNP Co./NNP ,/, Cincinnati/NNP ./.
 
-editing/JJ editing/NN<>identified/VBN identified/VBD<>
-Due/JJ to/TO an/DT editing/JJ error/NN ,/, a/DT letter/NN to/TO the/DT editor/NN in/IN yesterday/NN 's/POS edition/NN from/IN Frederick/NNP H./NNP Hallett/NNP mistakenly/RB identified/VBN the/DT NRDC/NNP ./.
+identified/VBN identified/VBD<>
+Due/JJ to/TO an/DT editing/NN error/NN ,/, a/DT letter/NN to/TO the/DT editor/NN in/IN yesterday/NN 's/POS edition/NN from/IN Frederick/NNP H./NNP Hallett/NNP mistakenly/RB identified/VBN the/DT NRDC/NNP ./.
 -------
 Due/JJ to/TO an/DT editing/NN error/NN ,/, a/DT letter/NN to/TO the/DT editor/NN in/IN yesterday/NN 's/POS edition/NN from/IN Frederick/NNP H./NNP Hallett/NNP mistakenly/RB identified/VBD the/DT NRDC/NNP ./.
 
@@ -443,8 +443,8 @@ Your/PRP$ Oct./NNP 6/CD editorial/NN ``/`` The/DT Ill/NNP Homeless/NNP ''/'' ref
 -------
 Your/PRP$ Oct./NNP 6/CD editorial/NN ``/`` The/NNP Ill/NNP Homeless/NNP ''/'' referred/VBD to/TO research/NN by/IN us/PRP and/CC six/CD of/IN our/PRP$ colleagues/NNS that/WDT was/VBD reported/VBN in/IN the/DT Sept./NNP 8/CD issue/NN of/IN the/DT Journal/NNP of/IN the/DT American/NNP Medical/NNP Association/NNP ./.
 
-implied/VBN implied/VBD<>
-Your/PRP$ comments/NNS implied/VBN we/PRP had/VBD discovered/VBN that/IN the/DT ``/`` principal/JJ cause/NN ''/'' of/IN homelessness/NN is/VBZ to/TO be/VB found/VBN in/IN the/DT large/JJ numbers/NNS of/IN mentally/RB ill/JJ and/CC substance-abusing/JJ people/NNS in/IN the/DT homeless/JJ population/NN ./.
+implied/VBN implied/VBD<>substance-abusing/NNP substance-abusing/JJ<>
+Your/PRP$ comments/NNS implied/VBN we/PRP had/VBD discovered/VBN that/IN the/DT ``/`` principal/JJ cause/NN ''/'' of/IN homelessness/NN is/VBZ to/TO be/VB found/VBN in/IN the/DT large/JJ numbers/NNS of/IN mentally/RB ill/JJ and/CC substance-abusing/NNP people/NNS in/IN the/DT homeless/JJ population/NN ./.
 -------
 Your/PRP$ comments/NNS implied/VBD we/PRP had/VBD discovered/VBN that/IN the/DT ``/`` principal/JJ cause/NN ''/'' of/IN homelessness/NN is/VBZ to/TO be/VB found/VBN in/IN the/DT large/JJ numbers/NNS of/IN mentally/RB ill/JJ and/CC substance-abusing/JJ people/NNS in/IN the/DT homeless/JJ population/NN ./.
 
@@ -503,8 +503,8 @@ After/IN your/PRP$ first/JJ three/CD weeks/NNS of/IN sleep/NN deprivation/NN ,/,
 -------
 After/IN your/PRP$ first/JJ three/CD weeks/NNS of/IN sleep/NN deprivation/NN ,/, you/PRP 're/VBP scarcely/RB in/IN touch/NN with/IN reality/NN any/DT more/RBR ;/: without/IN psychiatric/JJ treatment/NN ,/, you/PRP may/MD well/RB be/VB unable/JJ to/TO fend/VB for/IN yourself/PRP ever/RB again/RB ./. ''/''
 
-homeless/JJ homeless/NN<>
-Some/DT of/IN the/DT homeless/JJ ,/, obviously/RB ,/, had/VBD pre-existing/JJ mental/JJ illness/NN or/CC addiction/NN ./.
+homeless/JJ homeless/NN<>pre-existing/NNP pre-existing/JJ<>
+Some/DT of/IN the/DT homeless/JJ ,/, obviously/RB ,/, had/VBD pre-existing/NNP mental/JJ illness/NN or/CC addiction/NN ./.
 -------
 Some/DT of/IN the/DT homeless/NN ,/, obviously/RB ,/, had/VBD pre-existing/JJ mental/JJ illness/NN or/CC addiction/NN ./.
 
@@ -523,8 +523,8 @@ There/EX is/VBZ no/DT sign/NN that/IN you/PRP bothered/VBN to/TO consider/VB the
 -------
 There/EX is/VBZ no/DT sign/NN that/IN you/PRP bothered/VBD to/TO consider/VB the/DT inverse/NN of/IN your/PRP$ logic/NN :/: namely/RB ,/, that/IN mental/JJ illness/NN and/CC substance/NN abuse/NN might/MD be/VB to/TO some/DT degree/NN consequences/NNS rather/RB than/IN causes/NNS of/IN homelessness/NN ./.
 
-homeless/JJ homeless/NN<>Bricklayers/NNP Bricklayers/NNPS<>Craftsmen/NNP Craftsmen/NNPS<>insinuating/NN insinuating/VBG<>that/IN that/WDT<>know/VB know/VBP<>
-Of/IN the/DT approximately/RB 200/CD sponsors/NNS of/IN the/DT recent/JJ march/NN in/IN Washington/NNP for/IN the/DT homeless/JJ ,/, you/PRP chose/VBD to/TO cite/VB such/JJ groups/NNS as/IN the/DT National/NNP Association/NNP of/IN Home/NNP Builders/NNPS and/CC the/DT International/NNP Union/NNP of/IN Bricklayers/NNP and/CC Allied/NNP Craftsmen/NNP ,/, insinuating/NN that/IN the/DT march/NN got/VBD its/PRP$ major/JJ support/NN from/IN self-serving/JJ groups/NNS that/IN ``/`` know/VB a/DT good/JJ thing/NN when/WRB they/PRP see/VBP it/PRP ,/, ''/'' and/CC that/IN the/DT crusade/NN was/VBD based/VBN on/IN greed/NN or/CC the/DT profit/NN motive/NN ./.
+homeless/JJ homeless/NN<>Bricklayers/NNP Bricklayers/NNPS<>Craftsmen/NNP Craftsmen/NNPS<>insinuating/NN insinuating/VBG<>self-serving/NNP self-serving/JJ<>that/IN that/WDT<>know/VB know/VBP<>
+Of/IN the/DT approximately/RB 200/CD sponsors/NNS of/IN the/DT recent/JJ march/NN in/IN Washington/NNP for/IN the/DT homeless/JJ ,/, you/PRP chose/VBD to/TO cite/VB such/JJ groups/NNS as/IN the/DT National/NNP Association/NNP of/IN Home/NNP Builders/NNPS and/CC the/DT International/NNP Union/NNP of/IN Bricklayers/NNP and/CC Allied/NNP Craftsmen/NNP ,/, insinuating/NN that/IN the/DT march/NN got/VBD its/PRP$ major/JJ support/NN from/IN self-serving/NNP groups/NNS that/IN ``/`` know/VB a/DT good/JJ thing/NN when/WRB they/PRP see/VBP it/PRP ,/, ''/'' and/CC that/IN the/DT crusade/NN was/VBD based/VBN on/IN greed/NN or/CC the/DT profit/NN motive/NN ./.
 -------
 Of/IN the/DT approximately/RB 200/CD sponsors/NNS of/IN the/DT recent/JJ march/NN in/IN Washington/NNP for/IN the/DT homeless/NN ,/, you/PRP chose/VBD to/TO cite/VB such/JJ groups/NNS as/IN the/DT National/NNP Association/NNP of/IN Home/NNP Builders/NNPS and/CC the/DT International/NNP Union/NNP of/IN Bricklayers/NNPS and/CC Allied/NNP Craftsmen/NNPS ,/, insinuating/VBG that/IN the/DT march/NN got/VBD its/PRP$ major/JJ support/NN from/IN self-serving/JJ groups/NNS that/WDT ``/`` know/VBP a/DT good/JJ thing/NN when/WRB they/PRP see/VBP it/PRP ,/, ''/'' and/CC that/IN the/DT crusade/NN was/VBD based/VBN on/IN greed/NN or/CC the/DT profit/NN motive/NN ./.
 
@@ -903,11 +903,6 @@ right/NN right/JJ<>
 -------
 ``/`` You/PRP 've/VBP got/VBN two/CD champions/NNS sitting/VBG right/JJ before/IN you/PRP ,/, ''/'' said/VBD Mr./NNP Baum/NNP ./.
 
-November/CD November/NNP<>
-Wednesday/NNP ,/, November/CD 1/CD ,/, 1989/CD
--------
-Wednesday/NNP ,/, November/NNP 1/CD ,/, 1989/CD
-
 below/RB below/IN<>
 The/DT key/JJ U.S./NNP and/CC foreign/JJ annual/JJ interest/NN rates/NNS below/RB are/VBP a/DT guide/NN to/TO general/JJ levels/NNS but/CC do/VBP n't/RB always/RB represent/VB actual/JJ transactions/NNS ./.
 -------
@@ -1058,8 +1053,8 @@ Mr./NNP Bernstein/NNP ,/, a/DT tall/JJ ,/, energetic/JJ man/NN who/WP is/VBZ wid
 -------
 Mr./NNP Bernstein/NNP ,/, a/DT tall/JJ ,/, energetic/JJ man/NN who/WP is/VBZ widely/RB respected/VBN as/IN a/DT publishing/NN executive/NN ,/, has/VBZ spent/VBN much/JJ of/IN his/PRP$ time/NN in/IN recent/JJ years/NNS on/IN human/JJ rights/NNS issues/NNS ./.
 
-Provided/NNP Provided/VBN<>
-Congress/NNP learned/VBD during/IN the/DT Reagan/NNP administration/NN that/IN it/PRP could/MD intimidate/VB the/DT executive/JJ branch/NN by/IN uttering/VBG again/RB and/CC again/RB the/DT same/JJ seven/CD words/NNS :/: ``/`` Provided/NNP ,/, that/IN no/DT funds/NNS shall/MD be/VB spent/VBN .../: ./. ''/''
+uttering/NN uttering/VBG<>Provided/NNP Provided/VBN<>
+Congress/NNP learned/VBD during/IN the/DT Reagan/NNP administration/NN that/IN it/PRP could/MD intimidate/VB the/DT executive/JJ branch/NN by/IN uttering/NN again/RB and/CC again/RB the/DT same/JJ seven/CD words/NNS :/: ``/`` Provided/NNP ,/, that/IN no/DT funds/NNS shall/MD be/VB spent/VBN .../: ./. ''/''
 -------
 Congress/NNP learned/VBD during/IN the/DT Reagan/NNP administration/NN that/IN it/PRP could/MD intimidate/VB the/DT executive/JJ branch/NN by/IN uttering/VBG again/RB and/CC again/RB the/DT same/JJ seven/CD words/NNS :/: ``/`` Provided/VBN ,/, that/IN no/DT funds/NNS shall/MD be/VB spent/VBN .../: ./. ''/''
 
@@ -1118,8 +1113,8 @@ It/PRP also/RB empowers/VB the/DT president/NN to/TO make/VB recess/JJ appointme
 -------
 It/PRP also/RB empowers/VBZ the/DT president/NN to/TO make/VB recess/NN appointments/NNS ,/, without/IN Senate/NNP approval/NN :/: ``/`` The/DT President/NNP shall/MD have/VB Power/NN to/TO fill/VB up/RP all/DT Vacancies/NNS that/WDT may/MD happen/VB during/IN the/DT Recess/NN of/IN the/DT Senate/NNP ,/, by/IN granting/VBG Commissions/NNS which/WDT shall/MD expire/VB at/IN the/DT End/NN of/IN their/PRP$ next/JJ Session/NN ./. ''/''
 
-Yet/CC Yet/RB<>Act/NNP Act/NN<>filling/VBG filling/NN<>nominated/NN nominated/VBN<>said/VBD said/VBN<>
-Yet/CC Section/NNP 605/CD of/IN the/DT appropriations/NNS bill/NN for/IN the/DT executive/JJ office/NN provides/VBZ :/: ``/`` No/DT part/NN of/IN any/DT appropriation/NN for/IN the/DT current/JJ fiscal/JJ year/NN contained/VBN in/IN this/DT or/CC any/DT other/JJ Act/NNP shall/MD be/VB paid/VBN to/TO any/DT person/NN for/IN the/DT filling/VBG of/IN any/DT position/NN for/IN which/WDT he/PRP or/CC she/PRP has/VBZ been/VBN nominated/NN after/IN the/DT Senate/NNP has/VBZ voted/VBN not/RB to/TO approve/VB the/DT nomination/NN of/IN said/VBD person/NN ./. ''/''
+Yet/CC Yet/RB<>Act/NNP Act/NN<>filling/VBG filling/NN<>said/VBD said/VBN<>
+Yet/CC Section/NNP 605/CD of/IN the/DT appropriations/NNS bill/NN for/IN the/DT executive/JJ office/NN provides/VBZ :/: ``/`` No/DT part/NN of/IN any/DT appropriation/NN for/IN the/DT current/JJ fiscal/JJ year/NN contained/VBN in/IN this/DT or/CC any/DT other/JJ Act/NNP shall/MD be/VB paid/VBN to/TO any/DT person/NN for/IN the/DT filling/VBG of/IN any/DT position/NN for/IN which/WDT he/PRP or/CC she/PRP has/VBZ been/VBN nominated/VBN after/IN the/DT Senate/NNP has/VBZ voted/VBN not/RB to/TO approve/VB the/DT nomination/NN of/IN said/VBD person/NN ./. ''/''
 -------
 Yet/RB Section/NNP 605/CD of/IN the/DT appropriations/NNS bill/NN for/IN the/DT executive/JJ office/NN provides/VBZ :/: ``/`` No/DT part/NN of/IN any/DT appropriation/NN for/IN the/DT current/JJ fiscal/JJ year/NN contained/VBN in/IN this/DT or/CC any/DT other/JJ Act/NN shall/MD be/VB paid/VBN to/TO any/DT person/NN for/IN the/DT filling/NN of/IN any/DT position/NN for/IN which/WDT he/PRP or/CC she/PRP has/VBZ been/VBN nominated/VBN after/IN the/DT Senate/NNP has/VBZ voted/VBN not/RB to/TO approve/VB the/DT nomination/NN of/IN said/VBN person/NN ./. ''/''
 
@@ -1133,8 +1128,8 @@ Section/NNP 605/CD also/RB imposes/VBZ unconstitutional/JJ conditions/NNS on/IN 
 -------
 Section/NN 605/CD also/RB imposes/VBZ unconstitutional/JJ conditions/NNS on/IN the/DT president/NN 's/POS ability/NN to/TO nominate/VB candidates/NNS of/IN his/PRP$ choosing/NN ./.
 
-contain/VB contain/VBP<>violate/VB violate/VBP<>
-The/DT 1990/CD appropriations/NNS bills/NNS also/RB contain/VB a/DT number/NN of/IN ``/`` muzzling/JJ ''/'' provisions/NNS that/WDT violate/VB the/DT recommendation/NN clause/NN in/IN Article/NNP II/NNP of/IN the/DT Constitution/NNP ./.
+contain/VB contain/VBP<>muzzling/NN muzzling/JJ<>violate/VB violate/VBP<>
+The/DT 1990/CD appropriations/NNS bills/NNS also/RB contain/VB a/DT number/NN of/IN ``/`` muzzling/NN ''/'' provisions/NNS that/WDT violate/VB the/DT recommendation/NN clause/NN in/IN Article/NNP II/NNP of/IN the/DT Constitution/NNP ./.
 -------
 The/DT 1990/CD appropriations/NNS bills/NNS also/RB contain/VBP a/DT number/NN of/IN ``/`` muzzling/JJ ''/'' provisions/NNS that/WDT violate/VBP the/DT recommendation/NN clause/NN in/IN Article/NNP II/NNP of/IN the/DT Constitution/NNP ./.
 
@@ -1268,18 +1263,8 @@ The/DT worst/JJS crop/NN damage/NN occurred/VBD in/IN the/DT Midwestern/JJ Corn/
 -------
 The/DT worst/JJS crop/NN damage/NN occurred/VBD in/IN the/DT Midwestern/NNP Corn/NNP Belt/NNP and/CC the/DT northern/JJ Great/NNP Plains/NNPS ./.
 
-mortgaged/UH mortgaged/VBN<>
-What/WP saved/VBD many/JJ farmers/NNS from/IN a/DT bad/JJ year/NN was/VBD the/DT opportunity/NN to/TO reclaim/VB large/JJ quantities/NNS of/IN grain/NN and/CC other/JJ crops/NNS that/IN they/PRP had/VBD ``/`` mortgaged/UH ''/'' to/TO the/DT government/NN under/IN price-support/JJ loan/NN programs/NNS ./.
--------
-What/WP saved/VBD many/JJ farmers/NNS from/IN a/DT bad/JJ year/NN was/VBD the/DT opportunity/NN to/TO reclaim/VB large/JJ quantities/NNS of/IN grain/NN and/CC other/JJ crops/NNS that/IN they/PRP had/VBD ``/`` mortgaged/VBN ''/'' to/TO the/DT government/NN under/IN price-support/JJ loan/NN programs/NNS ./.
-
-reclaimed/JJ reclaimed/VBN<>
-With/IN prices/NNS soaring/VBG ,/, they/PRP were/VBD able/JJ to/TO sell/VB the/DT reclaimed/JJ commodities/NNS at/IN ``/`` considerable/JJ profit/NN ,/, ''/'' the/DT agency/NN 's/POS 240-page/JJ report/NN said/VBD ./.
--------
-With/IN prices/NNS soaring/VBG ,/, they/PRP were/VBD able/JJ to/TO sell/VB the/DT reclaimed/VBN commodities/NNS at/IN ``/`` considerable/JJ profit/NN ,/, ''/'' the/DT agency/NN 's/POS 240-page/JJ report/NN said/VBD ./.
-
-less/RBR less/JJR<>parched/JJ parched/VBN<>profited/VBZ profited/VBD<>
-In/IN less/RBR parched/JJ areas/NNS ,/, meanwhile/RB ,/, farmers/NNS who/WP had/VBD little/JJ or/CC no/DT loss/NN of/IN production/NN profited/VBZ greatly/RB from/IN the/DT higher/JJR prices/NNS ./.
+less/RBR less/JJR<>parched/JJ parched/VBN<>
+In/IN less/RBR parched/JJ areas/NNS ,/, meanwhile/RB ,/, farmers/NNS who/WP had/VBD little/JJ or/CC no/DT loss/NN of/IN production/NN profited/VBD greatly/RB from/IN the/DT higher/JJR prices/NNS ./.
 -------
 In/IN less/JJR parched/VBN areas/NNS ,/, meanwhile/RB ,/, farmers/NNS who/WP had/VBD little/JJ or/CC no/DT loss/NN of/IN production/NN profited/VBD greatly/RB from/IN the/DT higher/JJR prices/NNS ./.
 
@@ -1298,8 +1283,8 @@ It/PRP also/RB helps/VBZ explain/VB the/DT reluctance/NN of/IN the/DT major/JJ f
 -------
 It/PRP also/RB helps/VBZ explain/VB the/DT reluctance/NN of/IN the/DT major/JJ farm/NN lobbies/NNS and/CC many/JJ lawmakers/NNS to/TO make/VB any/DT significant/JJ changes/NNS in/IN the/DT 1985/CD farm/NN program/NN next/IN year/NN ./.
 
-Commodity/NNP Commodity/NN<>earlier/RBR earlier/JJR<>curtailed/VBN curtailed/VBD<>
-Commodity/NNP prices/NNS have/VBP been/VBN rising/VBG in/IN recent/JJ years/NNS ,/, with/IN the/DT farm/NN price/NN index/NN hitting/VBG record/NN peaks/NNS earlier/RBR this/DT year/NN ,/, as/IN the/DT government/NN curtailed/VBN production/NN with/IN land-idling/JJ programs/NNS to/TO reduce/VB price-depressing/JJ surpluses/NNS ./.
+Commodity/NNP Commodity/NN<>earlier/RBR earlier/JJR<>curtailed/VBN curtailed/VBD<>land-idling/NNP land-idling/JJ<>
+Commodity/NNP prices/NNS have/VBP been/VBN rising/VBG in/IN recent/JJ years/NNS ,/, with/IN the/DT farm/NN price/NN index/NN hitting/VBG record/NN peaks/NNS earlier/RBR this/DT year/NN ,/, as/IN the/DT government/NN curtailed/VBN production/NN with/IN land-idling/NNP programs/NNS to/TO reduce/VB price-depressing/JJ surpluses/NNS ./.
 -------
 Commodity/NN prices/NNS have/VBP been/VBN rising/VBG in/IN recent/JJ years/NNS ,/, with/IN the/DT farm/NN price/NN index/NN hitting/VBG record/NN peaks/NNS earlier/JJR this/DT year/NN ,/, as/IN the/DT government/NN curtailed/VBD production/NN with/IN land-idling/JJ programs/NNS to/TO reduce/VB price-depressing/JJ surpluses/NNS ./.
 
@@ -1618,6 +1603,11 @@ If/IN the/DT banks/NNS exhaust/VBP all/DT avenues/NNS of/IN appeal/NN ,/, it/PRP
 -------
 If/IN the/DT banks/NNS exhaust/VBP all/DT avenues/NNS of/IN appeal/NN ,/, it/PRP is/VBZ possible/JJ that/IN they/PRP would/MD seek/VB to/TO have/VB the/DT illegality/NN ruling/NN work/VB both/DT ways/NNS ,/, some/DT market/NN sources/NNS said/VBD ./.
 
+gut-wrenching/NNP gut-wrenching/JJ<>letter-writing/NNP letter-writing/JJ<>
+In/IN the/DT aftermath/NN of/IN the/DT stock/NN market/NN 's/POS gut-wrenching/NNP 190-point/JJ drop/NN on/IN Oct./NNP 13/CD ,/, Kidder/NNP ,/, Peabody/NNP &/CC Co./NNP 's/POS 1,400/CD stockbrokers/NNS across/IN the/DT country/NN began/VBD a/DT telephone/NN and/CC letter-writing/NNP campaign/NN aimed/VBN at/IN quashing/VBG the/DT country/NN 's/POS second-largest/JJ program/NN trader/NN ./.
+-------
+In/IN the/DT aftermath/NN of/IN the/DT stock/NN market/NN 's/POS gut-wrenching/JJ 190-point/JJ drop/NN on/IN Oct./NNP 13/CD ,/, Kidder/NNP ,/, Peabody/NNP &/CC Co./NNP 's/POS 1,400/CD stockbrokers/NNS across/IN the/DT country/NN began/VBD a/DT telephone/NN and/CC letter-writing/JJ campaign/NN aimed/VBN at/IN quashing/VBG the/DT country/NN 's/POS second-largest/JJ program/NN trader/NN ./.
+
 heated/JJ heated/VBN<>about/RB about/IN<>
 But/CC the/DT heated/JJ fight/NN over/IN program/NN trading/NN is/VBZ about/RB much/RB more/JJR than/IN a/DT volatile/JJ stock/NN market/NN ./.
 -------
@@ -1663,8 +1653,8 @@ Big/NNP Board/NNP stock/NN specialists/NNS ,/, in/IN a/DT bold/JJ palace/JJ revo
 -------
 Big/NNP Board/NNP stock/NN specialists/NNS ,/, in/IN a/DT bold/JJ palace/NN revolt/NN ,/, began/VBD shortly/RB after/IN Oct./NNP 13/CD to/TO telephone/VB the/DT corporate/JJ executives/NNS of/IN the/DT companies/NNS whose/WP$ stock/NN is/VBZ listed/VBN on/IN the/DT Big/NNP Board/NNP to/TO have/VB them/PRP pressure/VB the/DT exchange/NN to/TO ban/VB program/NN trading/NN ./.
 
-rallying/JJ rallying/VBG<>CEOs/NNP CEOs/NNS<>countless/UH countless/JJ<>
-Charles/NNP Wohlstetter/NNP ,/, the/DT chairman/NN of/IN Contel/NNP Corp./NNP who/WP is/VBZ rallying/JJ other/JJ CEOs/NNP to/TO the/DT anti-program/JJ trading/NN cause/NN ,/, says/VBZ he/PRP has/VBZ received/VBN ``/`` countless/UH ''/'' letters/NNS offering/VBG support/NN ./.
+CEOs/NNP CEOs/NNS<>countless/UH countless/JJ<>
+Charles/NNP Wohlstetter/NNP ,/, the/DT chairman/NN of/IN Contel/NNP Corp./NNP who/WP is/VBZ rallying/VBG other/JJ CEOs/NNP to/TO the/DT anti-program/JJ trading/NN cause/NN ,/, says/VBZ he/PRP has/VBZ received/VBN ``/`` countless/UH ''/'' letters/NNS offering/VBG support/NN ./.
 -------
 Charles/NNP Wohlstetter/NNP ,/, the/DT chairman/NN of/IN Contel/NNP Corp./NNP who/WP is/VBZ rallying/VBG other/JJ CEOs/NNS to/TO the/DT anti-program/JJ trading/NN cause/NN ,/, says/VBZ he/PRP has/VBZ received/VBN ``/`` countless/JJ ''/'' letters/NNS offering/VBG support/NN ./.
 
@@ -1748,8 +1738,8 @@ They/PRP say/VBP greedy/JJ market/NN manipulators/NNS have/VBP made/VBN a/DT sha
 -------
 They/PRP say/VBP greedy/JJ market/NN manipulators/NNS have/VBP made/VBN a/DT shambles/NN of/IN the/DT nation/NN 's/POS free-enterprise/NN system/NN ,/, turning/VBG the/DT stock/NN market/NN into/IN a/DT big/JJ gambling/NN den/NN ,/, with/IN the/DT odds/NNS heavily/RB stacked/VBN against/IN the/DT small/JJ investor/NN ./.
 
-come/VB come/VBN<>Off-Track/JJ Off-Track/NNP<>Betting/NN Betting/NNP<>
-``/`` The/DT public/NN did/VBD n't/RB come/VB to/TO the/DT market/NN to/TO play/VB a/DT game/NN ;/: they/PRP can/MD go/VB to/TO Off-Track/JJ Betting/NN for/IN that/DT ,/, ''/'' says/VBZ A./NNP Brean/NNP Murray/NNP ,/, chairman/NN of/IN Brean/NNP Murray/NNP ,/, Foster/NNP Securities/NNPS ,/, a/DT traditional/JJ money/NN management/NN firm/NN ./.
+come/VB come/VBN<>
+``/`` The/DT public/NN did/VBD n't/RB come/VB to/TO the/DT market/NN to/TO play/VB a/DT game/NN ;/: they/PRP can/MD go/VB to/TO Off-Track/NNP Betting/NNP for/IN that/DT ,/, ''/'' says/VBZ A./NNP Brean/NNP Murray/NNP ,/, chairman/NN of/IN Brean/NNP Murray/NNP ,/, Foster/NNP Securities/NNPS ,/, a/DT traditional/JJ money/NN management/NN firm/NN ./.
 -------
 ``/`` The/DT public/NN did/VBD n't/RB come/VBN to/TO the/DT market/NN to/TO play/VB a/DT game/NN ;/: they/PRP can/MD go/VB to/TO Off-Track/NNP Betting/NNP for/IN that/DT ,/, ''/'' says/VBZ A./NNP Brean/NNP Murray/NNP ,/, chairman/NN of/IN Brean/NNP Murray/NNP ,/, Foster/NNP Securities/NNPS ,/, a/DT traditional/JJ money/NN management/NN firm/NN ./.
 
@@ -1757,11 +1747,6 @@ portray/VB portray/VBP<>Neanderthals/NNP Neanderthals/NNS<>
 The/DT program/NN traders/NNS ,/, on/IN the/DT other/JJ hand/NN ,/, portray/VB old-fashioned/JJ stock/NN pickers/NNS as/IN the/DT Neanderthals/NNP of/IN the/DT industry/NN ./.
 -------
 The/DT program/NN traders/NNS ,/, on/IN the/DT other/JJ hand/NN ,/, portray/VBP old-fashioned/JJ stock/NN pickers/NNS as/IN the/DT Neanderthals/NNS of/IN the/DT industry/NN ./.
-
-witches/NNP witches/NNS<>
-Critics/NNS like/IN Mr./NNP Murray/NNP ``/`` are/VBP looking/VBG for/IN witches/NNP ,/, and/CC people/NNS who/WP use/VBP computers/NNS to/TO trade/VB are/VBP a/DT convenient/JJ boogieman/NN ,/, ''/'' says/VBZ J./NNP Thomas/NNP Allen/NNP ,/, president/NN of/IN Advanced/NNP Investment/NNP Management/NNP Inc./NNP ,/, a/DT Pittsburgh/NNP firm/NN that/WDT runs/VBZ a/DT $/$ 200/CD million/CD fund/NN that/WDT uses/VBZ index/NN arbitrage/NN ./.
--------
-Critics/NNS like/IN Mr./NNP Murray/NNP ``/`` are/VBP looking/VBG for/IN witches/NNS ,/, and/CC people/NNS who/WP use/VBP computers/NNS to/TO trade/VB are/VBP a/DT convenient/JJ boogieman/NN ,/, ''/'' says/VBZ J./NNP Thomas/NNP Allen/NNP ,/, president/NN of/IN Advanced/NNP Investment/NNP Management/NNP Inc./NNP ,/, a/DT Pittsburgh/NNP firm/NN that/WDT runs/VBZ a/DT $/$ 200/CD million/CD fund/NN that/WDT uses/VBZ index/NN arbitrage/NN ./.
 
 place/NN place/VBP<>sell/VB sell/VBP<>lock/VB lock/VBP<>in/IN in/RP<>
 When/WRB it/PRP occurs/VBZ ,/, the/DT traders/NNS place/NN orders/NNS via/IN computers/NNS to/TO buy/VB the/DT basket/NN of/IN stocks/NNS (/-LRB- such/JJ as/IN the/DT 500/CD stocks/NNS that/WDT constitute/VBP the/DT Standard/NNP &/CC Poor/NNP 's/POS 500/CD stock/NN index/NN )/-RRB- in/IN whichever/WDT market/NN is/VBZ cheaper/JJR and/CC sell/VB them/PRP in/IN the/DT more/RBR expensive/JJ market/NN ;/: they/PRP lock/VB in/IN the/DT difference/NN in/IN price/NN as/IN profit/NN ./.
@@ -2143,8 +2128,8 @@ The/DT ultimate/JJ goal/NN of/IN any/DT investor/NN is/VBZ a/DT profit/NN motive
 -------
 The/DT ultimate/JJ goal/NN of/IN any/DT investor/NN is/VBZ a/DT profit/NN motive/NN ,/, and/CC regulators/NNS should/MD not/RB concern/VB themselves/PRP with/IN whether/IN investors/NNS are/VBP sufficiently/RB focused/VBN on/IN the/DT long/JJ term/NN ./.
 
-scream/NN scream/VB<>foul/UH foul/JJ<>decline/NN decline/VBP<>abounding/JJ abounding/VBG<>rise/NN rise/VBP<>
-It/PRP is/VBZ interesting/JJ to/TO see/VB the/DT fundamental/JJ stock/NN pickers/NNS scream/NN ``/`` foul/UH ''/'' on/IN program/NN trading/NN when/WRB the/DT markets/NNS decline/NN ,/, while/IN hailing/VBG the/DT great/JJ values/NNS still/RB abounding/JJ as/IN the/DT markets/NNS rise/NN ./.
+scream/NN scream/VB<>foul/UH foul/JJ<>decline/NN decline/VBP<>rise/NN rise/VBP<>
+It/PRP is/VBZ interesting/JJ to/TO see/VB the/DT fundamental/JJ stock/NN pickers/NNS scream/NN ``/`` foul/UH ''/'' on/IN program/NN trading/NN when/WRB the/DT markets/NNS decline/NN ,/, while/IN hailing/VBG the/DT great/JJ values/NNS still/RB abounding/VBG as/IN the/DT markets/NNS rise/NN ./.
 -------
 It/PRP is/VBZ interesting/JJ to/TO see/VB the/DT fundamental/JJ stock/NN pickers/NNS scream/VB ``/`` foul/JJ ''/'' on/IN program/NN trading/NN when/WRB the/DT markets/NNS decline/VBP ,/, while/IN hailing/VBG the/DT great/JJ values/NNS still/RB abounding/VBG as/IN the/DT markets/NNS rise/VBP ./.
 
@@ -2153,8 +2138,8 @@ Could/MD rising/VBG volatility/NN possibly/RB be/VB related/VBN to/TO uncertaint
 -------
 Could/MD rising/VBG volatility/NN possibly/RB be/VB related/VBN to/TO uncertainty/NN about/IN the/DT economics/NNS of/IN stocks/NNS ,/, instead/RB of/IN the/DT evil/JJ deeds/NNS of/IN program-trading/NN goblins/NNS ?/.
 
-proposed/JJ proposed/VBN<>fixes/NN fixes/NNS<>program-trading/JJ program-trading/NN<>
-Some/DT of/IN the/DT proposed/JJ fixes/NN for/IN what/WP is/VBZ labeled/VBN ``/`` program-trading/JJ volatility/NN ''/'' could/MD be/VB far/RB worse/JJR than/IN the/DT perceived/VBN problem/NN ./.
+proposed/JJ proposed/VBN<>program-trading/JJ program-trading/NN<>
+Some/DT of/IN the/DT proposed/JJ fixes/NNS for/IN what/WP is/VBZ labeled/VBN ``/`` program-trading/JJ volatility/NN ''/'' could/MD be/VB far/RB worse/JJR than/IN the/DT perceived/VBN problem/NN ./.
 -------
 Some/DT of/IN the/DT proposed/VBN fixes/NNS for/IN what/WP is/VBZ labeled/VBN ``/`` program-trading/NN volatility/NN ''/'' could/MD be/VB far/RB worse/JJR than/IN the/DT perceived/VBN problem/NN ./.
 
@@ -2203,8 +2188,8 @@ Even/RB with/IN mutual/JJ funds/NNS ,/, the/DT little/JJ investor/NN continues/V
 -------
 Even/RB with/IN mutual/JJ funds/NNS ,/, the/DT little/JJ investor/NN continues/VBZ to/TO tolerate/VB high/JJ fees/NNS ,/, high/JJ commissions/NNS and/CC poor/JJ performance/NN ,/, while/IN index-fund/NN managers/NNS slowly/RB amass/VBP a/DT better/JJR record/NN with/IN lower/JJR fees/NNS ,/, lower/JJR commissions/NNS and/CC less/JJR risk/NN ./.
 
-studiously/VBZ studiously/RB<>devouring/JJ devouring/VBG<>clippings/NN clippings/NNS<>
-Yet/CC our/PRP$ efforts/NNS are/VBP somehow/RB less/RBR noble/JJ than/IN those/DT of/IN an/DT investment/NN expert/NN studiously/VBZ devouring/JJ press/NN clippings/NN on/IN each/DT company/NN he/PRP follows/VBZ ./.
+studiously/NN studiously/RB<>devouring/NN devouring/VBG<>clippings/NN clippings/NNS<>
+Yet/CC our/PRP$ efforts/NNS are/VBP somehow/RB less/RBR noble/JJ than/IN those/DT of/IN an/DT investment/NN expert/NN studiously/NN devouring/NN press/NN clippings/NN on/IN each/DT company/NN he/PRP follows/VBZ ./.
 -------
 Yet/CC our/PRP$ efforts/NNS are/VBP somehow/RB less/RBR noble/JJ than/IN those/DT of/IN an/DT investment/NN expert/NN studiously/RB devouring/VBG press/NN clippings/NNS on/IN each/DT company/NN he/PRP follows/VBZ ./.
 
@@ -2298,6 +2283,11 @@ But/CC the/DT 1989/CD fall/NN total/NN of/IN 80/CD ,/, while/IN well/RB below/IN
 -------
 But/CC the/DT 1989/CD fall/NN total/NN of/IN 80/CD ,/, while/IN well/RB below/IN 1988/CD activity/NN ,/, shows/VBZ ``/`` a/DT steady/JJ ratcheting/VBG up/IN in/IN citizen/NN referenda/NN and/CC initiatives/VBZ ,/, ''/'' says/VBZ Patrick/NNP McGuigan/NNP ,/, editor/NN of/IN Family/NNP ,/, Law/NNP and/CC Democracy/NNP Report/NNP ./.
 
+odd-year/NN odd-year/JJ<>
+He/PRP says/VBZ the/DT 10/CD citizen-sparked/JJ issues/NNS on/IN state/NN ballots/NNS this/DT fall/NN represent/VBP the/DT most/JJS in/IN any/DT odd-year/NN this/DT decade/NN ./.
+-------
+He/PRP says/VBZ the/DT 10/CD citizen-sparked/JJ issues/NNS on/IN state/NN ballots/NNS this/DT fall/NN represent/VBP the/DT most/JJS in/IN any/DT odd-year/JJ this/DT decade/NN ./.
+
 Cruise/NNP Cruise/NN<>
 Ballot/NN questions/NNS range/VBP from/IN a/DT Maine/NNP initiative/NN on/IN banning/VBG Cruise/NNP missiles/NNS to/TO a/DT referendum/NN on/IN increasing/VBG the/DT North/NNP Dakota/NNP income/NN tax/NN ./.
 -------
@@ -2308,8 +2298,8 @@ In/IN California/NNP ,/, two/CD petition/NN drives/NNS for/IN next/JJ year/NN 's
 -------
 In/IN California/NNP ,/, two/CD petition/NN drives/NNS for/IN next/JJ year/NN 's/POS election/NN are/VBP ``/`` essentially/RB finished/VBN ,/, ''/'' says/VBZ David/NNP Schmidt/NNP ,/, author/NN of/IN ``/`` Citizen/NNP Lawmakers/NNPS ./. ''/''
 
-COLLECTING/VBG COLLECTING/NN<>gains/NNS gains/VBZ<>rise/NN rise/VBP<>
-PHOTOGRAPH/NN COLLECTING/VBG gains/NNS new/JJ stature/NN as/IN prices/NNS rise/NN ./.
+gains/NNS gains/VBZ<>rise/NN rise/VBP<>
+PHOTOGRAPH/NN COLLECTING/NN gains/NNS new/JJ stature/NN as/IN prices/NNS rise/NN ./.
 -------
 PHOTOGRAPH/NN COLLECTING/NN gains/VBZ new/JJ stature/NN as/IN prices/NNS rise/VBP ./.
 
@@ -2338,10 +2328,10 @@ back/RP back/RB<>
 -------
 ``/`` When/WRB I/PRP see/VBP prints/NNS going/VBG into/IN the/DT hands/NNS of/IN institutions/NNS ,/, I/PRP know/VBP they/PRP are/VBP n't/RB going/VBG to/TO come/VB back/RB on/IN the/DT market/NN ./. ''/''
 
-fetching/JJ fetching/VBG<>
-But/CC much/RB contemporary/JJ work/NN is/VBZ also/RB fetching/JJ ``/`` a/DT great/JJ deal/NN of/IN money/NN ,/, ''/'' says/VBZ Miles/NNP Barth/NNP of/IN the/DT International/NNP Center/NNP of/IN Photography/NNP ./.
+DIALING/JJ DIALING/VBG<>
+DIALING/JJ 900/CD brings/VBZ callers/NNS a/DT growing/VBG number/NN of/IN services/NNS ./.
 -------
-But/CC much/RB contemporary/JJ work/NN is/VBZ also/RB fetching/VBG ``/`` a/DT great/JJ deal/NN of/IN money/NN ,/, ''/'' says/VBZ Miles/NNP Barth/NNP of/IN the/DT International/NNP Center/NNP of/IN Photography/NNP ./.
+DIALING/VBG 900/CD brings/VBZ callers/NNS a/DT growing/VBG number/NN of/IN services/NNS ./.
 
 horoscopes/NNP horoscopes/NNS<>
 The/DT service/NN --/: which/WDT costs/VBZ the/DT caller/NN from/IN 30/CD cents/NNS to/TO $/$ 25/CD a/DT minute/NN --/: currently/RB is/VBZ dominated/VBN by/IN celebrity/NN chatter/NN ,/, horoscopes/NNP and/CC romance/NN lines/NNS ./.
@@ -2393,11 +2383,6 @@ Hammacher/NNP Schlemmer/NNP &/CC Co./NNP offers/VBZ a/DT fiber-optic/JJ Christma
 -------
 Hammacher/NNP Schlemmer/NNP &/CC Co./NNP offers/VBZ a/DT fiber-optic/JJ Christmas/NNP tree/NN that/WDT eliminates/VBZ the/DT need/NN to/TO string/VB lights/NNS ./.
 
-fiber-end/NNP fiber-end/JJ<>bunches/NNP bunches/NNS<>
-The/DT $/$ 6,500/CD tree/NN is/VBZ designed/VBN to/TO send/VB continuously/RB changing/VBG colored/VBN light/NN to/TO dozens/NNS of/IN fiber-end/NNP bunches/NNP ./.
--------
-The/DT $/$ 6,500/CD tree/NN is/VBZ designed/VBN to/TO send/VB continuously/RB changing/VBG colored/VBN light/NN to/TO dozens/NNS of/IN fiber-end/JJ bunches/NNS ./.
-
 MEDICINE/NN MEDICINE/NNP<>TRANSPLANT/NN TRANSPLANT/NNP<>
 MEDICINE/NN TRANSPLANT/NN :/: Growth/NN of/IN Japanese/JJ trade/NN and/CC travel/NN prompts/VBZ Beth/NNP Israel/NNP Medical/NNP Center/NNP ,/, New/NNP York/NNP ,/, to/TO set/VB up/RP a/DT bilingual/JJ medical/JJ practice/NN ./.
 -------
@@ -2413,8 +2398,8 @@ DIAPER/JJ SERVICES/NNS make/VBP a/DT comeback/NN amid/IN growing/VBG environment
 -------
 DIAPER/NN SERVICES/NNS make/VBP a/DT comeback/NN amid/IN growing/VBG environmental/JJ concerns/NNS ./.
 
-Concerned/NNP Concerned/VBN<>super-absorbent/NNP super-absorbent/JJ<>disposables/NNP disposables/NNS<>cloth/JJ cloth/NN<>
-Concerned/NNP about/IN shrinking/VBG landfills/NNS and/CC the/DT safety/NN of/IN chemicals/NNS used/VBN in/IN super-absorbent/NNP disposables/NNP ,/, parents/NNS are/VBP returning/VBG to/TO the/DT cloth/JJ diaper/NN ./.
+Concerned/NNP Concerned/VBN<>super-absorbent/NNP super-absorbent/JJ<>disposables/NNP disposables/NNS<>
+Concerned/NNP about/IN shrinking/VBG landfills/NNS and/CC the/DT safety/NN of/IN chemicals/NNS used/VBN in/IN super-absorbent/NNP disposables/NNP ,/, parents/NNS are/VBP returning/VBG to/TO the/DT cloth/NN diaper/NN ./.
 -------
 Concerned/VBN about/IN shrinking/VBG landfills/NNS and/CC the/DT safety/NN of/IN chemicals/NNS used/VBN in/IN super-absorbent/JJ disposables/NNS ,/, parents/NNS are/VBP returning/VBG to/TO the/DT cloth/NN diaper/NN ./.
 
@@ -2433,8 +2418,8 @@ Diaper/NN shortages/NNS this/DT summer/NN limited/JJ growth/NN at/IN Stork/JJ Di
 -------
 Diaper/NN shortages/NNS this/DT summer/NN limited/VBD growth/NN at/IN Stork/NNP Diaper/NNP Services/NNPS ,/, Springfield/NNP ,/, Mass./NNP ,/, where/WRB business/NN is/VBZ up/IN 25/CD %/NN in/IN
 
-cloth/CD cloth/NN<>covers/VBZ covers/NNS<>Velcro/NNP Velcro/NN<>eliminate/VB eliminate/VBP<>
-Also/RB spurring/VBG the/DT move/NN to/TO cloth/CD :/: diaper/NN covers/VBZ with/IN Velcro/NNP fasteners/NNS that/WDT eliminate/VB the/DT need/NN for/IN safety/NN pins/NNS ./.
+covers/VBZ covers/NNS<>Velcro/NNP Velcro/NN<>eliminate/VB eliminate/VBP<>
+Also/RB spurring/VBG the/DT move/NN to/TO cloth/NN :/: diaper/NN covers/VBZ with/IN Velcro/NNP fasteners/NNS that/WDT eliminate/VB the/DT need/NN for/IN safety/NN pins/NNS ./.
 -------
 Also/RB spurring/VBG the/DT move/NN to/TO cloth/NN :/: diaper/NN covers/NNS with/IN Velcro/NN fasteners/NNS that/WDT eliminate/VBP the/DT need/NN for/IN safety/NN pins/NNS ./.
 
@@ -2498,8 +2483,8 @@ want/VBP want/VB<>
 -------
 ``/`` I/PRP do/VBP n't/RB want/VB to/TO denounce/VB it/PRP because/IN denouncing/VBG it/PRP would/MD be/VB like/IN denouncing/VBG capitalism/NN ,/, ''/'' he/PRP explains/VBZ ./.
 
-adapting/JJ adapting/VBG<>say/VBP say/VB<>
-And/CC surprising/JJ numbers/NNS of/IN small/JJ investors/NNS seem/VBP to/TO be/VB adapting/JJ to/TO greater/JJR stock/NN market/NN volatility/NN and/CC say/VBP they/PRP can/MD live/VB with/IN program/NN trading/NN ./.
+adapting/NN adapting/VBG<>say/VBP say/VB<>
+And/CC surprising/JJ numbers/NNS of/IN small/JJ investors/NNS seem/VBP to/TO be/VB adapting/NN to/TO greater/JJR stock/NN market/NN volatility/NN and/CC say/VBP they/PRP can/MD live/VB with/IN program/NN trading/NN ./.
 -------
 And/CC surprising/JJ numbers/NNS of/IN small/JJ investors/NNS seem/VBP to/TO be/VB adapting/VBG to/TO greater/JJR stock/NN market/NN volatility/NN and/CC say/VB they/PRP can/MD live/VB with/IN program/NN trading/NN ./.
 
@@ -2548,13 +2533,8 @@ What/WP else/RB can/MD a/DT small/JJ investor/NN do/VBP ?/.
 -------
 What/WP else/RB can/MD a/DT small/JJ investor/NN do/VB ?/.
 
-recouped/VB recouped/VBN<>
-Mr./NNP Taccetta/NNP says/VBZ he/PRP had/VBD just/RB recouped/VB the/DT $/$ 5,000/CD he/PRP lost/VBD in/IN the/DT 1987/CD crash/NN when/WRB he/PRP lost/VBD more/JJR money/NN last/JJ Oct./NNP 13/CD ./.
--------
-Mr./NNP Taccetta/NNP says/VBZ he/PRP had/VBD just/RB recouped/VBN the/DT $/$ 5,000/CD he/PRP lost/VBD in/IN the/DT 1987/CD crash/NN when/WRB he/PRP lost/VBD more/JJR money/NN last/JJ Oct./NNP 13/CD ./.
-
-so/RB so/IN<>flim-flammery/JJ flim-flammery/NN<>caused/VBD caused/VBN<>
-In/IN October/NNP ,/, before/IN the/DT market/NN dropped/VBD ,/, Mrs./NNP Arighi/NNP of/IN Arnold/NNP ,/, Calif./NNP ,/, moved/VBD to/TO sell/VB the/DT ``/`` speculative/JJ stocks/NNS ''/'' in/IN her/PRP$ family/NN trust/NN ``/`` so/RB we/PRP will/MD be/VB able/JJ to/TO withstand/VB all/PDT this/DT flim-flammery/JJ ''/'' caused/VBD by/IN program/NN trading/NN ./.
+so/RB so/IN<>caused/VBD caused/VBN<>
+In/IN October/NNP ,/, before/IN the/DT market/NN dropped/VBD ,/, Mrs./NNP Arighi/NNP of/IN Arnold/NNP ,/, Calif./NNP ,/, moved/VBD to/TO sell/VB the/DT ``/`` speculative/JJ stocks/NNS ''/'' in/IN her/PRP$ family/NN trust/NN ``/`` so/RB we/PRP will/MD be/VB able/JJ to/TO withstand/VB all/PDT this/DT flim-flammery/NN ''/'' caused/VBD by/IN program/NN trading/NN ./.
 -------
 In/IN October/NNP ,/, before/IN the/DT market/NN dropped/VBD ,/, Mrs./NNP Arighi/NNP of/IN Arnold/NNP ,/, Calif./NNP ,/, moved/VBD to/TO sell/VB the/DT ``/`` speculative/JJ stocks/NNS ''/'' in/IN her/PRP$ family/NN trust/NN ``/`` so/IN we/PRP will/MD be/VB able/JJ to/TO withstand/VB all/PDT this/DT flim-flammery/NN ''/'' caused/VBN by/IN program/NN trading/NN ./.
 
@@ -2593,8 +2573,8 @@ The/DT Underwood/NNP family/NN said/VBD that/IN holders/NNS of/IN more/JJR than/
 -------
 The/DT Underwood/NNP family/NN said/VBD that/IN holders/NNS of/IN more/JJR than/IN a/DT majority/NN of/IN the/DT stock/NN of/IN the/DT company/NN have/VBP approved/VBN the/DT transaction/NN by/IN written/VBN consent/NN ./.
 
-closer/RBR closer/JJR<>
-Researchers/NNS at/IN American/NNP Telephone/NNP &/CC Telegraph/NNP Co./NNP 's/POS Bell/NNP Laboratories/NNPS reported/VBD they/PRP raised/VBD the/DT electrical/JJ current-carrying/JJ capacity/NN of/IN new/JJ superconductor/NN crystals/NNS by/IN a/DT factor/NN of/IN 100/CD ,/, moving/VBG the/DT materials/NNS closer/RBR to/TO commercial/JJ use/NN ./.
+current-carrying/NN current-carrying/JJ<>closer/RBR closer/JJR<>
+Researchers/NNS at/IN American/NNP Telephone/NNP &/CC Telegraph/NNP Co./NNP 's/POS Bell/NNP Laboratories/NNPS reported/VBD they/PRP raised/VBD the/DT electrical/JJ current-carrying/NN capacity/NN of/IN new/JJ superconductor/NN crystals/NNS by/IN a/DT factor/NN of/IN 100/CD ,/, moving/VBG the/DT materials/NNS closer/RBR to/TO commercial/JJ use/NN ./.
 -------
 Researchers/NNS at/IN American/NNP Telephone/NNP &/CC Telegraph/NNP Co./NNP 's/POS Bell/NNP Laboratories/NNPS reported/VBD they/PRP raised/VBD the/DT electrical/JJ current-carrying/JJ capacity/NN of/IN new/JJ superconductor/NN crystals/NNS by/IN a/DT factor/NN of/IN 100/CD ,/, moving/VBG the/DT materials/NNS closer/JJR to/TO commercial/JJ use/NN ./.
 
@@ -2603,8 +2583,8 @@ The/DT scientists/NNS said/VBD they/PRP created/VBD small/JJ changes/NNS in/IN t
 -------
 The/DT scientists/NNS said/VBD they/PRP created/VBD small/JJ changes/NNS in/IN the/DT crystal-lattice/JJ structures/NNS of/IN the/DT superconductors/NNS to/TO raise/VB the/DT amount/NN of/IN current/NN that/IN single/JJ crystals/NNS could/MD carry/VB to/TO 600,000/CD amps/NNS per/IN square/JJ centimeter/NN in/IN a/DT moderately/RB strong/JJ magnetic/JJ field/NN ./.
 
-liquid-nitrogen/JJ liquid-nitrogen/NN<>Fahrenheit/NNP Fahrenheit/NN<>
-The/DT scientists/NNS said/VBD they/PRP made/VBD the/DT advance/NN with/IN yttrium-containing/JJ superconductors/NNS cooled/VBN to/TO liquid-nitrogen/JJ temperature/NN ,/, or/CC minus/CC 321/CD degrees/NNS Fahrenheit/NNP ./.
+yttrium-containing/NNP yttrium-containing/JJ<>liquid-nitrogen/JJ liquid-nitrogen/NN<>Fahrenheit/NNP Fahrenheit/NN<>
+The/DT scientists/NNS said/VBD they/PRP made/VBD the/DT advance/NN with/IN yttrium-containing/NNP superconductors/NNS cooled/VBN to/TO liquid-nitrogen/JJ temperature/NN ,/, or/CC minus/CC 321/CD degrees/NNS Fahrenheit/NNP ./.
 -------
 The/DT scientists/NNS said/VBD they/PRP made/VBD the/DT advance/NN with/IN yttrium-containing/JJ superconductors/NNS cooled/VBN to/TO liquid-nitrogen/NN temperature/NN ,/, or/CC minus/CC 321/CD degrees/NNS Fahrenheit/NN ./.
 
@@ -2613,8 +2593,8 @@ Their/PRP$ report/NN appears/VBZ in/IN today/NN 's/POS issue/NN of/IN the/DT jou
 -------
 Their/PRP$ report/NN appears/VBZ in/IN today/NN 's/POS issue/NN of/IN the/DT journal/NN Nature/NNP ./.
 
-higher/RBR higher/JJR<>current/JJ current/NN<>bulk/JJ bulk/NN<>
-Scientists/NNS had/VBD obtained/VBN even/RB higher/RBR current-carrying/JJ capacity/NN in/IN thin/JJ films/NNS of/IN the/DT new/JJ superconductors/NNS ,/, but/CC have/VBP had/VBN problems/NNS increasing/VBG the/DT amount/NN of/IN current/JJ that/IN bulk/JJ crystals/NNS could/MD carry/VB ./.
+current-carrying/NN current-carrying/JJ<>current/JJ current/NN<>bulk/JJ bulk/NN<>
+Scientists/NNS had/VBD obtained/VBN even/RB higher/JJR current-carrying/NN capacity/NN in/IN thin/JJ films/NNS of/IN the/DT new/JJ superconductors/NNS ,/, but/CC have/VBP had/VBN problems/NNS increasing/VBG the/DT amount/NN of/IN current/JJ that/IN bulk/JJ crystals/NNS could/MD carry/VB ./.
 -------
 Scientists/NNS had/VBD obtained/VBN even/RB higher/JJR current-carrying/JJ capacity/NN in/IN thin/JJ films/NNS of/IN the/DT new/JJ superconductors/NNS ,/, but/CC have/VBP had/VBN problems/NNS increasing/VBG the/DT amount/NN of/IN current/NN that/IN bulk/NN crystals/NNS could/MD carry/VB ./.
 
@@ -2623,8 +2603,13 @@ Superconductors/NNS conduct/NN electricity/NN without/IN resistance/NN when/WRB 
 -------
 Superconductors/NNS conduct/VBP electricity/NN without/IN resistance/NN when/WRB cooled/VBN ./.
 
-low/JJ low/RB<>most/RBS most/JJS<>
-He/PRP added/VBD that/IN the/DT current-carrying/JJ capacity/NN of/IN multi-crystal/JJ samples/NNS of/IN superconductors/NNS remains/VBZ too/RB low/JJ for/IN most/RBS practical/JJ uses/NNS because/IN of/IN so-called/JJ weak/JJ links/NNS between/IN crystals/NNS ./.
+current-carrying/NNP current-carrying/JJ<>
+The/DT AT&T/NNP advance/NN shows/VBZ how/WRB one/CD aspect/NN of/IN the/DT current-carrying/NNP problem/NN can/MD be/VB overcome/VBN ./.
+-------
+The/DT AT&T/NNP advance/NN shows/VBZ how/WRB one/CD aspect/NN of/IN the/DT current-carrying/JJ problem/NN can/MD be/VB overcome/VBN ./.
+
+current-carrying/NNP current-carrying/JJ<>low/JJ low/RB<>most/RBS most/JJS<>
+He/PRP added/VBD that/IN the/DT current-carrying/NNP capacity/NN of/IN multi-crystal/JJ samples/NNS of/IN superconductors/NNS remains/VBZ too/RB low/JJ for/IN most/RBS practical/JJ uses/NNS because/IN of/IN so-called/JJ weak/JJ links/NNS between/IN crystals/NNS ./.
 -------
 He/PRP added/VBD that/IN the/DT current-carrying/JJ capacity/NN of/IN multi-crystal/JJ samples/NNS of/IN superconductors/NNS remains/VBZ too/RB low/RB for/IN most/JJS practical/JJ uses/NNS because/IN of/IN so-called/JJ weak/JJ links/NNS between/IN crystals/NNS ./.
 
@@ -2638,8 +2623,8 @@ Still/RB ,/, scientists/NNS breathed/VBD a/DT collective/JJ sigh/NN of/IN relief
 -------
 Still/RB ,/, scientists/NNS breathed/VBD a/DT collective/JJ sigh/NN of/IN relief/NN about/IN the/DT finding/NN ,/, because/IN it/PRP demonstrates/VBZ how/WRB to/TO overcome/VB the/DT ``/`` flux/NN pinning/NN ''/'' problem/NN that/IN earlier/RBR this/DT year/NN was/VBD widely/RB publicized/VBN as/IN undercutting/VBG new/JJ superconductors/NNS '/POS potential/NN ./.
 
-pins/NNS pins/VBZ<>
-Mr./NNP van/NNP Dover/NNP said/VBD the/DT crystal/NN changes/VBZ his/PRP$ team/NN introduced/VBD apparently/RB pins/NNS the/DT magnetic/JJ fields/NNS in/IN place/NN ,/, preventing/VBG them/PRP from/IN lowering/VBG current-carrying/JJ capacity/NN ./.
+pins/NNS pins/VBZ<>current-carrying/NNP current-carrying/JJ<>
+Mr./NNP van/NNP Dover/NNP said/VBD the/DT crystal/NN changes/VBZ his/PRP$ team/NN introduced/VBD apparently/RB pins/NNS the/DT magnetic/JJ fields/NNS in/IN place/NN ,/, preventing/VBG them/PRP from/IN lowering/VBG current-carrying/NNP capacity/NN ./.
 -------
 Mr./NNP van/NNP Dover/NNP said/VBD the/DT crystal/NN changes/VBZ his/PRP$ team/NN introduced/VBD apparently/RB pins/VBZ the/DT magnetic/JJ fields/NNS in/IN place/NN ,/, preventing/VBG them/PRP from/IN lowering/VBG current-carrying/JJ capacity/NN ./.
 
@@ -2658,8 +2643,8 @@ The/DT AT&T/NNP team/NN also/RB is/VBZ trying/VBG to/TO combine/VB their/PRP$ la
 -------
 The/DT AT&T/NNP team/NN also/RB is/VBZ trying/VBG to/TO combine/VB their/PRP$ latest/JJS superconductor/NN process/NN with/IN ``/`` melt-textured/JJ growth/NN ,/, ''/'' a/DT process/NN discovered/VBN earlier/JJR at/IN Bell/NNP Laboratories/NNPS ./.
 
-combined/JJ combined/VBN<>
-The/DT combined/JJ processes/NNS may/MD significantly/RB raise/VB the/DT current-carrying/JJ capacity/NN of/IN multi-crystal/JJ samples/NNS ./.
+combined/JJ combined/VBN<>current-carrying/NNP current-carrying/JJ<>
+The/DT combined/JJ processes/NNS may/MD significantly/RB raise/VB the/DT current-carrying/NNP capacity/NN of/IN multi-crystal/JJ samples/NNS ./.
 -------
 The/DT combined/VBN processes/NNS may/MD significantly/RB raise/VB the/DT current-carrying/JJ capacity/NN of/IN multi-crystal/JJ samples/NNS ./.
 
@@ -2778,8 +2763,8 @@ Stadiums/NNS tend/VBP to/TO redistribute/VB existing/JJ wealth/NN within/IN a/DT
 -------
 Stadiums/NNS tend/VBP to/TO redistribute/VB existing/VBG wealth/NN within/IN a/DT community/NN ,/, not/RB create/VB more/JJR of/IN it/PRP ./.
 
-agree/VB agree/VBP<>mega-stadium/NNS mega-stadium/NN<>
-Voters/NNS generally/RB agree/VB when/WRB they/PRP are/VBP given/VBN a/DT chance/NN to/TO decide/VB if/IN they/PRP want/VBP to/TO sink/VB their/PRP$ own/JJ tax/NN dollars/NNS into/IN a/DT new/JJ mega-stadium/NNS ./.
+agree/VB agree/VBP<>
+Voters/NNS generally/RB agree/VB when/WRB they/PRP are/VBP given/VBN a/DT chance/NN to/TO decide/VB if/IN they/PRP want/VBP to/TO sink/VB their/PRP$ own/JJ tax/NN dollars/NNS into/IN a/DT new/JJ mega-stadium/NN ./.
 -------
 Voters/NNS generally/RB agree/VBP when/WRB they/PRP are/VBP given/VBN a/DT chance/NN to/TO decide/VB if/IN they/PRP want/VBP to/TO sink/VB their/PRP$ own/JJ tax/NN dollars/NNS into/IN a/DT new/JJ mega-stadium/NN ./.
 
@@ -2792,11 +2777,6 @@ down/RB down/RP<>
 Last/JJ month/NN ,/, Phoenix/NNP voters/NNS turned/VBD thumbs/NNS down/RB on/IN a/DT $/$ 100/CD million/CD stadium/NN bond/NN and/CC tax/NN proposition/NN ./.
 -------
 Last/JJ month/NN ,/, Phoenix/NNP voters/NNS turned/VBD thumbs/NNS down/RP on/IN a/DT $/$ 100/CD million/CD stadium/NN bond/NN and/CC tax/NN proposition/NN ./.
-
-fielded/VBP fielded/VBD<>
-Its/PRP$ backers/NNS fielded/VBP every/DT important/JJ interest/NN on/IN their/PRP$ team/NN --/: a/DT popular/JJ mayor/NN ,/, the/DT Chamber/NNP of/IN Commerce/NNP ,/, the/DT major/JJ media/NNS --/: and/CC spent/VBD $/$ 100,000/CD on/IN promotion/NN ./.
--------
-Its/PRP$ backers/NNS fielded/VBD every/DT important/JJ interest/NN on/IN their/PRP$ team/NN --/: a/DT popular/JJ mayor/NN ,/, the/DT Chamber/NNP of/IN Commerce/NNP ,/, the/DT major/JJ media/NNS --/: and/CC spent/VBD $/$ 100,000/CD on/IN promotion/NN ./.
 
 built/VBD built/VBN<>
 He/PRP says/VBZ he/PRP had/VBD Candlestick/NNP built/VBD because/IN the/DT Giants/NNPS claimed/VBD they/PRP needed/VBD 10,000/CD parking/NN spaces/NNS ./.
@@ -2898,8 +2878,8 @@ transformed/VBN transformed/VBD<>
 -------
 ``/`` Just/RB as/IN the/DT 1980s/CD bull/NN market/NN transformed/VBD the/DT U.S./NNP securities/NNS business/NN ,/, so/RB too/RB will/MD the/DT more/RBR difficult/JJ environment/NN of/IN the/DT 1990s/CD ,/, ''/'' says/VBZ Christopher/NNP T./NNP Mahoney/NNP ,/, a/DT Moody/NNP 's/POS vice/NN president/NN ./.
 
-credit-rating/JJ credit-rating/NN<>
-What/WP worries/VBZ credit-rating/JJ concerns/NNS the/DT most/JJS is/VBZ that/IN Wall/NNP Street/NNP firms/NNS are/VBP taking/VBG long-term/JJ risks/NNS with/IN their/PRP$ own/JJ capital/NN via/IN leveraged/JJ buy-out/NN and/CC junk/NN bond/NN financings/NNS ./.
+credit-rating/NNP credit-rating/NN<>concerns/VBZ concerns/NNS<>
+What/WP worries/VBZ credit-rating/NNP concerns/VBZ the/DT most/JJS is/VBZ that/IN Wall/NNP Street/NNP firms/NNS are/VBP taking/VBG long-term/JJ risks/NNS with/IN their/PRP$ own/JJ capital/NN via/IN leveraged/JJ buy-out/NN and/CC junk/NN bond/NN financings/NNS ./.
 -------
 What/WP worries/VBZ credit-rating/NN concerns/NNS the/DT most/JJS is/VBZ that/IN Wall/NNP Street/NNP firms/NNS are/VBP taking/VBG long-term/JJ risks/NNS with/IN their/PRP$ own/JJ capital/NN via/IN leveraged/JJ buy-out/NN and/CC junk/NN bond/NN financings/NNS ./.
 
@@ -2937,11 +2917,6 @@ most/RBS most/JJS<>
 The/DT recent/JJ cash/NN squeeze/NN at/IN Campeau/NNP Corp./NNP ,/, First/NNP Boston/NNP 's/POS most/RBS lucrative/JJ client/NN of/IN the/DT decade/NN ,/, is/VBZ proving/VBG costly/JJ to/TO First/NNP Boston/NNP because/IN it/PRP arranged/VBD more/JJR than/IN $/$ 3/CD billion/CD of/IN high-yield/JJ ,/, high-risk/JJ junk/NN financings/NNS for/IN Campeau/NNP units/NNS ./.
 -------
 The/DT recent/JJ cash/NN squeeze/NN at/IN Campeau/NNP Corp./NNP ,/, First/NNP Boston/NNP 's/POS most/JJS lucrative/JJ client/NN of/IN the/DT decade/NN ,/, is/VBZ proving/VBG costly/JJ to/TO First/NNP Boston/NNP because/IN it/PRP arranged/VBD more/JJR than/IN $/$ 3/CD billion/CD of/IN high-yield/JJ ,/, high-risk/JJ junk/NN financings/NNS for/IN Campeau/NNP units/NNS ./.
-
-bedding/JJ bedding/NN<>
-In/IN addition/NN ,/, a/DT big/JJ loan/NN that/IN First/NNP Boston/NNP made/VBD to/TO Ohio/NNP Mattress/NNP Co/NNP ./. was/VBD n't/RB repaid/VBN on/IN time/NN when/WRB its/PRP$ $/$ 450/CD million/CD junk/NN financing/NN for/IN a/DT buy-out/NN of/IN the/DT bedding/JJ company/NN was/VBD withdrawn/VBN ./.
--------
-In/IN addition/NN ,/, a/DT big/JJ loan/NN that/IN First/NNP Boston/NNP made/VBD to/TO Ohio/NNP Mattress/NNP Co/NNP ./. was/VBD n't/RB repaid/VBN on/IN time/NN when/WRB its/PRP$ $/$ 450/CD million/CD junk/NN financing/NN for/IN a/DT buy-out/NN of/IN the/DT bedding/NN company/NN was/VBD withdrawn/VBN ./.
 
 represent/VB represent/VBP<>
 ``/`` These/DT two/CD exposures/NNS alone/RB represent/VB a/DT very/RB substantial/JJ portion/NN of/IN CS/NNP First/NNP Boston/NNP 's/POS equity/NN ,/, ''/'' Moody/NNP 's/POS said/VBD ./.
@@ -3003,6 +2978,11 @@ It/PRP was/VBD later/RB applied/VBN to/TO other/JJ new-car/JJ programs/NNS ,/, i
 -------
 It/PRP was/VBD later/JJ applied/VBN to/TO other/JJ new-car/NN programs/NNS ,/, including/VBG those/DT that/WDT produced/VBD the/DT Ford/NNP Thunderbird/NNP and/CC Mercury/NNP Cougar/NNP ./.
 
+parts-engineering/NNP parts-engineering/JJ<>
+Mr./NNP Veraldi/NNP worked/VBD at/IN Ford/NNP for/IN 40/CD years/NNS ,/, holding/VBG a/DT variety/NN of/IN car/NN and/CC parts-engineering/NNP positions/NNS ./.
+-------
+Mr./NNP Veraldi/NNP worked/VBD at/IN Ford/NNP for/IN 40/CD years/NNS ,/, holding/VBG a/DT variety/NN of/IN car/NN and/CC parts-engineering/JJ positions/NNS ./.
+
 absurdity/NNS absurdity/NN<>stretched/VBN stretched/VBD<>have/VBP have/VB<>
 The/DT limits/NNS to/TO legal/JJ absurdity/NNS stretched/VBN another/DT notch/NN this/DT week/NN when/WRB the/DT Supreme/NNP Court/NNP refused/VBD to/TO hear/VB an/DT appeal/NN from/IN a/DT case/NN that/WDT says/VBZ corporate/JJ defendants/NNS must/MD pay/VB damages/NNS even/RB after/IN proving/VBG that/IN they/PRP could/MD not/RB possibly/RB have/VBP caused/VBN the/DT harm/NN ./.
 -------
@@ -3012,6 +2992,11 @@ share/NN share/VB<>wish/VBP wish/VB<>Solomonic/NNP Solomonic/JJ<>
 We/PRP can/MD understand/VB and/CC share/NN the/DT compassion/NN that/WDT makes/VBZ judges/NNS sometimes/RB wish/VBP to/TO offer/VB a/DT kind/NN of/IN Solomonic/NNP aid/NN to/TO those/DT who/WP 've/VBP been/VBN hurt/VBN ./.
 -------
 We/PRP can/MD understand/VB and/CC share/VB the/DT compassion/NN that/WDT makes/VBZ judges/NNS sometimes/RB wish/VB to/TO offer/VB a/DT kind/NN of/IN Solomonic/JJ aid/NN to/TO those/DT who/WP 've/VBP been/VBN hurt/VBN ./.
+
+policy-making/NN policy-making/JJ<>
+But/CC this/DT case/NN is/VBZ a/DT stark/JJ lesson/NN in/IN how/WRB the/DT failures/NNS of/IN the/DT traditional/JJ policy-making/NN process/NN have/VBP left/VBN the/DT courts/NNS as/IN the/DT only/JJ forum/NN this/DT country/NN has/VBZ to/TO debate/VB risk/NN ,/, technology/NN and/CC innovation/NN ./.
+-------
+But/CC this/DT case/NN is/VBZ a/DT stark/JJ lesson/NN in/IN how/WRB the/DT failures/NNS of/IN the/DT traditional/JJ policy-making/JJ process/NN have/VBP left/VBN the/DT courts/NNS as/IN the/DT only/JJ forum/NN this/DT country/NN has/VBZ to/TO debate/VB risk/NN ,/, technology/NN and/CC innovation/NN ./.
 
 diethylstilbestrol/NNS diethylstilbestrol/NN<>
 From/IN the/DT 1940s/CD until/IN 1971/CD ,/, some/DT two/CD million/CD women/NNS took/VBD the/DT synthetic/JJ hormone/NN diethylstilbestrol/NNS (/-LRB- DES/NNP )/-RRB- to/TO prevent/VB miscarriages/NNS and/CC morning/NN sickness/NN ./.
@@ -3333,8 +3318,8 @@ Criminal/NNP charges/NNS were/VBD filed/VBN against/IN Diceon/NNP Electronics/NN
 -------
 Criminal/JJ charges/NNS were/VBD filed/VBN against/IN Diceon/NNP Electronics/NNP Inc./NNP and/CC two/CD company/NN officials/NNS alleging/VBG waste/NN disposal/NN violations/NNS in/IN its/PRP$ Chatsworth/NNP ,/, Calif./NNP ,/, facility/NN ./.
 
-counts/VBZ counts/NNS<>circuit-board/JJ circuit-board/NN<>disposed/VBN disposed/VBD<>stored/JJ stored/VBD<>leaky/NNP leaky/JJ<>unlabeled/NNP unlabeled/JJ<>
-The/DT Los/NNP Angeles/NNP County/NNP district/NN attorney/NN 's/POS office/NN filed/VBD seven/CD felony/NN and/CC five/CD misdemeanor/NN counts/VBZ charging/VBG that/IN late/JJ last/JJ year/NN and/CC early/RB this/DT year/NN the/DT Irvine/NNP ,/, Calif.-based/JJ circuit-board/JJ manufacturer/NN illegally/RB disposed/VBN of/IN acid/NN ,/, caustic/JJ and/CC heavy/JJ metals/NNS into/IN the/DT sewer/NN system/NN ,/, and/CC stored/JJ hazardous/JJ materials/NNS in/IN leaky/NNP ,/, unlabeled/NNP or/CC open-top/JJ containers/NNS ./.
+counts/VBZ counts/NNS<>circuit-board/JJ circuit-board/NN<>disposed/VBN disposed/VBD<>leaky/NNP leaky/JJ<>unlabeled/NNP unlabeled/JJ<>
+The/DT Los/NNP Angeles/NNP County/NNP district/NN attorney/NN 's/POS office/NN filed/VBD seven/CD felony/NN and/CC five/CD misdemeanor/NN counts/VBZ charging/VBG that/IN late/JJ last/JJ year/NN and/CC early/RB this/DT year/NN the/DT Irvine/NNP ,/, Calif.-based/JJ circuit-board/JJ manufacturer/NN illegally/RB disposed/VBN of/IN acid/NN ,/, caustic/JJ and/CC heavy/JJ metals/NNS into/IN the/DT sewer/NN system/NN ,/, and/CC stored/VBD hazardous/JJ materials/NNS in/IN leaky/NNP ,/, unlabeled/NNP or/CC open-top/JJ containers/NNS ./.
 -------
 The/DT Los/NNP Angeles/NNP County/NNP district/NN attorney/NN 's/POS office/NN filed/VBD seven/CD felony/NN and/CC five/CD misdemeanor/NN counts/NNS charging/VBG that/IN late/JJ last/JJ year/NN and/CC early/RB this/DT year/NN the/DT Irvine/NNP ,/, Calif.-based/JJ circuit-board/NN manufacturer/NN illegally/RB disposed/VBD of/IN acid/NN ,/, caustic/JJ and/CC heavy/JJ metals/NNS into/IN the/DT sewer/NN system/NN ,/, and/CC stored/VBD hazardous/JJ materials/NNS in/IN leaky/JJ ,/, unlabeled/JJ or/CC open-top/JJ containers/NNS ./.
 
@@ -3618,11 +3603,6 @@ A/DT $/$ 107.03/CD million/CD offering/NN of/IN Santa/NNP Ana/NNP Community/NNP 
 -------
 A/DT $/$ 107.03/CD million/CD offering/NN of/IN Santa/NNP Ana/NNP Community/NNP Redevelopment/NNP Agency/NNP ,/, Calif./NNP ,/, tax/NN allocation/NN bonds/NNS got/VBD off/RP to/TO a/DT slow/JJ start/NN and/CC may/MD be/VB repriced/VBN at/IN lower/JJR levels/NNS today/NN ,/, according/VBG to/TO an/DT official/NN with/IN lead/NN underwriter/NN Donaldson/NNP Lufkin/NNP &/CC Jenrette/NNP Securities/NNPS Corp/NNP ./.
 
-Santa/JJ Santa/NNP<>Ana/JJ Ana/NNP<>
-The/DT Santa/JJ Ana/JJ bonds/NNS were/VBD tentatively/RB priced/VBN to/TO yield/VB from/IN 6.40/CD %/NN in/IN 1991/CD to/TO 7.458/CD %/NN in/IN
--------
-The/DT Santa/NNP Ana/NNP bonds/NNS were/VBD tentatively/RB priced/VBN to/TO yield/VB from/IN 6.40/CD %/NN in/IN 1991/CD to/TO 7.458/CD %/NN in/IN
-
 distributable/NN distributable/JJ<>
 Bucking/VBG the/DT market/NN trend/NN ,/, an/DT issue/NN of/IN $/$ 130/CD million/CD general/JJ obligation/NN distributable/NN state/NN aid/NN bonds/NNS from/IN Detroit/NNP ,/, Mich./NNP ,/, apparently/RB drew/VBD solid/JJ investor/NN interest/NN ./.
 -------
@@ -3658,8 +3638,8 @@ The/DT 12/CD %/NN notes/VBZ due/JJ 1995/CD fell/VBD 9/32/CD to/TO 103/CD 3/8/CD 
 -------
 The/DT 12/CD %/NN notes/NNS due/JJ 1995/CD fell/VBD 9/32/CD to/TO 103/CD 3/8/CD to/TO yield/VB 11.10/CD %/NN ./.
 
-double-C/NNS double-C/NN<>triple-C/NNS triple-C/NN<>
-Standard/NNP &/CC Poor/NNP 's/POS Corp./NNP lowered/VBD to/TO double-C/NNS from/IN triple-C/NNS the/DT rating/NN on/IN about/IN $/$ 130/CD million/CD of/IN debt/NN ./.
+triple-C/NNP triple-C/NN<>
+Standard/NNP &/CC Poor/NNP 's/POS Corp./NNP lowered/VBD to/TO double-C/NN from/IN triple-C/NNP the/DT rating/NN on/IN about/IN $/$ 130/CD million/CD of/IN debt/NN ./.
 -------
 Standard/NNP &/CC Poor/NNP 's/POS Corp./NNP lowered/VBD to/TO double-C/NN from/IN triple-C/NN the/DT rating/NN on/IN about/IN $/$ 130/CD million/CD of/IN debt/NN ./.
 
@@ -3763,13 +3743,8 @@ In/IN addition/NN ,/, it/PRP is/VBZ believed/VBN to/TO offer/VB a/DT cost-sharin
 -------
 In/IN addition/NN ,/, it/PRP is/VBZ believed/VBN to/TO offer/VB a/DT cost-sharing/JJ mechanism/NN that/WDT would/MD help/VB subsidize/VB the/DT clean-up/JJ costs/NNS for/IN the/DT dirtiest/JJS coal-fired/JJ utilities/NNS in/IN the/DT country/NN ,/, sparing/VBG their/PRP$ customers/NNS from/IN exorbitant/JJ jumps/NNS in/IN their/PRP$ electric/JJ bills/NNS ./.
 
-vow/VBP vow/NN<>
-The/DT administration/NN ,/, sticking/VBG to/TO its/PRP$ vow/VBP of/IN avoiding/VBG tax/NN increases/NNS ,/, has/VBZ staunchly/RB opposed/VBN cost-sharing/NN ./.
--------
-The/DT administration/NN ,/, sticking/VBG to/TO its/PRP$ vow/NN of/IN avoiding/VBG tax/NN increases/NNS ,/, has/VBZ staunchly/RB opposed/VBN cost-sharing/NN ./.
-
-acid-rain/JJ acid-rain/NN<>
-Mr./NNP Dingell/NNP 's/POS staff/NN was/VBD expected/VBN to/TO present/VB its/PRP$ acid-rain/JJ alternative/NN to/TO other/JJ committee/NN members/NNS ,/, apparently/RB in/IN an/DT attempt/NN to/TO appease/VB Midwestern/JJ lawmakers/NNS from/IN high-polluting/JJ states/NNS who/WP insist/VBP on/IN cost-sharing/NN ./.
+acid-rain/JJ acid-rain/NN<>high-polluting/NNP high-polluting/JJ<>
+Mr./NNP Dingell/NNP 's/POS staff/NN was/VBD expected/VBN to/TO present/VB its/PRP$ acid-rain/JJ alternative/NN to/TO other/JJ committee/NN members/NNS ,/, apparently/RB in/IN an/DT attempt/NN to/TO appease/VB Midwestern/JJ lawmakers/NNS from/IN high-polluting/NNP states/NNS who/WP insist/VBP on/IN cost-sharing/NN ./.
 -------
 Mr./NNP Dingell/NNP 's/POS staff/NN was/VBD expected/VBN to/TO present/VB its/PRP$ acid-rain/NN alternative/NN to/TO other/JJ committee/NN members/NNS ,/, apparently/RB in/IN an/DT attempt/NN to/TO appease/VB Midwestern/JJ lawmakers/NNS from/IN high-polluting/JJ states/NNS who/WP insist/VBP on/IN cost-sharing/NN ./.
 
@@ -3973,8 +3948,8 @@ The/DT aerospace/NN ,/, automotive/JJ supply/NN ,/, electronics/NNS and/CC print
 -------
 The/DT aerospace/NN ,/, automotive/JJ supply/NN ,/, electronics/NNS and/CC printing-press/NN concern/NN also/RB indicated/VBD that/IN the/DT first/JJ half/DT of/IN fiscal/JJ 1990/CD could/MD be/VB rough/JJ ./.
 
-heavy-truck/NNP heavy-truck/NN<>passenger-car/JJ passenger-car/NN<>
-In/IN an/DT interview/NN ,/, Donald/NNP Beall/NNP ,/, chairman/NN ,/, said/VBD first-half/JJ profit/NN certainly/RB would/MD trail/VB the/DT past/JJ year/NN 's/POS ,/, primarily/RB because/IN of/IN weakness/NN in/IN the/DT heavy-truck/NNP and/CC passenger-car/JJ markets/NNS ./.
+passenger-car/JJ passenger-car/NN<>
+In/IN an/DT interview/NN ,/, Donald/NNP Beall/NNP ,/, chairman/NN ,/, said/VBD first-half/JJ profit/NN certainly/RB would/MD trail/VB the/DT past/JJ year/NN 's/POS ,/, primarily/RB because/IN of/IN weakness/NN in/IN the/DT heavy-truck/NN and/CC passenger-car/JJ markets/NNS ./.
 -------
 In/IN an/DT interview/NN ,/, Donald/NNP Beall/NNP ,/, chairman/NN ,/, said/VBD first-half/JJ profit/NN certainly/RB would/MD trail/VB the/DT past/JJ year/NN 's/POS ,/, primarily/RB because/IN of/IN weakness/NN in/IN the/DT heavy-truck/NN and/CC passenger-car/NN markets/NNS ./.
 
@@ -4208,8 +4183,8 @@ Equitable/NNP of/IN Iowa/NNP Cos./NNP ,/, Des/NNP Moines/NNPS ,/, had/VBD been/V
 -------
 Equitable/NNP of/IN Iowa/NNP Cos./NNP ,/, Des/NNP Moines/NNP ,/, had/VBD been/VBN seeking/VBG a/DT buyer/NN for/IN the/DT 36-store/JJ Younkers/NNP chain/NN since/IN June/NNP ,/, when/WRB it/PRP announced/VBD its/PRP$ intention/NN to/TO free/VB up/RP capital/NN to/TO expand/VB its/PRP$ insurance/NN business/NN ./.
 
-Younkers/NNP Younkers/NNS<>
-Younkers/NNP rang/VBD up/RP sales/NNS in/IN 1988/CD of/IN $/$ 313/CD million/CD ./.
+Younkers/JJ Younkers/NNS<>rang/NN rang/VBD<>up/IN up/RP<>
+Younkers/JJ rang/NN up/IN sales/NNS in/IN 1988/CD of/IN $/$ 313/CD million/CD ./.
 -------
 Younkers/NNS rang/VBD up/RP sales/NNS in/IN 1988/CD of/IN $/$ 313/CD million/CD ./.
 
@@ -4297,11 +4272,6 @@ third-quarter/JJ third-quarter/NN<>continued/VBD continued/VBN<>
 Hadson/NNP Corp./NNP said/VBD it/PRP expects/VBZ to/TO report/VB a/DT third-quarter/JJ net/JJ loss/NN of/IN $/$ 17/CD million/CD to/TO $/$ 19/CD million/CD because/IN of/IN special/JJ reserves/NNS and/CC continued/VBD low/JJ natural-gas/NN prices/NNS ./.
 -------
 Hadson/NNP Corp./NNP said/VBD it/PRP expects/VBZ to/TO report/VB a/DT third-quarter/NN net/JJ loss/NN of/IN $/$ 17/CD million/CD to/TO $/$ 19/CD million/CD because/IN of/IN special/JJ reserves/NNS and/CC continued/VBN low/JJ natural-gas/NN prices/NNS ./.
-
-reimbursed/NNS reimbursed/VBN<>
-The/DT Oklahoma/NNP City/NNP energy/NN and/CC defense/NN concern/NN said/VBD it/PRP will/MD record/VB a/DT $/$ 7.5/CD million/CD reserve/NN for/IN its/PRP$ defense/NN group/NN ,/, including/VBG a/DT $/$ 4.7/CD million/CD charge/NN related/VBN to/TO problems/NNS under/IN a/DT fixed-price/JJ development/NN contract/NN and/CC $/$ 2.8/CD million/CD in/IN overhead/JJ costs/NNS that/WDT wo/MD n't/RB be/VB reimbursed/NNS ./.
--------
-The/DT Oklahoma/NNP City/NNP energy/NN and/CC defense/NN concern/NN said/VBD it/PRP will/MD record/VB a/DT $/$ 7.5/CD million/CD reserve/NN for/IN its/PRP$ defense/NN group/NN ,/, including/VBG a/DT $/$ 4.7/CD million/CD charge/NN related/VBN to/TO problems/NNS under/IN a/DT fixed-price/JJ development/NN contract/NN and/CC $/$ 2.8/CD million/CD in/IN overhead/JJ costs/NNS that/WDT wo/MD n't/RB be/VB reimbursed/VBN ./.
 
 leases/VBZ leases/NNS<>
 In/IN addition/NN ,/, Hadson/NNP said/VBD it/PRP will/MD write/VB off/RP about/IN $/$ 3.5/CD million/CD in/IN costs/NNS related/VBN to/TO international/JJ exploration/NN leases/VBZ where/WRB exploration/NN efforts/NNS have/VBP been/VBN unsuccessful/JJ ./.
@@ -4603,8 +4573,8 @@ The/DT acquisition/NN of/IN 87-store/NNP Weisfield/NNP 's/POS raises/VBZ Ratners
 -------
 The/DT acquisition/NN of/IN 87-store/JJ Weisfield/NNP 's/POS raises/VBZ Ratners/NNP 's/POS U.S./NNP presence/NN to/TO 450/CD stores/NNS ./.
 
-Lines/NNPS Lines/NNP<>averted/NN averted/VBN<>
-Carnival/NNP Cruise/NNP Lines/NNPS Inc./NNP said/VBD potential/JJ problems/NNS with/IN the/DT construction/NN of/IN two/CD big/JJ cruise/NN ships/NNS from/IN Finland/NNP have/VBP been/VBN averted/NN ./.
+Lines/NNPS Lines/NNP<>
+Carnival/NNP Cruise/NNP Lines/NNPS Inc./NNP said/VBD potential/JJ problems/NNS with/IN the/DT construction/NN of/IN two/CD big/JJ cruise/NN ships/NNS from/IN Finland/NNP have/VBP been/VBN averted/VBN ./.
 -------
 Carnival/NNP Cruise/NNP Lines/NNP Inc./NNP said/VBD potential/JJ problems/NNS with/IN the/DT construction/NN of/IN two/CD big/JJ cruise/NN ships/NNS from/IN Finland/NNP have/VBP been/VBN averted/VBN ./.
 
@@ -4793,8 +4763,8 @@ Bush/NNP unveiled/VBD a/DT package/NN of/IN trade/NN initiatives/NNS to/TO help/
 -------
 Bush/NNP unveiled/VBD a/DT package/NN of/IN trade/NN initiatives/NNS to/TO help/VB establish/VB ``/`` economic/JJ alternatives/NNS to/TO drug/NN trafficking/NN ''/'' in/IN the/DT Andean/JJ nations/NNS of/IN South/NNP America/NNP ./.
 
-Am/NNP Am/VBP<>subpoenaed/JJ subpoenaed/VBN<>
-Pan/NNP Am/NNP has/VBZ subpoenaed/JJ several/JJ government/NN agencies/NNS ,/, including/VBG the/DT CIA/NNP and/CC FBI/NNP ,/, to/TO determine/VB whether/IN they/PRP were/VBD warned/VBN that/IN a/DT bomb/NN had/VBD been/VBN planted/VBN aboard/IN a/DT jet/NN that/WDT exploded/VBD over/IN Scotland/NNP last/JJ December/NNP ,/, killing/VBG 270/CD people/NNS ./.
+Am/NNP Am/VBP<>
+Pan/NNP Am/NNP has/VBZ subpoenaed/VBN several/JJ government/NN agencies/NNS ,/, including/VBG the/DT CIA/NNP and/CC FBI/NNP ,/, to/TO determine/VB whether/IN they/PRP were/VBD warned/VBN that/IN a/DT bomb/NN had/VBD been/VBN planted/VBN aboard/IN a/DT jet/NN that/WDT exploded/VBD over/IN Scotland/NNP last/JJ December/NNP ,/, killing/VBG 270/CD people/NNS ./.
 -------
 Pan/NNP Am/VBP has/VBZ subpoenaed/VBN several/JJ government/NN agencies/NNS ,/, including/VBG the/DT CIA/NNP and/CC FBI/NNP ,/, to/TO determine/VB whether/IN they/PRP were/VBD warned/VBN that/IN a/DT bomb/NN had/VBD been/VBN planted/VBN aboard/IN a/DT jet/NN that/WDT exploded/VBD over/IN Scotland/NNP last/JJ December/NNP ,/, killing/VBG 270/CD people/NNS ./.
 
@@ -5053,11 +5023,6 @@ You/PRP sell/VBP the/DT good/JJ bank/NN as/IN an/DT ongoing/JJ operation/NN and/
 -------
 You/PRP sell/VBP the/DT good/JJ bank/NN as/IN an/DT ongoing/JJ operation/NN and/CC use/VBP some/DT of/IN the/DT proceeds/NNS to/TO capitalize/VB the/DT bad/JJ bank/NN ,/, ''/'' says/VBZ thrift/NN specialist/NN Lewis/NNP Ranieri/NNP of/IN Ranieri/NNP Associates/NNPS in/IN New/NNP York/NNP ./.
 
-scrutinizing/JJ scrutinizing/VBG<>
-And/CC some/DT investment/NN bankers/NNS say/VBP a/DT restructuring/NN is/VBZ n't/RB feasible/JJ while/IN the/DT SEC/NNP still/RB is/VBZ scrutinizing/JJ Mr./NNP Spiegel/NNP 's/POS past/JJ junk-bond/NN trades/NNS ./.
--------
-And/CC some/DT investment/NN bankers/NNS say/VBP a/DT restructuring/NN is/VBZ n't/RB feasible/JJ while/IN the/DT SEC/NNP still/RB is/VBZ scrutinizing/VBG Mr./NNP Spiegel/NNP 's/POS past/JJ junk-bond/NN trades/NNS ./.
-
 Savings/NNPS Savings/NNP<>
 Columbia/NNP Savings/NNPS &/CC Loan/NNP (/-LRB- NYSE/NNP ;/: Symbol/NN :/: CSV/NNP )/-RRB-
 -------
@@ -5087,11 +5052,6 @@ Interleukin-3/NNP Interleukin-3/NN<>DNA/NN DNA/NNP<>
 The/DT patent/NN for/IN Interleukin-3/NNP covers/VBZ materials/NNS and/CC methods/NNS used/VBN to/TO make/VB the/DT human/JJ blood/NN cell/NN growth/NN factor/NN via/IN recombinant/JJ DNA/NN technology/NN ./.
 -------
 The/DT patent/NN for/IN Interleukin-3/NN covers/VBZ materials/NNS and/CC methods/NNS used/VBN to/TO make/VB the/DT human/JJ blood/NN cell/NN growth/NN factor/NN via/IN recombinant/JJ DNA/NNP technology/NN ./.
-
-Interleukin-3/NNP Interleukin-3/NN<>
-Sandoz/NNP Ltd./NNP has/VBZ licensed/VBN certain/JJ manufacturing/NN and/CC marketing/NN rights/NNS for/IN Interleukin-3/NNP from/IN Genetics/NNP Institute/NNP and/CC is/VBZ conducting/VBG preclinical/JJ studies/NNS with/IN it/PRP ./.
--------
-Sandoz/NNP Ltd./NNP has/VBZ licensed/VBN certain/JJ manufacturing/NN and/CC marketing/NN rights/NNS for/IN Interleukin-3/NN from/IN Genetics/NNP Institute/NNP and/CC is/VBZ conducting/VBG preclinical/JJ studies/NNS with/IN it/PRP ./.
 
 Interleukin-3/NNP Interleukin-3/NN<>blood-cell/JJ blood-cell/NN<>
 Interleukin-3/NNP may/MD help/VB in/IN treating/VBG blood/NN cell/NN deficiencies/NNS associated/VBN with/IN cancer/NN treatment/NN ,/, bone/NN marrow/NN transplants/NNS and/CC other/JJ blood-cell/JJ disorders/NNS ,/, Genetics/NNP Institute/NNP said/VBD ./.
@@ -5223,8 +5183,8 @@ Jerry/NNP Chapman/NNP ,/, managing/VBG director/NN of/IN WayMar/NNP Associates/N
 -------
 Jerry/NNP Chapman/NNP ,/, managing/VBG director/NN of/IN WayMar/NNP Associates/NNPS ,/, was/VBD elected/VBN a/DT director/NN of/IN this/DT business/NN telecommunications/NNS software/NN and/CC systems/NNS concern/NN ./.
 
-Feeding/JJ Feeding/NNP<>Frenzy/NN Frenzy/NNP<>detailed/JJ detailed/VBN<>
-``/`` Feeding/JJ Frenzy/NN ''/'' (/-LRB- Henry/NNP Holt/NNP ,/, 326/CD pages/NNS ,/, $/$ 19.95/CD )/-RRB- ,/, a/DT highly/RB detailed/JJ account/NN of/IN the/DT Wedtech/NNP scandal/NN ,/, begins/VBZ on/IN a/DT reassuring/JJ note/NN ./.
+detailed/JJ detailed/VBN<>
+``/`` Feeding/NNP Frenzy/NNP ''/'' (/-LRB- Henry/NNP Holt/NNP ,/, 326/CD pages/NNS ,/, $/$ 19.95/CD )/-RRB- ,/, a/DT highly/RB detailed/JJ account/NN of/IN the/DT Wedtech/NNP scandal/NN ,/, begins/VBZ on/IN a/DT reassuring/JJ note/NN ./.
 -------
 ``/`` Feeding/NNP Frenzy/NNP ''/'' (/-LRB- Henry/NNP Holt/NNP ,/, 326/CD pages/NNS ,/, $/$ 19.95/CD )/-RRB- ,/, a/DT highly/RB detailed/VBN account/NN of/IN the/DT Wedtech/NNP scandal/NN ,/, begins/VBZ on/IN a/DT reassuring/JJ note/NN ./.
 
@@ -5253,8 +5213,8 @@ Although/IN started/VBN in/IN 1965/CD ,/, Wedtech/NNP did/VBD n't/RB really/RB g
 -------
 Although/IN started/VBN in/IN 1965/CD ,/, Wedtech/NNP did/VBD n't/RB really/RB get/VB rolling/VBG until/IN 1975/CD ,/, when/WRB Mr./NNP Neuberger/NNP discovered/VBD the/DT federal/JJ government/NN 's/POS Section/NN 8/CD (/-LRB- A/NN )/-RRB- minority/NN business/NN program/NN ./.
 
-Johnson-era/NNP Johnson-era/NN<>that/IN that/WDT<>mandates/NNS mandates/VBZ<>noncompetitively/VBN noncompetitively/RB<>
-This/DT is/VBZ a/DT Johnson-era/NNP ,/, Great/NNP Society/NNP creation/NN that/IN mandates/NNS certain/JJ government/NN contracts/NNS be/VB awarded/VBN noncompetitively/VBN to/TO minority/NN businesses/NNS ./.
+that/IN that/WDT<>mandates/NNS mandates/VBZ<>noncompetitively/VBN noncompetitively/RB<>
+This/DT is/VBZ a/DT Johnson-era/NN ,/, Great/NNP Society/NNP creation/NN that/IN mandates/NNS certain/JJ government/NN contracts/NNS be/VB awarded/VBN noncompetitively/VBN to/TO minority/NN businesses/NNS ./.
 -------
 This/DT is/VBZ a/DT Johnson-era/NN ,/, Great/NNP Society/NNP creation/NN that/WDT mandates/VBZ certain/JJ government/NN contracts/NNS be/VB awarded/VBN noncompetitively/RB to/TO minority/NN businesses/NNS ./.
 
@@ -5298,8 +5258,8 @@ If/IN you/PRP were/VBD not/RB an/DT effective/JJ crook/NN ,/, you/PRP found/VBD 
 -------
 If/IN you/PRP were/VBD not/RB an/DT effective/JJ crook/NN ,/, you/PRP found/VBD yourself/PRP out/IN in/IN the/DT cold/NN ,/, a/DT fate/NN that/WDT eventually/RB befell/VBD Mr./NNP Mariotta/NNP ,/, the/DT firm/NN 's/POS semiliterate/JJ ``/`` minority/NN ''/'' person/NN ./.
 
-breezy/NN breezy/JJ<>tabloid/NN tabloid/JJ<>writing/VBG writing/NN<>Feeding/JJ Feeding/NNP<>Frenzy/NN Frenzy/NNP<>short/RB short/JJ<>
-But/CC despite/IN the/DT sensational/JJ nature/NN of/IN the/DT revelations/NNS and/CC the/DT breezy/NN ,/, easy-to-read/JJ tabloid/NN writing/VBG style/NN ,/, ``/`` Feeding/JJ Frenzy/NN ''/'' often/RB falls/VBZ short/RB of/IN gripping/JJ reading/NN ./.
+breezy/NN breezy/JJ<>tabloid/NN tabloid/JJ<>writing/VBG writing/NN<>short/RB short/JJ<>
+But/CC despite/IN the/DT sensational/JJ nature/NN of/IN the/DT revelations/NNS and/CC the/DT breezy/NN ,/, easy-to-read/JJ tabloid/NN writing/VBG style/NN ,/, ``/`` Feeding/NNP Frenzy/NNP ''/'' often/RB falls/VBZ short/RB of/IN gripping/JJ reading/NN ./.
 -------
 But/CC despite/IN the/DT sensational/JJ nature/NN of/IN the/DT revelations/NNS and/CC the/DT breezy/JJ ,/, easy-to-read/JJ tabloid/JJ writing/NN style/NN ,/, ``/`` Feeding/NNP Frenzy/NNP ''/'' often/RB falls/VBZ short/JJ of/IN gripping/JJ reading/NN ./.
 
@@ -5342,11 +5302,6 @@ Programs/NNP Programs/NNS<>Section/NNP Section/NN<>A/NNP A/NN<>little/JJ little/
 Programs/NNP like/IN Section/NNP 8/CD (/-LRB- A/NNP )/-RRB- are/VBP a/DT little/JJ like/IN leaving/VBG gold/NN in/IN the/DT street/NN and/CC then/RB expressing/VBG surprise/NN when/WRB thieves/NNS walk/VBP by/IN to/TO scoop/VB it/PRP up/RP ./.
 -------
 Programs/NNS like/IN Section/NN 8/CD (/-LRB- A/NN )/-RRB- are/VBP a/DT little/RB like/IN leaving/VBG gold/NN in/IN the/DT street/NN and/CC then/RB expressing/VBG surprise/NN when/WRB thieves/NNS walk/VBP by/RP to/TO scoop/VB it/PRP up/IN ./.
-
-Feeding/JJ Feeding/NNP<>Frenzy/NN Frenzy/NNP<>
-``/`` Feeding/JJ Frenzy/NN ''/'' does/VBZ provide/VB a/DT few/JJ clues/NNS ./.
--------
-``/`` Feeding/NNP Frenzy/NNP ''/'' does/VBZ provide/VB a/DT few/JJ clues/NNS ./.
 
 best/RB best/JJS<>
 In/IN and/CC around/IN all/DT levels/NNS of/IN government/NN in/IN the/DT U.S./NNP are/VBP groups/NNS of/IN people/NNS who/WP can/MD best/RB be/VB described/VBN as/IN belonging/VBG to/TO a/DT political/JJ insider/NN commercial/JJ party/NN ./.
@@ -5453,8 +5408,8 @@ The/DT St./NNP Louis/NNP company/NN earned/VBD $/$ 45.2/CD million/CD ,/, or/CC 
 -------
 The/DT St./NNP Louis/NNP company/NN earned/VBD $/$ 45.2/CD million/CD ,/, or/CC 65/CD cents/NNS a/DT share/NN ,/, compared/VBN with/IN $/$ 84.9/CD million/CD ,/, or/CC $/$ 1.24/CD a/DT share/NN ,/, a/DT year/NN earlier/JJR ./.
 
-phase-out/JJ phase-out/NN<>cake/NNP cake/NN<>
-Ralston/NNP said/VBD its/PRP$ restructuring/NN costs/NNS include/VBP the/DT phase-out/JJ of/IN a/DT battery/NN facility/NN in/IN Greenville/NNP ,/, N.C./NNP ,/, the/DT recent/JJ closing/NN of/IN a/DT Hostess/NNP cake/NNP bakery/NN in/IN Cincinnati/NNP and/CC a/DT reduction/NN in/IN staff/NN throughout/IN the/DT company/NN ./.
+cake/NNP cake/NN<>
+Ralston/NNP said/VBD its/PRP$ restructuring/NN costs/NNS include/VBP the/DT phase-out/NN of/IN a/DT battery/NN facility/NN in/IN Greenville/NNP ,/, N.C./NNP ,/, the/DT recent/JJ closing/NN of/IN a/DT Hostess/NNP cake/NNP bakery/NN in/IN Cincinnati/NNP and/CC a/DT reduction/NN in/IN staff/NN throughout/IN the/DT company/NN ./.
 -------
 Ralston/NNP said/VBD its/PRP$ restructuring/NN costs/NNS include/VBP the/DT phase-out/NN of/IN a/DT battery/NN facility/NN in/IN Greenville/NNP ,/, N.C./NNP ,/, the/DT recent/JJ closing/NN of/IN a/DT Hostess/NNP cake/NN bakery/NN in/IN Cincinnati/NNP and/CC a/DT reduction/NN in/IN staff/NN throughout/IN the/DT company/NN ./.
 
@@ -5832,6 +5787,11 @@ passed/VBD passed/VBN<>ago/RB ago/IN<>covered/VBN covered/VBD<>
 Moreover/RB ,/, they/PRP said/VBD the/DT first/JJ appropriations/NNS bill/NN passed/VBD 200/CD years/NNS ago/RB covered/VBN many/JJ different/JJ items/NNS ,/, and/CC there/EX was/VBD no/DT discussion/NN of/IN a/DT line-item/JJ veto/NN ./.
 -------
 Moreover/RB ,/, they/PRP said/VBD the/DT first/JJ appropriations/NNS bill/NN passed/VBN 200/CD years/NNS ago/IN covered/VBD many/JJ different/JJ items/NNS ,/, and/CC there/EX was/VBD no/DT discussion/NN of/IN a/DT line-item/JJ veto/NN ./.
+
+lawmaking/NN lawmaking/JJ<>
+They/PRP also/RB said/VBD that/IN more/JJR than/IN a/DT dozen/NN presidents/NNS have/VBP called/VBN for/IN line-item/JJ veto/NN authority/NN since/IN the/DT Civil/NNP War/NNP ,/, and/CC ``/`` all/DT have/VBP shared/VBN the/DT view/NN that/IN such/JJ lawmaking/NN power/NN is/VBZ beyond/IN the/DT reach/NN ''/'' of/IN the/DT president/NN ./.
+-------
+They/PRP also/RB said/VBD that/IN more/JJR than/IN a/DT dozen/NN presidents/NNS have/VBP called/VBN for/IN line-item/JJ veto/NN authority/NN since/IN the/DT Civil/NNP War/NNP ,/, and/CC ``/`` all/DT have/VBP shared/VBN the/DT view/NN that/IN such/JJ lawmaking/JJ power/NN is/VBZ beyond/IN the/DT reach/NN ''/'' of/IN the/DT president/NN ./.
 
 railcar/CD railcar/NN<>
 Trinity/NNP Industries/NNPS Inc./NNP said/VBD it/PRP reached/VBD a/DT preliminary/JJ agreement/NN to/TO sell/VB 500/CD railcar/CD platforms/NNS to/TO Trailer/NNP Train/NNP Co./NNP of/IN Chicago/NNP ./.

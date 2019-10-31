@@ -11,6 +11,6 @@
 # while True:
 #     word = input("Please input: ")
 #     print(is_number(word))
-s = "McAlpine"
+s = "7.458 % in"
 
 print(s.capitalize())
