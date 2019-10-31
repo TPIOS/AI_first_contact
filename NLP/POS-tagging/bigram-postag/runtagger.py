@@ -27,78 +27,78 @@ def is_number(num):
         return False
 
 def processWord(unkProb, x, wordIdx, tag, tagAndWord):
-    if is_number(x) or (x == "hundred" or x == "thousand" or x == "TWO" or x == "Sept.30" or x.endswith("1st") or x.endswith("2nd") or x.endswith("3rd")): #for all number, it should be number
-        if tag == "CD":
-            return unkProb * 100
+    # if is_number(x) or (x == "hundred" or x == "thousand" or x == "TWO" or x == "Sept.30" or x.endswith("1st") or x.endswith("2nd") or x.endswith("3rd")): #for all number, it should be number
+    #     if tag == "CD":
+    #         return unkProb * 10000
 
-    if x.endswith("-year-old"):
-        if tag == "JJ":
-            return unkProb * 100
+    # if x.endswith("-year-old"):
+    #     if tag == "JJ":
+    #         return unkProb * 10000
 
     #end-with-ing
     if x.endswith("ing"):
         if tag == "JJ":
-            return unkProb * 50
+            return unkProb * 5000
         elif tag == "NN":
-            return unkProb * 50
+            return unkProb * 5000
         elif tag == "VBG":
-            return unkProb * 50
+            return unkProb * 5000
 
     #end-with-ment/ness
     if x.endswith("ment") or x.endswith("ness") or x.endswith("tion") or x.endswith("sion"):
         if tag == "NN":
-            return unkProb * 100
+            return unkProb * 10000
         
     #capitalized word
     if x == x.capitalize() and wordIdx != 0:
         if x.endswith("es"):
             if tag == "NNPS":
-                return unkProb * 75
+                return unkProb * 7500
             elif tag == "JJ":
-                return unkProb * 50
+                return unkProb * 5000
         else:
             if tag == "NNP":
-                return unkProb * 75
+                return unkProb * 7500
             elif tag == "JJ":
-                return unkProb * 50
+                return unkProb * 5000
 
     #abbr.
     if x.isupper() and wordIdx != 0:
         if tag == "NNP" or tag == "NNPS":
-            return unkProb*100
+            return unkProb*10000
 
     #dash
     if "-" in x:
         if x.endswith("s"):
             if tag == "NNPS":
-                return unkProb * 75
+                return unkProb * 7500
             elif tag == "NNS" or tag == "JJ":
-                return unkProb * 50
+                return unkProb * 5000
         else:
             if tag == "NNP":
-                return unkProb * 75
+                return unkProb * 7500
             elif tag == "NNS" or tag == "JJ":
-                return unkProb * 50
+                return unkProb * 5000
 
     #end-with-s
     if x.endswith("s"):
         if x[:-1] in tagAndWord["NN"]:
             if tag == "NNS":
-                return unkProb * 100
+                return unkProb * 10000
         elif x[:-1] in tagAndWord["NNP"]:
             if tag == "NNPS":
-                return unkProb * 100
+                return unkProb * 10000
         elif x[:-1] in tagAndWord["VB"] or x[:-1] in tagAndWord["VBP"]:
             if tag == "VBZ":
-                return unkProb * 100
+                return unkProb * 10000
 
     if x+"s" in tagAndWord["NNS"]:
         if tag == "NN":
-            return unkProb * 100
+            return unkProb * 10000
     
     if x+"s" in tagAndWord["VBZ"]:
         if tag == "VB" or tag == "VBP":
-            return unkProb * 100
+            return unkProb * 10000
     
     return unkProb
 
@@ -170,7 +170,13 @@ def tag_sentence(test_file, model_file, out_file):
         sentence = line.rstrip()
         words = sentence.split(" ")
         ans = list()
-        for i in range(len(resTags)): ans.append(words[i]+"/"+resTags[i])
+        for i in range(len(resTags)): 
+            x = words[i]
+            if is_number(x) or (x == "hundred" or x == "thousand" or x == "TWO" or x == "Sept.30" or x.endswith("1st") or x.endswith("2nd") or x.endswith("3rd")):
+                resTags[i] = "CD"
+            if words[i].endswith("-year-old"):
+                resTags[i] = "JJ"
+            ans.append(words[i]+"/"+resTags[i])
         ans = " ".join(ans)
         outFile.write(ans+"\n")
 
