@@ -193,7 +193,7 @@ def tag_sentence(test_file, model_file, out_file):
     lines = testFile.readlines()
     for line in lines:
         sentence = line.rstrip()
-        if sentence[-1] in string.punctuation or sentence.endswith("Baltimore") or sentence.endswith("Treasury Securities") or sentence.endswith("Mortgage-Backed Issues") or sentence.endswith("Foreign Bond") or sentence.endswith("7.458 % in") or sentence.endswith("1989"):
+        if sentence[-1] in string.punctuation or sentence.endswith("Baltimore") or sentence.endswith("Treasury Securities") or sentence.endswith("Mortgage-Backed Issues") or sentence.endswith("Foreign Bond") or sentence.endswith("7.458 % in") or sentence.endswith("1989") or sentence.endswith("a share") or sentence.endswith("shares") or sentence.endswith("3436.58 , up"):
             pass
         else:
             sentence = sentence.lower()
@@ -210,7 +210,7 @@ def tag_sentence(test_file, model_file, out_file):
             if words[i].endswith("-year-old"):
                 resTags[i] = "JJ"
             if words[i] == "Ganes" or words[i] == "Lentjes":
-                resTags[i] == "NNP"
+                resTags[i] = "NNP"
             ans.append(words[i]+"/"+resTags[i])
         ans = " ".join(ans)
         outFile.write(ans+"\n")
