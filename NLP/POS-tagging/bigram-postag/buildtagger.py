@@ -88,15 +88,15 @@ def loadTrainData(train_file, vocab, tags, tagAndWord):
                 tagAndWord[tag][word] = 1
             prev = word
 
-    for line in lines:
-        prev = "<s>"
-        sentence = line.rstrip()
-        sents = sentence.split(" ")
-        for sent in sents:
-            word, tag = sent.rsplit("/", 1)
-            word = processWord(word, tag, prev)
-            enlargeCorpus(vocab, tagAndWord, word, tag)
-            prev = word
+    # for line in lines:
+    #     prev = "<s>"
+    #     sentence = line.rstrip()
+    #     sents = sentence.split(" ")
+    #     for sent in sents:
+    #         word, tag = sent.rsplit("/", 1)
+    #         word = processWord(word, tag, prev)
+    #         enlargeCorpus(vocab, tagAndWord, word, tag)
+    #         prev = word
     trainFile.close()
 
 def unknownVocab(vocab, tagAndWord):
